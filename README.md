@@ -4,3 +4,5 @@
   <a href="https://www.npmjs.com/package/symbola"><img src="https://img.shields.io/npm/v/symbola.svg" alt="NPM Version"></a>
   <a href="/symbola/symbola/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/symbola.svg" alt="License"></a>
 </p>
+
+//
