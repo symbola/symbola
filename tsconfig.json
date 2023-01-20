@@ -1,10 +1,9 @@
 {
   "references": [
     { "path": "packages/core" },
-    { "path": "packages/string" },
     { "path": "packages/number" },
     { "path": "packages/object" },
-    { "path": "packages/immer" }
+    { "path": "packages/function" }
   ],
   "files": []
 }
