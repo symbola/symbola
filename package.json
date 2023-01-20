@@ -15,6 +15,7 @@
     "w:typescript": "yarn workspace @symbola/config-typescript",
     "w:babel": "yarn workspace @symbola/config-babel",
     "postinstall": "husky install",
+    "test": "yarn workspaces foreach -p run test",
     "lint:eslint": "yarn workspaces foreach -p run lint:eslint",
     "lint:prettier": "yarn workspaces foreach -p run lint:prettier"
   },
