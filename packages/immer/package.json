@@ -6,7 +6,6 @@
   "scripts": {
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
-    "lint:types": "tsc",
     "test": "jest",
     "test:ci": "jest --coverage"
   },

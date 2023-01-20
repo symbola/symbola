@@ -6,18 +6,21 @@
   ],
   "description": "Symbol protocols for JavaScript",
   "scripts": {
-    "w:immer": "yarn workspace @symbola/immer",
-    "w:core": "yarn workspace @symbola/core",
-    "w:object": "yarn workspace @symbola/object",
-    "w:config": "yarn workspace @symbola/config",
-    "w:eslint": "yarn workspace @symbola/config-eslint",
-    "w:prettier": "yarn workspace @symbola/config-prettier",
-    "w:typescript": "yarn workspace @symbola/config-typescript",
-    "w:babel": "yarn workspace @symbola/config-babel",
+    "p:immer": "yarn workspace @symbola/immer",
+    "p:core": "yarn workspace @symbola/core",
+    "p:object": "yarn workspace @symbola/object",
+    "p:number": "yarn workspace @symbola/number",
+    "p:string": "yarn workspace @symbola/string",
+    "c:config": "yarn workspace @symbola/config",
+    "c:eslint": "yarn workspace @symbola/config-eslint",
+    "c:prettier": "yarn workspace @symbola/config-prettier",
+    "c:typescript": "yarn workspace @symbola/config-typescript",
+    "c:babel": "yarn workspace @symbola/config-babel",
     "postinstall": "husky install",
     "test": "yarn workspaces foreach -p run test",
     "lint:eslint": "yarn workspaces foreach -p run lint:eslint",
-    "lint:prettier": "yarn workspaces foreach -p run lint:prettier"
+    "lint:prettier": "yarn workspaces foreach -p run lint:prettier",
+    "types": "tsc -b"
   },
   "engines": {
     "node": ">= 18"

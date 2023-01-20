@@ -1,5 +1,3 @@
-describe('asd', () => {
-  it('bla', () => {
-    expect(1).toBe(1)
-  })
+it('tests', () => {
+  expect(1).toBe(1)
 })
