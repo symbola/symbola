@@ -1,4 +1,4 @@
-import extend from "./extend"
+import extend from './extend'
 
 it('extends', () => {
   const s1 = Symbol()

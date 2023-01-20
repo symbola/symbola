@@ -1,4 +1,4 @@
-import setSymbolProperty from "./setSymbolProperty";
+import setSymbolProperty from './setSymbolProperty'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const extend = (target: object, ...sources: any[]): void => {

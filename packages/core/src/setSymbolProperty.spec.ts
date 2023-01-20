@@ -1,4 +1,4 @@
-import setSymbolProperty from "./setSymbolProperty"
+import setSymbolProperty from './setSymbolProperty'
 
 it('sets symbol property', () => {
   const s = Symbol()

@@ -19,12 +19,13 @@
     "c:babel": "yarn workspace @symbola/config-babel",
     "postinstall": "husky install",
     "test": "yarn workspaces foreach -pv run test",
-    "test:ci": "yarn workspaces foreach -p run test:ci",
+    "test:ci": "yarn workspaces foreach -pv run test:ci",
     "lint:eslint": "yarn workspaces foreach -pv run lint:eslint",
     "lint:eslint:fix": "yarn workspaces foreach -pv run lint:eslint:fix",
     "lint:prettier": "yarn workspaces foreach -pv run lint:prettier",
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
-    "types": "tsc -b"
+    "types": "tsc -b",
+    "build": "yarn workspaces foreach -ptv run build"
   },
   "engines": {
     "node": ">= 18"
