@@ -1,1 +1,1 @@
-module.exports = require('@symbola/config-typescript')
+module.exports = require('@symbola/typescript-config')

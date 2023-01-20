@@ -1,1 +1,1 @@
-module.exports = require('@symbola/config-prettier')
+module.exports = require('@symbola/prettier-config')

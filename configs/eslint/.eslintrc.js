@@ -3,11 +3,7 @@ module.exports = {
   overrides: [
     {
       files: ['src/**/*.ts'],
-      extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:prettier/recommended',
-      ],
+      extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
       plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'warn',
@@ -23,4 +19,5 @@ module.exports = {
       },
     },
   ],
+  ignorePatterns: ['coverage', 'dist', 'docs'],
 }

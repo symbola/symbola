@@ -1,1 +1,1 @@
-module.exports = require('@symbola/config-jest')
+module.exports = require('@symbola/jest-config')

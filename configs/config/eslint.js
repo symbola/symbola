@@ -1,1 +1,1 @@
-module.exports = require('@symbola/config-eslint')
+module.exports = require('@symbola/eslint-config')

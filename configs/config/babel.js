@@ -1,1 +1,1 @@
-module.exports = require('@symbola/config-babel')
+module.exports = require('@symbola/babel-config')

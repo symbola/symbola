@@ -1,9 +1,12 @@
 {
-  "name": "@symbola/config-eslint",
+  "name": "@symbola/eslint-config",
   "main": "./.eslintrc.js",
   "scripts": {
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "build": "microbundle",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "*",
@@ -11,7 +14,6 @@
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-jest": "*",
-    "eslint-plugin-prettier": "*",
     "eslint-plugin-tsdoc": "*"
   },
   "devDependencies": {
@@ -22,7 +24,6 @@
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^4.2.1",
     "eslint-plugin-jest": "^27.2.1",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "prettier": "^2.8.3"
   }

@@ -1,4 +1,11 @@
 {
-  "name": "@symbola/config-jest",
-  "main": "./jest.config.js"
+  "name": "@symbola/jest-config",
+  "main": "./jest.config.js",
+  "scripts": {
+    "build": "microbundle",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
+  }
 }

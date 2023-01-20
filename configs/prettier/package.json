@@ -1,7 +1,14 @@
 {
-  "name": "@symbola/config-prettier",
+  "name": "@symbola/prettier-config",
   "main": "./prettier.config.js",
   "peerDependencies": {
     "prettier": "*"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
   }
 }
