@@ -83,6 +83,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
             ["@semantic-release/commit-analyzer", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2"],\
             ["@semantic-release/github", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:8.0.7"],\
+            ["@semantic-release/npm", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2"],\
             ["@semantic-release/release-notes-generator", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.3"],\
             ["@symbola/config", "workspace:configs/config"],\
             ["@types/eslint", "npm:8.4.10"],\
@@ -5345,6 +5346,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:16607187520a01a3043ee3a72ba9c2cb5d068179052fa698e057461552d7ae848dd875afac6b68156046a310d7faa05bd74a8e54c06fd998e324d632856a17e2#npm:9.0.2"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["@types/semantic-release", null],\
+            ["aggregate-error", "npm:3.1.0"],\
+            ["execa", "npm:5.1.1"],\
+            ["fs-extra", "npm:11.1.0"],\
+            ["lodash", "npm:4.17.21"],\
+            ["nerf-dart", "npm:1.0.0"],\
+            ["normalize-url", "npm:6.1.0"],\
+            ["npm", "npm:8.19.3"],\
+            ["rc", "npm:1.2.8"],\
+            ["read-pkg", "npm:5.2.0"],\
+            ["registry-auth-token", "npm:5.0.1"],\
+            ["semantic-release", "npm:20.0.2"],\
+            ["semver", "npm:7.3.8"],\
+            ["tempy", "npm:1.0.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-npm-virtual-a696d552b0/0/cache/@semantic-release-npm-npm-9.0.2-01eb854535-e0493a06fc.zip/node_modules/@semantic-release/npm/",\
+          "packageDependencies": [\
+            ["@semantic-release/npm", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2"],\
+            ["@semantic-release/error", "npm:3.0.0"],\
+            ["@types/semantic-release", "npm:20.0.0"],\
             ["aggregate-error", "npm:3.1.0"],\
             ["execa", "npm:5.1.1"],\
             ["fs-extra", "npm:11.1.0"],\
@@ -15906,6 +15933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
             ["@semantic-release/commit-analyzer", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2"],\
             ["@semantic-release/github", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:8.0.7"],\
+            ["@semantic-release/npm", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.2"],\
             ["@semantic-release/release-notes-generator", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.3"],\
             ["@symbola/config", "workspace:configs/config"],\
             ["@types/eslint", "npm:8.4.10"],\

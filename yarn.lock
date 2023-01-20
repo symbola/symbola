@@ -2630,7 +2630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:^9.0.0":
+"@semantic-release/npm@npm:^9.0.0, @semantic-release/npm@npm:^9.0.2":
   version: 9.0.2
   resolution: "@semantic-release/npm@npm:9.0.2"
   dependencies:
@@ -11193,6 +11193,7 @@ __metadata:
     "@dmeents/semantic-release-yarn": ^1.1.2
     "@semantic-release/commit-analyzer": ^9.0.2
     "@semantic-release/github": ^8.0.7
+    "@semantic-release/npm": ^9.0.2
     "@semantic-release/release-notes-generator": ^10.0.3
     "@symbola/config": "workspace:^"
     "@types/eslint": ^8
