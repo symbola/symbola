@@ -1,13 +1,18 @@
 const map = Symbol('map')
 
-Object.prototype[map] = () => {
-  console.log(123)
+Object.prototype[map] = function(fn) {
+  return Object.fromEntries(Object.entries(this).map(fn))
 }
 
 declare global {
   interface Object {
-    [map]: () => unknown
+    [map]: any
   }
 }
+const bla = {
+  a: 1
+}
+
+const b = [12, 3, 4]
 
 export { map }

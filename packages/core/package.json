@@ -1,10 +1,27 @@
 {
   "name": "@symbola/core",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/core.js",
+    "default": "./dist/core.modern.mjs",
+    "types": "./dist/index.d.ts"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/core.js",
+  "module": "./dist/core.module.js",
+  "unpkg": "./dist/core.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",
     "test": "jest",
-    "test:ci": "jest --coverage"
+    "test:ci": "jest --coverage",
+    "prebuild": "rimraf dist",
+    "build": "microbundle",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -22,7 +39,6 @@
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^4.2.1",
     "eslint-plugin-jest": "^27.2.1",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "prettier": "^2.8.3"
   }

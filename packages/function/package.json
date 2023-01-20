@@ -1,15 +1,15 @@
 {
-  "name": "@symbola/object",
+  "name": "@symbola/function",
   "source": "src/index.ts",
   "exports": {
-    "require": "./dist/object.js",
-    "default": "./dist/object.modern.mjs",
+    "require": "./dist/function.js",
+    "default": "./dist/function.modern.mjs",
     "types": "./dist/index.d.ts"
   },
   "types": "./dist/index.d.ts",
-  "main": "./dist/object.js",
-  "module": "./dist/object.module.js",
-  "unpkg": "./dist/object.umd.js",
+  "main": "./dist/function.js",
+  "module": "./dist/function.module.js",
+  "unpkg": "./dist/function.umd.js",
   "files": [
     "dist"
   ],
@@ -17,6 +17,7 @@
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",
     "test": "jest",
+    "test:watch": "jest --watch",
     "test:ci": "jest --coverage",
     "build": "microbundle",
     "lint:prettier:fix": "prettier --write .",
@@ -40,5 +41,9 @@
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "prettier": "^2.8.3"
+  },
+  "dependencies": {
+    "@symbola/core": "workspace:^",
+    "fp-ts": "^2.13.1"
   }
 }
