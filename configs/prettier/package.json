@@ -5,13 +5,12 @@
     "prettier": "*"
   },
   "scripts": {
-    "build": "microbundle",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:fix": "eslint --fix ."
   },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  }
+  "files": [
+    "prettier.config.js"
+  ]
 }

@@ -21,14 +21,15 @@
     "@types/babel__core": "^7",
     "@types/babel__preset-env": "^7",
     "@types/eslint": "^8",
-    "@types/prettier": "^2",
-    "microbundle": "^0.15.1"
+    "@types/prettier": "^2"
   },
   "scripts": {
-    "build": "microbundle",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:fix": "eslint --fix ."
-  }
+  },
+  "files": [
+    "*.js"
+  ]
 }

@@ -9,8 +9,5 @@
   },
   "files": [
     "tsconfig.json"
-  ],
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  }
+  ]
 }
