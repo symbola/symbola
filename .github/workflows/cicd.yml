@@ -33,6 +33,8 @@ jobs:
       - name: Prettier
         run: yarn lint:prettier
 
+      - run: yarn build
+
       - name: Types
         run: yarn types
 
