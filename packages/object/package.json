@@ -1,10 +1,24 @@
 {
   "name": "@symbola/object",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/object.js",
+    "default": "./dist/object.modern.mjs",
+    "types": "./dist/index.d.ts"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/object.js",
+  "module": "./dist/object.module.js",
+  "unpkg": "./dist/object.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",
     "test": "jest",
-    "test:ci": "jest --coverage"
+    "test:ci": "jest --coverage",
+    "build": "microbundle"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

@@ -2679,7 +2679,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   peerDependencies:
     "@babel/core": ^7
@@ -2701,7 +2700,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   peerDependencies:
     "@typescript-eslint/eslint-plugin": "*"
@@ -2717,16 +2715,12 @@ __metadata:
 "@symbola/config-jest@workspace:^, @symbola/config-jest@workspace:configs/jest":
   version: 0.0.0-use.local
   resolution: "@symbola/config-jest@workspace:configs/jest"
-  dependencies:
-    microbundle: ^0.15.1
   languageName: unknown
   linkType: soft
 
 "@symbola/config-prettier@workspace:^, @symbola/config-prettier@workspace:configs/prettier":
   version: 0.0.0-use.local
   resolution: "@symbola/config-prettier@workspace:configs/prettier"
-  dependencies:
-    microbundle: ^0.15.1
   peerDependencies:
     prettier: "*"
   languageName: unknown
@@ -2737,7 +2731,6 @@ __metadata:
   resolution: "@symbola/config-typescript@workspace:configs/typescript"
   dependencies:
     "@types/jest": ^29.2.6
-    microbundle: ^0.15.1
   languageName: unknown
   linkType: soft
 
@@ -2764,7 +2757,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2790,7 +2782,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2817,7 +2808,6 @@ __metadata:
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     immer: ^9.0.18
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2843,7 +2833,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2869,7 +2858,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2895,7 +2883,6 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
-    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
