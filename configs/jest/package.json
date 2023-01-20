@@ -1,0 +1,4 @@
+{
+  "name": "@symbola/config-jest",
+  "main": "./jest.config.js"
+}

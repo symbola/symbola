@@ -2,11 +2,15 @@
   "name": "@symbola/object",
   "scripts": {
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "test": "jest",
+    "test:ci": "jest --coverage",
+    "types": "tsc"
   },
   "devDependencies": {
     "@symbola/config": "workspace:^",
     "@types/eslint": "^8",
+    "@types/jest": "^29.2.6",
     "@types/prettier": "^2",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
@@ -15,6 +19,7 @@
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
+    "jest": "^29.3.1",
     "prettier": "^2.8.3"
   }
 }

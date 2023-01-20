@@ -1,0 +1,7 @@
+{
+  "name": "@symbola/config-prettier",
+  "main": "./prettier.config.js",
+  "peerDependencies": {
+    "prettier": "*"
+  }
+}

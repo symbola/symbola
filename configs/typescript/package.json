@@ -1,0 +1,6 @@
+{
+  "name": "@symbola/config-typescript",
+  "dependencies": {
+    "@types/jest": "^29.2.6"
+  }
+}

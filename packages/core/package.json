@@ -2,7 +2,9 @@
   "name": "@symbola/core",
   "scripts": {
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "test": "jest",
+    "test:ci": "jest --coverage"
   },
   "devDependencies": {
     "@symbola/config": "workspace:^",
