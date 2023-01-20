@@ -2665,9 +2665,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@symbola/config-babel@workspace:^, @symbola/config-babel@workspace:configs/babel":
+"@symbola/babel-config@workspace:^, @symbola/babel-config@workspace:configs/babel":
   version: 0.0.0-use.local
-  resolution: "@symbola/config-babel@workspace:configs/babel"
+  resolution: "@symbola/babel-config@workspace:configs/babel"
   dependencies:
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
@@ -2677,60 +2677,12 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
   peerDependencies:
     "@babel/core": ^7
     "@babel/preset-env": ^7
     "@babel/preset-typescript": ^7
-  languageName: unknown
-  linkType: soft
-
-"@symbola/config-eslint@workspace:^, @symbola/config-eslint@workspace:configs/eslint":
-  version: 0.0.0-use.local
-  resolution: "@symbola/config-eslint@workspace:configs/eslint"
-  dependencies:
-    "@types/eslint": ^8
-    "@types/prettier": ^2
-    "@typescript-eslint/eslint-plugin": ^5.48.2
-    "@typescript-eslint/parser": ^5.48.2
-    eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
-    eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-tsdoc: ^0.2.17
-    prettier: ^2.8.3
-  peerDependencies:
-    "@typescript-eslint/eslint-plugin": "*"
-    "@typescript-eslint/parser": "*"
-    eslint: "*"
-    eslint-config-prettier: "*"
-    eslint-plugin-jest: "*"
-    eslint-plugin-prettier: "*"
-    eslint-plugin-tsdoc: "*"
-  languageName: unknown
-  linkType: soft
-
-"@symbola/config-jest@workspace:^, @symbola/config-jest@workspace:configs/jest":
-  version: 0.0.0-use.local
-  resolution: "@symbola/config-jest@workspace:configs/jest"
-  languageName: unknown
-  linkType: soft
-
-"@symbola/config-prettier@workspace:^, @symbola/config-prettier@workspace:configs/prettier":
-  version: 0.0.0-use.local
-  resolution: "@symbola/config-prettier@workspace:configs/prettier"
-  peerDependencies:
-    prettier: "*"
-  languageName: unknown
-  linkType: soft
-
-"@symbola/config-typescript@workspace:^, @symbola/config-typescript@workspace:configs/typescript":
-  version: 0.0.0-use.local
-  resolution: "@symbola/config-typescript@workspace:configs/typescript"
-  dependencies:
-    "@types/jest": ^29.2.6
   languageName: unknown
   linkType: soft
 
@@ -2741,11 +2693,11 @@ __metadata:
     "@babel/core": ^7.20.12
     "@babel/preset-env": ^7.20.2
     "@babel/preset-typescript": ^7.18.6
-    "@symbola/config-babel": "workspace:^"
-    "@symbola/config-eslint": "workspace:^"
-    "@symbola/config-jest": "workspace:^"
-    "@symbola/config-prettier": "workspace:^"
-    "@symbola/config-typescript": "workspace:^"
+    "@symbola/babel-config": "workspace:^"
+    "@symbola/eslint-config": "workspace:^"
+    "@symbola/jest-config": "workspace:^"
+    "@symbola/prettier-config": "workspace:^"
+    "@symbola/typescript-config": "workspace:^"
     "@types/babel__core": ^7
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
@@ -2755,13 +2707,12 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.6.0
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
 
-"@symbola/core@workspace:packages/core":
+"@symbola/core@workspace:^, @symbola/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@symbola/core@workspace:packages/core"
   dependencies:
@@ -2780,8 +2731,56 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    prettier: ^2.8.3
+  languageName: unknown
+  linkType: soft
+
+"@symbola/eslint-config@workspace:^, @symbola/eslint-config@workspace:configs/eslint":
+  version: 0.0.0-use.local
+  resolution: "@symbola/eslint-config@workspace:configs/eslint"
+  dependencies:
+    "@types/eslint": ^8
+    "@types/prettier": ^2
+    "@typescript-eslint/eslint-plugin": ^5.48.2
+    "@typescript-eslint/parser": ^5.48.2
+    eslint: ^8.32.0
+    eslint-config-prettier: ^4.2.1
+    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-tsdoc: ^0.2.17
+    prettier: ^2.8.3
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": "*"
+    "@typescript-eslint/parser": "*"
+    eslint: "*"
+    eslint-config-prettier: "*"
+    eslint-plugin-jest: "*"
+    eslint-plugin-tsdoc: "*"
+  languageName: unknown
+  linkType: soft
+
+"@symbola/function@workspace:packages/function":
+  version: 0.0.0-use.local
+  resolution: "@symbola/function@workspace:packages/function"
+  dependencies:
+    "@babel/core": ^7.20.12
+    "@babel/preset-env": ^7.20.2
+    "@babel/preset-typescript": ^7.18.6
+    "@symbola/config": "workspace:^"
+    "@symbola/core": "workspace:^"
+    "@types/babel__core": ^7
+    "@types/babel__preset-env": ^7
+    "@types/eslint": ^8
+    "@types/jest": ^29.2.6
+    "@types/node": ^18.11.18
+    "@types/prettier": ^2
+    "@typescript-eslint/eslint-plugin": ^5.48.2
+    "@typescript-eslint/parser": ^5.48.2
+    eslint: ^8.32.0
+    eslint-config-prettier: ^4.2.1
+    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-tsdoc: ^0.2.17
+    fp-ts: ^2.13.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2805,10 +2804,15 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     immer: ^9.0.18
     prettier: ^2.8.3
+  languageName: unknown
+  linkType: soft
+
+"@symbola/jest-config@workspace:^, @symbola/jest-config@workspace:configs/jest":
+  version: 0.0.0-use.local
+  resolution: "@symbola/jest-config@workspace:configs/jest"
   languageName: unknown
   linkType: soft
 
@@ -2820,6 +2824,7 @@ __metadata:
     "@babel/preset-env": ^7.20.2
     "@babel/preset-typescript": ^7.18.6
     "@symbola/config": "workspace:^"
+    "@symbola/core": "workspace:^"
     "@types/babel__core": ^7
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
@@ -2831,7 +2836,6 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
   languageName: unknown
@@ -2845,6 +2849,7 @@ __metadata:
     "@babel/preset-env": ^7.20.2
     "@babel/preset-typescript": ^7.18.6
     "@symbola/config": "workspace:^"
+    "@symbola/core": "workspace:^"
     "@types/babel__core": ^7
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
@@ -2856,9 +2861,16 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
+  languageName: unknown
+  linkType: soft
+
+"@symbola/prettier-config@workspace:^, @symbola/prettier-config@workspace:configs/prettier":
+  version: 0.0.0-use.local
+  resolution: "@symbola/prettier-config@workspace:configs/prettier"
+  peerDependencies:
+    prettier: "*"
   languageName: unknown
   linkType: soft
 
@@ -2881,9 +2893,16 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
+  languageName: unknown
+  linkType: soft
+
+"@symbola/typescript-config@workspace:^, @symbola/typescript-config@workspace:configs/typescript":
+  version: 0.0.0-use.local
+  resolution: "@symbola/typescript-config@workspace:configs/typescript"
+  dependencies:
+    "@types/jest": ^29.2.6
   languageName: unknown
   linkType: soft
 
@@ -5072,21 +5091,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "eslint-plugin-prettier@npm:4.2.1"
-  dependencies:
-    prettier-linter-helpers: ^1.0.0
-  peerDependencies:
-    eslint: ">=7.28.0"
-    prettier: ">=2.0.0"
-  peerDependenciesMeta:
-    eslint-config-prettier:
-      optional: true
-  checksum: b9e839d2334ad8ec7a5589c5cb0f219bded260839a857d7a486997f9870e95106aa59b8756ff3f37202085ebab658de382b0267cae44c3a7f0eb0bcc03a4f6d6
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-tsdoc@npm:^0.2.17":
   version: 0.2.17
   resolution: "eslint-plugin-tsdoc@npm:0.2.17"
@@ -5340,13 +5344,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-diff@npm:^1.1.2":
-  version: 1.2.0
-  resolution: "fast-diff@npm:1.2.0"
-  checksum: 1b5306eaa9e826564d9e5ffcd6ebd881eb5f770b3f977fcbf38f05c824e42172b53c79920e8429c54eb742ce15a0caf268b0fdd5b38f6de52234c4a8368131ae
-  languageName: node
-  linkType: hard
-
 "fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
@@ -5544,6 +5541,13 @@ __metadata:
   dependencies:
     is-callable: ^1.1.3
   checksum: 6c48ff2bc63362319c65e2edca4a8e1e3483a2fabc72fbe7feaf8c73db94fc7861bd53bc02c8a66a0c1dd709da6b04eec42e0abdd6b40ce47305ae92a25e5d28
+  languageName: node
+  linkType: hard
+
+"fp-ts@npm:^2.13.1":
+  version: 2.13.1
+  resolution: "fp-ts@npm:2.13.1"
+  checksum: 618e0028aca9ff1d52b86f438499ccab149825bdab14c678d22c3e2ccbf9d36fd1f26d463bf0ae1e63f5cd79dd54c8218af2cca0daeea68b039307b751ae9563
   languageName: node
   linkType: hard
 
@@ -9494,15 +9498,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-linter-helpers@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "prettier-linter-helpers@npm:1.0.0"
-  dependencies:
-    fast-diff: ^1.1.2
-  checksum: 00ce8011cf6430158d27f9c92cfea0a7699405633f7f1d4a45f07e21bf78e99895911cbcdc3853db3a824201a7c745bd49bfea8abd5fb9883e765a90f74f8392
-  languageName: node
-  linkType: hard
-
 "prettier@npm:^2.8.3":
   version: 2.8.3
   resolution: "prettier@npm:2.8.3"
@@ -10064,6 +10059,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "rimraf@npm:4.1.1"
+  bin:
+    rimraf: dist/cjs/src/bin.js
+  checksum: f52d46f59c1a532b3d0f73cb5228ff8f7df4ee87b9df95cf655788ea186c935b5c6ab4c45b66f8de5ed1e3690f58ff83f9a5b0ba1ae2e76a9bf36415f37732f7
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-bundle-size@npm:^1.0.3":
   version: 1.0.3
   resolution: "rollup-plugin-bundle-size@npm:1.0.3"
@@ -10190,13 +10194,13 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
-    eslint-plugin-prettier: ^4.2.1
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
     jest: ^29.3.1
     lint-staged: ^13.1.0
     microbundle: ^0.15.1
     prettier: ^2.8.3
+    rimraf: ^4.1.1
     semantic-release: ^20.0.2
     typescript: ^4.9.4
   languageName: unknown
