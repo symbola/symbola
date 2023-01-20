@@ -1,0 +1,17 @@
+{
+  "name": "@symbola/prettier-config",
+  "main": "./prettier.config.js",
+  "license": "ISC",
+  "peerDependencies": {
+    "prettier": "*"
+  },
+  "scripts": {
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
+  },
+  "files": [
+    "prettier.config.js"
+  ]
+}

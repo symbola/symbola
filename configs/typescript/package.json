@@ -1,0 +1,14 @@
+{
+  "name": "@symbola/typescript-config",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^29.2.6"
+  },
+  "scripts": {
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write ."
+  },
+  "files": [
+    "tsconfig.json"
+  ]
+}

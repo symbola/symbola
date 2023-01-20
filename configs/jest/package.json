@@ -1,0 +1,14 @@
+{
+  "name": "@symbola/jest-config",
+  "main": "./jest.config.js",
+  "license": "ISC",
+  "scripts": {
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:fix": "eslint --fix ."
+  },
+  "files": [
+    "jest.config.js"
+  ]
+}
