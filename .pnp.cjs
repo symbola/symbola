@@ -5418,6 +5418,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "packagePeers": [\
@@ -5443,6 +5444,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5471,6 +5473,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:8.6.0"],\
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5497,6 +5500,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5520,6 +5524,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:8.6.0"],\
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "packagePeers": [\
@@ -5550,6 +5555,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5578,6 +5584,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["fp-ts", "npm:2.13.1"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5605,6 +5612,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["immer", "npm:9.0.18"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5614,7 +5622,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:configs/jest", {\
           "packageLocation": "./configs/jest/",\
           "packageDependencies": [\
-            ["@symbola/jest-config", "workspace:configs/jest"]\
+            ["@symbola/jest-config", "workspace:configs/jest"],\
+            ["microbundle", "npm:0.15.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -5641,6 +5650,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5668,6 +5678,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5679,6 +5690,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@symbola/prettier-config", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#workspace:configs/prettier"],\
             ["@types/prettier", "npm:2.7.2"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "packagePeers": [\
@@ -5690,7 +5702,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:configs/prettier", {\
           "packageLocation": "./configs/prettier/",\
           "packageDependencies": [\
-            ["@symbola/prettier-config", "workspace:configs/prettier"]\
+            ["@symbola/prettier-config", "workspace:configs/prettier"],\
+            ["microbundle", "npm:0.15.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -5716,6 +5729,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:1e44245f66a622fa1f49d4403ebb977823d7aceeca9762f91203d0ce34762b9bae23b428d09bff4ce8b7ffd73eed286afa0fff721aa3b4c39d449e7fc98bb865#npm:4.3.0"],\
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"]\
           ],\
           "linkType": "SOFT"\
@@ -5726,7 +5740,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./configs/typescript/",\
           "packageDependencies": [\
             ["@symbola/typescript-config", "workspace:configs/typescript"],\
-            ["@types/jest", "npm:29.2.6"]\
+            ["@types/jest", "npm:29.2.6"],\
+            ["microbundle", "npm:0.15.1"]\
           ],\
           "linkType": "SOFT"\
         }]\

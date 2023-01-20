@@ -2678,6 +2678,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   peerDependencies:
     "@babel/core": ^7
@@ -2708,6 +2709,7 @@ __metadata:
     eslint-config-prettier: ^8.6.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2732,6 +2734,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2748,6 +2751,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   peerDependencies:
     "@typescript-eslint/eslint-plugin": "*"
@@ -2781,6 +2785,7 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     fp-ts: ^2.13.1
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2806,6 +2811,7 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     immer: ^9.0.18
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2813,6 +2819,8 @@ __metadata:
 "@symbola/jest-config@workspace:^, @symbola/jest-config@workspace:configs/jest":
   version: 0.0.0-use.local
   resolution: "@symbola/jest-config@workspace:configs/jest"
+  dependencies:
+    microbundle: ^0.15.1
   languageName: unknown
   linkType: soft
 
@@ -2837,6 +2845,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2862,6 +2871,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2869,6 +2879,8 @@ __metadata:
 "@symbola/prettier-config@workspace:^, @symbola/prettier-config@workspace:configs/prettier":
   version: 0.0.0-use.local
   resolution: "@symbola/prettier-config@workspace:configs/prettier"
+  dependencies:
+    microbundle: ^0.15.1
   peerDependencies:
     prettier: "*"
   languageName: unknown
@@ -2894,6 +2906,7 @@ __metadata:
     eslint-config-prettier: ^4.2.1
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
     prettier: ^2.8.3
   languageName: unknown
   linkType: soft
@@ -2903,6 +2916,7 @@ __metadata:
   resolution: "@symbola/typescript-config@workspace:configs/typescript"
   dependencies:
     "@types/jest": ^29.2.6
+    microbundle: ^0.15.1
   languageName: unknown
   linkType: soft
 
