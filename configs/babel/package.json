@@ -1,6 +1,7 @@
 {
   "name": "@symbola/babel-config",
   "main": "./babel.config.js",
+  "license": "ISC",
   "scripts": {
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",

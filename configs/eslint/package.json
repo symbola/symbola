@@ -1,6 +1,7 @@
 {
   "name": "@symbola/eslint-config",
   "main": "./.eslintrc.js",
+  "license": "ISC",
   "scripts": {
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",

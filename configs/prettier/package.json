@@ -1,6 +1,7 @@
 {
   "name": "@symbola/prettier-config",
   "main": "./prettier.config.js",
+  "license": "ISC",
   "peerDependencies": {
     "prettier": "*"
   },
