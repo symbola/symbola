@@ -32,7 +32,7 @@ jobs:
         run: yarn p:${{ matrix.package }} test:ci
 
       - name: Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           files: ./packages/${{ matrix.package }}/coverage/coverage-final.json
           flags: ${{ matrix.package }}
