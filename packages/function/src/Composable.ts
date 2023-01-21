@@ -1,7 +1,9 @@
-import { extend, compose } from '@symbola/core'
+import { extend } from '@symbola/core'
 import { FunctionN } from 'fp-ts/function'
 
-export default abstract class ExtendedFunction {
+export const compose = Symbol('compose')
+
+export default abstract class Composable {
   [compose]<A, B, C>(this: FunctionN<[A], B>, f: FunctionN<[B], C>): FunctionN<[A], C> {
     return (i: A): C => f(this(i))
   }
@@ -9,7 +11,7 @@ export default abstract class ExtendedFunction {
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface Function extends ExtendedFunction {}
+  interface Function extends Composable {}
 }
 
-extend(Function.prototype, ExtendedFunction.prototype)
+extend(Function.prototype, Composable.prototype)

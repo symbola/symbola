@@ -1,8 +1,6 @@
-import { compose } from '@symbola/core'
+import { compose } from './Composable'
 
-import './FunctionExtended'
-
-describe('ExtendedFunction', () => {
+describe('Composable', () => {
   it('composes', () => {
     const f = Math.round[compose](Math.sqrt)
     expect(f(4.2)).toBe(2)

@@ -1,3 +1,1 @@
-export { compose } from '@symbola/core'
-
-import './FunctionExtended'
+export { default as Composable, compose } from './Composable'
