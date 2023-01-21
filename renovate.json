@@ -1,6 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "definitelyTyped",
+      "matchPackagePrefixes": ["@types/"]
+    },
+    {
+      "extends": "monorepo:babel",
+      "groupName": "babel monorepo",
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["lint", "prettier"],
+      "automerge": true
+    }
   ]
 }
