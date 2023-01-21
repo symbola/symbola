@@ -2829,6 +2829,7 @@ __metadata:
     fp-ts: ^2.13.1
     microbundle: ^0.15.1
     prettier: ^2.8.3
+    tuplerone: ^3.3.3
   languageName: unknown
   linkType: soft
 
@@ -2913,6 +2914,7 @@ __metadata:
     eslint-plugin-tsdoc: ^0.2.17
     microbundle: ^0.15.1
     prettier: ^2.8.3
+    tuplerone: ^3.3.3
   languageName: unknown
   linkType: soft
 
@@ -11478,6 +11480,13 @@ __metadata:
   peerDependencies:
     typescript: ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta"
   checksum: 1843f4c1b2e0f975e08c4c21caa4af4f7f65a12ac1b81b3b8489366826259323feb3fc7a243123453d2d1a02314205a7634e048d4a8009921da19f99755cdc48
+  languageName: node
+  linkType: hard
+
+"tuplerone@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "tuplerone@npm:3.3.3"
+  checksum: a49bcf6889687246db9b8823ec89d84f075c8f5fba8352d071514d7a94c1d8a5d0c10d76f31b0905005f8388b666ae994765585507ad016008433f384139c55c
   languageName: node
   linkType: hard
 
