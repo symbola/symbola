@@ -27,7 +27,26 @@ jobs:
         run: yarn build
 
       - name: Jest
-        run: yarn p:{{ matrix.package }} test:ci
+        run: yarn p:${{ matrix.package }} test:ci
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: packages/${{ matrix.package }}/coverage/lcov.info
+          flag-name: smybola-${{ matrix.package }}
+          parallel: true
+
+  finish:
+    name: Coverage
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
 
   lint:
     name: Lint
