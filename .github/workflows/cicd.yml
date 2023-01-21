@@ -15,9 +15,11 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - run: yarn build
+      - name: TypeScript
+        run: yarn build
 
-      - run: yarn test:ci
+      - name: Jest
+        run: yarn test:ci
 
   lint:
     name: Lint
@@ -33,11 +35,6 @@ jobs:
       - name: Prettier
         run: yarn lint:prettier
 
-      - run: yarn build
-
-      - name: Types
-        run: yarn types
-
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -48,7 +45,7 @@ jobs:
       - uses: ./.github/actions/setup
 
       - name: Build
-        run: yarn build
+        run: yarn build:prod
 
       - name: Release
         run: yarn multi-semantic-release

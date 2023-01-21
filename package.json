@@ -26,8 +26,10 @@
     "lint:eslint:fix": "yarn workspaces foreach -pv run lint:eslint:fix",
     "lint:prettier": "yarn workspaces foreach -pv run lint:prettier",
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
-    "types": "tsc -b",
-    "build": "yarn workspaces foreach -ptv run build"
+    "types": "tsc --noEmit",
+    "build": "tsc -b",
+    "build:dev": "tsc -w",
+    "build:prod": "yarn workspaces foreach -ptv run build"
   },
   "engines": {
     "node": ">= 18"

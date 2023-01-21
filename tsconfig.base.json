@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
@@ -9,7 +9,6 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "incremental": true,
-    "noEmit": true,
     "declaration": true,
     "declarationMap": true,
     "types": ["jest"]
