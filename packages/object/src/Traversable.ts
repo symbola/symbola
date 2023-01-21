@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { extend } from '@symbola/core'
 
 export const traverse = Symbol('traverse')
@@ -8,7 +9,7 @@ export const _continue = Symbol('continue')
 type Signal = typeof _break | typeof _continue
 
 export default abstract class Traversable {
-  *[traverse]<A, B>(this: Iterable<A | Signal>, fn: (a: A) => B): Iterable<B> {
+  *[traverse]<A, B>(this: Iterable<A>, fn: (a: A) => B | Signal) {
     const iterator = this[Symbol.iterator]()
 
     while (true) {

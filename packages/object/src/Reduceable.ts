@@ -9,7 +9,7 @@ export default abstract class Reduceable {
   [reduce](
     this: Iterable<unknown>,
     fn: (...args: unknown[]) => unknown,
-    ...args: unknown[]
+    ...args: [] | [unknown]
   ): unknown {
     const iterator = this[Symbol.iterator]()
     let previous = args.length ? args[0] : iterator.next().value
