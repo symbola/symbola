@@ -48,7 +48,8 @@
   },
   "dependencies": {
     "@symbola/core": "workspace:^",
-    "fp-ts": "^2.13.1"
+    "fp-ts": "^2.13.1",
+    "tuplerone": "^3.3.3"
   },
   "repository": "github:symbola/symbola",
   "license": "ISC",
