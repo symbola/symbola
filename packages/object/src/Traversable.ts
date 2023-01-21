@@ -6,7 +6,7 @@ export const traverse = Symbol('traverse')
 export const _break = Symbol('break')
 export const _continue = Symbol('continue')
 
-type Signal = typeof _break | typeof _continue
+export type Signal = typeof _break | typeof _continue
 
 export default abstract class Traversable {
   *[traverse]<A, B>(this: Iterable<A>, fn: (a: A) => B | Signal) {
