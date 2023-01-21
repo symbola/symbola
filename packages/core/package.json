@@ -1,15 +1,18 @@
 {
   "name": "@symbola/core",
   "source": "src/index.ts",
+  "sideEffects": [
+    "./dist/index.js"
+  ],
   "exports": {
-    "require": "./dist/core.js",
-    "default": "./dist/core.modern.mjs",
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.mjs",
     "types": "./dist/index.d.ts"
   },
   "types": "./dist/index.d.ts",
-  "main": "./dist/core.js",
-  "module": "./dist/core.module.js",
-  "unpkg": "./dist/core.umd.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
   "files": [
     "dist"
   ],

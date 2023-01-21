@@ -1,15 +1,18 @@
 {
   "name": "@symbola/function",
   "source": "src/index.ts",
+  "sideEffects": [
+    "./dist/index.js"
+  ],
   "exports": {
-    "require": "./dist/function.js",
-    "default": "./dist/function.modern.mjs",
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.mjs",
     "types": "./dist/index.d.ts"
   },
   "types": "./dist/index.d.ts",
-  "main": "./dist/function.js",
-  "module": "./dist/function.module.js",
-  "unpkg": "./dist/function.umd.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
   "files": [
     "dist"
   ],
