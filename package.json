@@ -26,9 +26,8 @@
     "lint:eslint:fix": "yarn workspaces foreach -pv run lint:eslint:fix",
     "lint:prettier": "yarn workspaces foreach -pv run lint:prettier",
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
-    "types": "tsc --noEmit",
     "build": "tsc -b",
-    "build:dev": "tsc -w",
+    "build:dev": "tsc -b -w",
     "build:prod": "yarn workspaces foreach -ptv run build",
     "docs": "typedoc"
   },
