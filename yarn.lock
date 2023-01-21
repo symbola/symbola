@@ -2720,7 +2720,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
@@ -2774,7 +2774,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     microbundle: ^0.15.1
@@ -2791,7 +2791,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
@@ -2823,7 +2823,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     fp-ts: ^2.13.1
@@ -2856,7 +2856,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     microbundle: ^0.15.1
@@ -2882,7 +2882,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     microbundle: ^0.15.1
@@ -5102,20 +5102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^4.2.1":
-  version: 4.3.0
-  resolution: "eslint-config-prettier@npm:4.3.0"
-  dependencies:
-    get-stdin: ^6.0.0
-  peerDependencies:
-    eslint: ">=3.14.1"
-  bin:
-    eslint-config-prettier-check: bin/cli.js
-  checksum: d2b8a6e95da3bd4a37a791b26d59f4b3cfb597a533f4c46aa1f5c23e0dae651f7afc09434108a1bd0ead8d031708119d0361e3f7168c356d751e2366ec5d19e0
-  languageName: node
-  linkType: hard
-
-"eslint-config-prettier@npm:^8.6.0":
+"eslint-config-prettier@npm:^8.0.0, eslint-config-prettier@npm:^8.6.0":
   version: 8.6.0
   resolution: "eslint-config-prettier@npm:8.6.0"
   peerDependencies:
@@ -5810,13 +5797,6 @@ __metadata:
   version: 0.1.0
   resolution: "get-package-type@npm:0.1.0"
   checksum: bba0811116d11e56d702682ddef7c73ba3481f114590e705fc549f4d868972263896af313c57a25c076e3c0d567e11d919a64ba1b30c879be985fc9d44f96148
-  languageName: node
-  linkType: hard
-
-"get-stdin@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "get-stdin@npm:6.0.0"
-  checksum: 593f6fb4fff4c8d49ec93a07c430c1edc6bd4fe7e429d222b5da2f367276a98809af9e90467ad88a2d83722ff95b9b35bbaba02b56801421c5e3668173fe12b4
   languageName: node
   linkType: hard
 
@@ -11204,7 +11184,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.48.2
     "@typescript-eslint/parser": ^5.48.2
     eslint: ^8.32.0
-    eslint-config-prettier: ^4.2.1
+    eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
