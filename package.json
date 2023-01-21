@@ -29,7 +29,8 @@
     "types": "tsc --noEmit",
     "build": "tsc -b",
     "build:dev": "tsc -w",
-    "build:prod": "yarn workspaces foreach -ptv run build"
+    "build:prod": "yarn workspaces foreach -ptv run build",
+    "docs": "typedoc"
   },
   "engines": {
     "node": ">= 18"
@@ -72,6 +73,7 @@
     "prettier": "^2.8.3",
     "rimraf": "^4.1.1",
     "semantic-release": "^20.0.2",
+    "typedoc": "^0.23.24",
     "typescript": "^4.9.4"
   },
   "packageManager": "yarn@3.3.1"

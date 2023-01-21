@@ -61,5 +61,8 @@
   },
   "volta": {
     "node": "18.13.0"
+  },
+  "typedoc": {
+    "entryPoint": "./src/index.ts"
   }
 }

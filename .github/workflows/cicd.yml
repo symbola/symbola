@@ -15,7 +15,7 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - name: TypeScript
+      - name: Build
         run: yarn build
 
       - name: Jest
@@ -52,3 +52,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  docs:
+    name: Docs
+    runs-on: ubuntu-latest
+    needs: [test, lint]
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup
+
+      - name: Build
+        run: yarn build
+
+      - name: Generate
+        run: yarn docs
+
+      - name: Publish
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
