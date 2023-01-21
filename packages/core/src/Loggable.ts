@@ -1,14 +1,16 @@
 import extend from './extend'
-import { log, logger } from './symbols'
 
-export abstract class Loggable {
-  [logger](...args: unknown[]): void
+export const log = Symbol('log')
+export const _logger = Symbol('logger')
+
+export default abstract class Loggable {
+  [_logger](...args: unknown[]): void
 
   [log]<A>(this: A, ...args: unknown[]): A {
     // TODO
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    this[logger](...args, this)
+    this[_logger](...args, this)
 
     return this
   }
@@ -20,5 +22,5 @@ declare global {
 }
 
 extend(Object.prototype, Loggable.prototype, {
-  [logger]: console.log,
+  [_logger]: console.log,
 })

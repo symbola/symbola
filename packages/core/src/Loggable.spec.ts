@@ -1,11 +1,10 @@
-import { log, logger } from './symbols'
-import './Loggable'
+import { log, _logger } from './Loggable'
 
 describe('Loggable', () => {
   it('logs', () => {
     const fn = jest.fn((x) => x)
     const o = {
-      [logger]: fn,
+      [_logger]: fn,
     }
     expect(o[log](123)).toBe(o)
     expect(fn).toHaveBeenCalledWith(123, o)
