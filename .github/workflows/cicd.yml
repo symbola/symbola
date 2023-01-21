@@ -10,6 +10,14 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - core
+          - function
+          - number
+          - object
     steps:
       - uses: actions/checkout@v3
 
@@ -19,7 +27,7 @@ jobs:
         run: yarn build
 
       - name: Jest
-        run: yarn test:ci
+        run: yarn p:{{ matrix.package }} test:ci
 
   lint:
     name: Lint
