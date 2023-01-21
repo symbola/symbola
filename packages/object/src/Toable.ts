@@ -2,16 +2,14 @@ import { extend } from '@symbola/core'
 
 export const to = Symbol('to')
 
-export interface Newable<A, B> {
-  new (a: A): B
-}
-
 /**
+ * // TODO: types break when used with `SetConstructor` because of iterable overloads
+ *
  * @alpha
  */
 export default abstract class Toable {
-  [to]<A, B>(this: A, newable: Newable<A, B>): B {
-    return new newable(this)
+  [to]<A, B>(this: A, constructor: new (a: A) => B) {
+    return new constructor(this) as InstanceType<typeof constructor>
   }
 }
 
