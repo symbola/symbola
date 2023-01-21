@@ -2833,7 +2833,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@symbola/iterable@workspace:^, @symbola/iterable@workspace:packages/iterable":
+"@symbola/iterable@workspace:packages/iterable":
   version: 0.0.0-use.local
   resolution: "@symbola/iterable@workspace:packages/iterable"
   dependencies:
@@ -2935,7 +2935,6 @@ __metadata:
     "@babel/preset-typescript": ^7.18.6
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
-    "@symbola/iterable": "workspace:^"
     "@types/babel__core": ^7
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
