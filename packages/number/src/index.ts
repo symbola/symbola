@@ -1,3 +1,1 @@
-export { times } from '@symbola/core'
-
-import './NumberExtended'
+export { default as Timesable, times } from './Timesable'

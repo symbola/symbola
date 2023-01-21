@@ -1,5 +1,4 @@
-import { times } from '@symbola/core'
-import './NumberExtended'
+import { times } from './Timesable'
 
 describe('NumberExtended', () => {
   it('times', () => {
