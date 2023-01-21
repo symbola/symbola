@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src/**/*", "../object/src/Toable.ts"],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}

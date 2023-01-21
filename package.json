@@ -11,6 +11,7 @@
     "p:immer": "yarn workspace @symbola/immer",
     "p:core": "yarn workspace @symbola/core",
     "p:object": "yarn workspace @symbola/object",
+    "p:iterable": "yarn workspace @symbola/iterable",
     "p:function": "yarn workspace @symbola/function",
     "p:number": "yarn workspace @symbola/number",
     "p:string": "yarn workspace @symbola/string",

@@ -4,10 +4,10 @@ export const filter = Symbol('filter')
 
 export default abstract class Filterable {
   *[filter]<A>(this: Iterable<A>, fn: (a: A) => boolean) {
-    for (const x of this) {
-      const next = fn(x)
-      if (next) {
-        yield x
+    for (const value of this) {
+      const nextValue = fn(value)
+      if (nextValue) {
+        yield value
       }
     }
   }
