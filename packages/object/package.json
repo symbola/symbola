@@ -47,7 +47,8 @@
     "prettier": "^2.8.3"
   },
   "dependencies": {
-    "@symbola/core": "workspace:^"
+    "@symbola/core": "workspace:^",
+    "tuplerone": "^3.3.3"
   },
   "repository": "github:symbola/symbola",
   "license": "ISC",
