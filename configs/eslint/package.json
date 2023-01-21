@@ -29,5 +29,16 @@
   },
   "files": [
     ".eslintrc.js"
-  ]
+  ],
+  "repository": "github:symbola/symbola",
+  "engines": {
+    "node": ">= 18"
+  },
+  "author": "slikts <dabas@untu.ms>",
+  "bugs": {
+    "url": "https://github.com/symbola/symbola/issues"
+  },
+  "volta": {
+    "node": "18.13.0"
+  }
 }

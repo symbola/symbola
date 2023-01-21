@@ -1,6 +1,7 @@
 {
   "name": "symbola",
   "private": true,
+  "author": "slikts <dabas@untu.ms>",
   "workspaces": [
     "packages/*",
     "configs/*"
@@ -37,6 +38,9 @@
   },
   "homepage": "https://github.com/symbola/symbola#readme",
   "repository": "github:symbola/symbola",
+  "bugs": {
+    "url": "https://github.com/symbola/symbola/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",

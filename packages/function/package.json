@@ -46,5 +46,17 @@
   "dependencies": {
     "@symbola/core": "workspace:^",
     "fp-ts": "^2.13.1"
+  },
+  "repository": "github:symbola/symbola",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 18"
+  },
+  "author": "slikts <dabas@untu.ms>",
+  "bugs": {
+    "url": "https://github.com/symbola/symbola/issues"
+  },
+  "volta": {
+    "node": "18.13.0"
   }
 }
