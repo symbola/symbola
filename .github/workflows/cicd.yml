@@ -18,6 +18,7 @@ jobs:
           - function
           - number
           - object
+          - set
           - iterable
     steps:
       - uses: actions/checkout@v3

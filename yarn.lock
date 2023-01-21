@@ -2833,7 +2833,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@symbola/iterable@workspace:packages/iterable":
+"@symbola/iterable@workspace:^, @symbola/iterable@workspace:packages/iterable":
   version: 0.0.0-use.local
   resolution: "@symbola/iterable@workspace:packages/iterable"
   dependencies:
@@ -2923,6 +2923,33 @@ __metadata:
   resolution: "@symbola/prettier-config@workspace:configs/prettier"
   peerDependencies:
     prettier: "*"
+  languageName: unknown
+  linkType: soft
+
+"@symbola/set@workspace:packages/set":
+  version: 0.0.0-use.local
+  resolution: "@symbola/set@workspace:packages/set"
+  dependencies:
+    "@babel/core": ^7.20.12
+    "@babel/preset-env": ^7.20.2
+    "@babel/preset-typescript": ^7.18.6
+    "@symbola/config": "workspace:^"
+    "@symbola/core": "workspace:^"
+    "@symbola/iterable": "workspace:^"
+    "@types/babel__core": ^7
+    "@types/babel__preset-env": ^7
+    "@types/eslint": ^8
+    "@types/jest": ^29.2.6
+    "@types/node": ^18.11.18
+    "@types/prettier": ^2
+    "@typescript-eslint/eslint-plugin": ^5.48.2
+    "@typescript-eslint/parser": ^5.48.2
+    eslint: ^8.32.0
+    eslint-config-prettier: ^8.0.0
+    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-tsdoc: ^0.2.17
+    microbundle: ^0.15.1
+    prettier: ^2.8.3
   languageName: unknown
   linkType: soft
 

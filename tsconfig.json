@@ -4,6 +4,7 @@
     { "path": "packages/number" },
     { "path": "packages/object" },
     { "path": "packages/iterable" },
+    { "path": "packages/set" },
     { "path": "packages/function" }
   ],
   "files": []
