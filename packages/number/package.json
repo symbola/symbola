@@ -60,6 +60,14 @@
   "volta": {
     "node": "18.13.0"
   },
+  "keywords": [
+    "protocol-oriented",
+    "protocols",
+    "extension",
+    "polymorphism",
+    "iteration",
+    "iterables"
+  ],
   "typedoc": {
     "entryPoint": "./src/index.ts"
   }
