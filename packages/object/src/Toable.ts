@@ -9,7 +9,7 @@ export const to = Symbol('to')
  */
 export default abstract class Toable {
   [to]<A, B>(this: A, constructor: new (a: A) => B) {
-    return new constructor(this) as InstanceType<typeof constructor>
+    return new constructor(this)
   }
 }
 
