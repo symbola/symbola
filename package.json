@@ -45,6 +45,20 @@
   "bugs": {
     "url": "https://github.com/symbola/symbola/issues"
   },
+  "keywords": [
+    "protocol-oriented",
+    "polymorphism",
+    "typeclasses",
+    "swift-protocols",
+    "parametric-polymorphism",
+    "protocol-oriented-programming",
+    "rust-traits",
+    "cpp-concepts",
+    "ad-hoc-polymorphism",
+    "symbol-protocols",
+    "iteration",
+    "iterables"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
