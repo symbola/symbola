@@ -17,7 +17,6 @@ export default abstract class Everyable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Object extends Everyable {}
 }
 

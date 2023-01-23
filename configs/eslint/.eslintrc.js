@@ -7,6 +7,7 @@ module.exports = {
       plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'warn',
+        '@typescript-eslint/no-empty-interface': 'off',
       },
     },
     {

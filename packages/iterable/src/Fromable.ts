@@ -32,7 +32,6 @@ export default abstract class Fromable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Object extends Fromable {}
 }
 

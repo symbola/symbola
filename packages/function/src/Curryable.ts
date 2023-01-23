@@ -14,7 +14,6 @@ export default abstract class Curryable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Function extends Curryable {}
 }
 

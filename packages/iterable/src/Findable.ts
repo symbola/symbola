@@ -14,7 +14,6 @@ export default abstract class Findable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Object extends Findable {}
 }
 

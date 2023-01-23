@@ -15,7 +15,6 @@ export default abstract class Composable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Function extends Composable {}
 }
 

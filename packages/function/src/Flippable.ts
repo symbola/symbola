@@ -12,7 +12,6 @@ export default abstract class Flippable {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Function extends Flippable {}
 }
 
