@@ -5,11 +5,10 @@ export const value = Symbol('value')
 
 export default abstract class Valuable {
   /**
-   * Returns a [value object] of the given object.
-   * Implemented using [Tuplerone].
+   * Returns a value object of the given object.
    *
-   * [value object]: https://en.wikipedia.org/wiki/Value_object
-   * [Tuplerone]: https://github.com/slikts/tuplerone
+   * @see https://en.wikipedia.org/wiki/Value_object
+   * @see https://github.com/slikts/tuplerone
    */
   [value]<A extends object>(this: A): A {
     return ValueObject(this)

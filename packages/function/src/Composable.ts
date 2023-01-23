@@ -3,11 +3,14 @@ import { FunctionN } from 'fp-ts/function'
 
 export const compose = Symbol('compose')
 
+/**
+ * @alpha
+ */
 export default abstract class Composable {
   /**
-   * TODO: support more arities
+   * Compose two functions.
    *
-   * @alpha
+   * TODO: support more arities
    */
   [compose]<A, B, C>(this: FunctionN<[A], B>, f: FunctionN<[B], C>): FunctionN<[A], C> {
     return (i: A): C => f(this(i))

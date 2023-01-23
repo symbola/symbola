@@ -9,10 +9,9 @@ export const isSupersetOf = Symbol('isSupersetOf')
 export const isDisjointFrom = Symbol('isDisjointFrom')
 
 /**
- * Methods from [Set Methods for JavaScript proposal][proposal].
+ * Methods from the new Set method proposal.
  *
- * [proposal]: https://github.com/tc39/proposal-set-methods
- *
+ * @see https://github.com/tc39/proposal-set-methods
  * @alpha
  */
 export default abstract class ExtendedSet {
