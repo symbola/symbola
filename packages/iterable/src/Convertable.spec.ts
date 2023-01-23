@@ -1,4 +1,4 @@
-import { toArray, toMap, toSet, toObject } from './Convertable'
+import { toArray, toMap, toSet, toObject, toWeakMap, toWeakSet } from './Convertable'
 
 describe('Convertable', () => {
   describe('toArray', () => {
@@ -70,6 +70,35 @@ describe('Convertable', () => {
         c: 3,
       })
       expect(result).toBeInstanceOf(Object)
+    })
+  })
+
+  describe('toWeakMap', () => {
+    it('converts iterables to weak maps', () => {
+      const object = {}
+      const entries: [object, string][] = [
+        [object, 'a'],
+        [object, 'b'],
+        [object, 'c'],
+      ]
+      const result = entries[toWeakMap]()
+      expect(result).toEqual(
+        new WeakMap([
+          [object, 'a'],
+          [object, 'b'],
+          [object, 'c'],
+        ]),
+      )
+      expect(result).toBeInstanceOf(WeakMap)
+    })
+  })
+
+  describe('toWeakSet', () => {
+    it('converts iterables to weak sets', () => {
+      const object = {}
+      const result = [object, object, object][toWeakSet]()
+      expect(result).toEqual(new WeakSet([object, object, object]))
+      expect(result).toBeInstanceOf(WeakSet)
     })
   })
 })

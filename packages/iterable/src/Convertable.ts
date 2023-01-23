@@ -4,6 +4,8 @@ export const toArray = Symbol('toArray')
 export const toMap = Symbol('toMap')
 export const toSet = Symbol('toSet')
 export const toObject = Symbol('toObject')
+export const toWeakMap = Symbol('toWeakMap')
+export const toWeakSet = Symbol('toWeakSet')
 
 export default abstract class Convertable {
   /**
@@ -32,6 +34,20 @@ export default abstract class Convertable {
    */
   [toObject]<A extends string | symbol | number, B>(this: Iterable<[A, B]>) {
     return Object.fromEntries(this)
+  }
+
+  /**
+   * Converts an iterable of entries to a weak map.
+   */
+  [toWeakMap]<A extends object, B>(this: Iterable<[A, B]>) {
+    return new WeakMap(this)
+  }
+
+  /**
+   * Converts an iterable to a weak set.
+   */
+  [toWeakSet]<A extends object>(this: Iterable<A>) {
+    return new WeakSet(this)
   }
 }
 
