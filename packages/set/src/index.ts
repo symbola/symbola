@@ -1,2 +1,2 @@
-export { default as ExtendedSet } from './ExtendedSet'
-export * from './ExtendedSet'
+export { default as ExtendedSet } from './SetMethods'
+export * from './SetMethods'
