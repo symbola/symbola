@@ -1,4 +1,4 @@
-import { toArray, toMap, toSet } from './Convertable'
+import { toArray, toMap, toSet, toObject } from './Convertable'
 
 describe('Convertable', () => {
   describe('toArray', () => {
@@ -53,6 +53,23 @@ describe('Convertable', () => {
     it('noop on sets', () => {
       const result = new Set([1, 2, 3])[toSet]()
       expect(result).toBe(result)
+    })
+  })
+
+  describe('toObject', () => {
+    it('converts iterables to objects', () => {
+      const entries: [string, number][] = [
+        ['a', 1],
+        ['b', 2],
+        ['c', 3],
+      ]
+      const result = entries[toObject]()
+      expect(result).toEqual({
+        a: 1,
+        b: 2,
+        c: 3,
+      })
+      expect(result).toBeInstanceOf(Object)
     })
   })
 })

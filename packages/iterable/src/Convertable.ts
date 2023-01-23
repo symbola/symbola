@@ -3,6 +3,7 @@ import { extend } from '@symbola/core'
 export const toArray = Symbol('toArray')
 export const toMap = Symbol('toMap')
 export const toSet = Symbol('toSet')
+export const toObject = Symbol('toObject')
 
 export default abstract class Convertable {
   /**
@@ -27,6 +28,13 @@ export default abstract class Convertable {
    */
   [toSet]<A>(this: Iterable<A>) {
     return new Set(this)
+  }
+
+  /**
+   * Converts an iterable of entries to an object.
+   */
+  [toObject]<A extends string | symbol | number, B>(this: Iterable<[A, B]>) {
+    return Object.fromEntries(this)
   }
 }
 
