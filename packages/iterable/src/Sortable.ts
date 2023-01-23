@@ -1,6 +1,6 @@
 import { extend } from '@symbola/core'
 
-export const sort = Symbol('sortable')
+export const sort = Symbol('sort')
 
 export default abstract class Sortable {
   /**
