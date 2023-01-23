@@ -7,6 +7,9 @@ export default abstract class Somable {
    * Checks if any value in the iterable satisfies the predicate.
    */
   [some]<A>(this: Iterable<A>, fn: (a: A) => boolean) {
+    if (Array.isArray(this)) {
+      return this.some(fn)
+    }
     for (const a of this) {
       if (fn(a)) {
         return true

@@ -2,12 +2,12 @@ import { from } from './Fromable'
 
 describe('Fromable', () => {
   it('wraps iterator-like', () => {
-    const iterator = {
+    const iteratorLike = {
       next() {
         return { done: false, value: 123 }
       },
     }
-    const iterable = iterator[from]()
+    const iterable = iteratorLike[from]()
     expect(iterable[Symbol.iterator]().next()).toEqual({ done: false, value: 123 })
   })
 
@@ -24,5 +24,15 @@ describe('Fromable', () => {
     }
     const iterable = iterator[from]()
     expect(iterable[Symbol.iterator]().next()).toEqual({ done: true })
+  })
+
+  it('returns if done with value', () => {
+    const iterator = {
+      next() {
+        return { done: true, value: 123 }
+      },
+    }
+    const iterable = iterator[from]()
+    expect(iterable[Symbol.iterator]().next()).toEqual({ done: true, value: 123 })
   })
 })

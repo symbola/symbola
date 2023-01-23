@@ -4,6 +4,9 @@ import { reduce } from './Reduceable'
 export const size = Symbol('size')
 
 export default abstract class Sizeable {
+  /**
+   * Returns the number of elements in the iterable.
+   */
   [size](this: Iterable<unknown>): number {
     if (Array.isArray(this)) {
       return this.length

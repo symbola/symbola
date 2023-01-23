@@ -4,7 +4,13 @@ import { extend } from '@symbola/core'
 export const drop = Symbol('drop')
 
 export default abstract class Droppable {
+  /**
+   * Drop the first `n` elements of an iterable.
+   */
   *[drop]<A>(this: Iterable<A>, n: number) {
+    if (Array.isArray(this)) {
+      return this.slice(n)
+    }
     let count = 0
     for (const a of this) {
       if (count >= n) {

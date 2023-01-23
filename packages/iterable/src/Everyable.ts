@@ -7,6 +7,9 @@ export default abstract class Everyable {
    * Returns true if every element in the iterable satisfies the predicate.
    */
   [every]<A>(this: Iterable<A>, fn: (a: A) => boolean) {
+    if (Array.isArray(this)) {
+      return this.every(fn)
+    }
     for (const a of this) {
       if (!fn(a)) {
         return false

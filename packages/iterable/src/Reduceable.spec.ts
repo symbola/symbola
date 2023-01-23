@@ -18,4 +18,16 @@ describe('Reduceable', () => {
     const result = iterable[reduce]((a, b) => `${a}${b}`, '')
     expect(result).toEqual('123')
   })
+
+  it('reduces arrays', () => {
+    const array = [1, 2]
+    const result = array[reduce]((a, b) => a + b)
+    expect(result).toEqual(3)
+  })
+
+  it('reduces arrays with initial value', () => {
+    const array = [1, 2, 3]
+    const result = array[reduce]((a, b) => a + b, 1)
+    expect(result).toEqual(7)
+  })
 })

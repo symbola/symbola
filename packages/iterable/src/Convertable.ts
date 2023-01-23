@@ -10,9 +10,6 @@ export default abstract class Convertable {
    * Converts an iterable to an array.
    */
   [toArray]<A>(this: Iterable<A>) {
-    // if (Array.isArray(this)) {
-    //   return this
-    // }
     return [...this]
   }
 

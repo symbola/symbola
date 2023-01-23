@@ -8,10 +8,12 @@ export const _continue = Symbol('continue')
 
 export type Signal = typeof _break | typeof _continue
 
-/**
- * @alpha
- */
 export default abstract class Traversable {
+  /**
+   * Traverse an iterable.
+   *
+   * @alpha
+   */
   *[traverse]<A, B>(this: Iterable<A>, fn: (a: A) => B | Signal) {
     const iterator = this[Symbol.iterator]()
 

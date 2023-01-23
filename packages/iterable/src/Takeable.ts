@@ -4,6 +4,9 @@ import { extend } from '@symbola/core'
 export const take = Symbol('take')
 
 export default abstract class Takeable {
+  /**
+   * Take the first `n` elements of an iterable.
+   */
   *[take]<A>(this: Iterable<A>, n: number) {
     const iterator = this[Symbol.iterator]()
     for (let i = 0; i < n; i++) {

@@ -2,10 +2,12 @@ import { extend } from '@symbola/core'
 
 export const zip = Symbol('zip')
 
-/**
- * @alpha
- */
 export default abstract class Zippable {
+  /**
+   * Zips two iterables together.
+   *
+   * @alpha
+   */
   *[zip]<A, B>(this: Iterable<A>, target: Iterable<B>) {
     const iterator1 = this[Symbol.iterator]()
     const iterator2 = target[Symbol.iterator]()
