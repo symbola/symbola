@@ -1,1 +1,1 @@
-export { default as Collectable, collect } from './Collectable'
+export { default as Collectable, toArray as collect } from './Convertable'

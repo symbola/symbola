@@ -1,15 +1,15 @@
 import { extend } from '@symbola/core'
 
-export const collect = Symbol('collect')
+export const toArray = Symbol('toArray')
 
 /**
  * @see https://github.com/tc39/proposal-array-from-async
  */
-export default abstract class Collectable {
+export default abstract class Convertable {
   /**
    * Collects all values from an async iterable into an array.
    */
-  async [collect]<A>(this: AsyncIterable<A>) {
+  async [toArray]<A>(this: AsyncIterable<A>) {
     const results = []
     for await (const value of this) {
       results.push(value)
@@ -19,7 +19,7 @@ export default abstract class Collectable {
 }
 
 declare global {
-  interface Object extends Collectable {}
+  interface Object extends Convertable {}
 }
 
-extend(Object.prototype, Collectable.prototype)
+extend(Object.prototype, Convertable.prototype)
