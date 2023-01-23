@@ -12,6 +12,7 @@
     "p:core": "yarn workspace @symbola/core",
     "p:object": "yarn workspace @symbola/object",
     "p:iterable": "yarn workspace @symbola/iterable",
+    "p:async": "yarn workspace @symbola/async-iterable",
     "p:function": "yarn workspace @symbola/function",
     "p:number": "yarn workspace @symbola/number",
     "p:set": "yarn workspace @symbola/set",

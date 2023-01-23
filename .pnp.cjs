@@ -40,6 +40,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:configs/typescript"\
       },\
       {\
+        "name": "@symbola/async-iterable",\
+        "reference": "workspace:packages/async-iterable"\
+      },\
+      {\
         "name": "@symbola/core",\
         "reference": "workspace:packages/core"\
       },\
@@ -67,6 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@symbola/async-iterable", ["workspace:packages/async-iterable"]],\
       ["@symbola/babel-config", ["virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#workspace:configs/babel", "workspace:configs/babel"]],\
       ["@symbola/config", ["workspace:configs/config"]],\
       ["@symbola/core", ["workspace:packages/core"]],\
@@ -5548,6 +5553,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string.prototype.matchall", "npm:4.0.8"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@symbola/async-iterable", [\
+        ["workspace:packages/async-iterable", {\
+          "packageLocation": "./packages/async-iterable/",\
+          "packageDependencies": [\
+            ["@symbola/async-iterable", "workspace:packages/async-iterable"],\
+            ["@babel/core", "npm:7.20.12"],\
+            ["@babel/preset-env", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:7.20.2"],\
+            ["@babel/preset-typescript", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:7.18.6"],\
+            ["@symbola/config", "workspace:configs/config"],\
+            ["@symbola/core", "workspace:packages/core"],\
+            ["@types/babel__core", "npm:7.20.0"],\
+            ["@types/babel__preset-env", "npm:7.9.2"],\
+            ["@types/eslint", "npm:8.4.10"],\
+            ["@types/jest", "npm:29.2.6"],\
+            ["@types/node", "npm:18.11.18"],\
+            ["@types/prettier", "npm:2.7.2"],\
+            ["@typescript-eslint/eslint-plugin", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:5.48.2"],\
+            ["@typescript-eslint/parser", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:5.48.2"],\
+            ["eslint", "npm:8.32.0"],\
+            ["eslint-config-prettier", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:8.6.0"],\
+            ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
+            ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["microbundle", "npm:0.15.1"],\
+            ["prettier", "npm:2.8.3"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@symbola/babel-config", [\

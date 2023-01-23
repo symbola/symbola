@@ -161,6 +161,7 @@ The library is divided into separate packages:
 
 - `@symbola/core`
 - `@symbola/iterable`
+- `@symbola/async-iterable`
 - `@symbola/object`
 - `@symbola/function`
 - `@symbola/number`
