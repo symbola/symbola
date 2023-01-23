@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const splice = Symbol('splice')
 
-export default abstract class Sortable {
+export default abstract class Spliceable {
   /**
    * Sort the elements in the iterable.
    */
@@ -24,7 +24,7 @@ export default abstract class Sortable {
 }
 
 declare global {
-  interface Object extends Sortable {}
+  interface Object extends Spliceable {}
 }
 
-extend(Object.prototype, Sortable.prototype)
+extend(Object.prototype, Spliceable.prototype)
