@@ -44,7 +44,9 @@
     "jest.jestCommandLine": "yarn test",
     "search.exclude": {
       "**/.yarn": true,
-      "**/.pnp.*": true
+      "**/.pnp.*": true,
+      "**/dist": true,
+      "**/coverage": true
     },
     "eslint.nodePath": ".yarn/sdks",
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
