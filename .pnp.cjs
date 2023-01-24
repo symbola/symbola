@@ -6050,7 +6050,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:29.3.1"],\
             ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"],\
-            ["queueable", "npm:5.0.1"]\
+            ["queueable", "npm:5.3.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -15741,10 +15741,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["queueable", [\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/queueable-npm-5.0.1-0fcc6032ea-12d94a394a.zip/node_modules/queueable/",\
+        ["npm:5.3.0", {\
+          "packageLocation": "./.yarn/cache/queueable-npm-5.3.0-f5e8ba4845-4d04ed11df.zip/node_modules/queueable/",\
           "packageDependencies": [\
-            ["queueable", "npm:5.0.1"],\
+            ["queueable", "npm:5.3.0"],\
             ["fast-list", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
