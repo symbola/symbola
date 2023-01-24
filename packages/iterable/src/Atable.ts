@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { extend } from '@symbola/core'
-import { LinkedQueue } from 'queueable'
+import { Buffer } from 'queueable'
 
 export const at = Symbol('at')
 
@@ -26,7 +26,7 @@ export default abstract class Atable {
       return undefined
     }
     const limit = Math.abs(i)
-    const buffer = new LinkedQueue<A>(limit)
+    const buffer = new Buffer<A>(limit)
     for (const a of this) {
       buffer.enqueue(a)
     }
