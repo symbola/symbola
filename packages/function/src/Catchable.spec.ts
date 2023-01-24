@@ -5,6 +5,7 @@ describe('Catchable', () => {
     const throws = () => {
       throw 123
     }
+
     expect(throws[_catch]((x) => x)()).toBe(123)
   })
 })

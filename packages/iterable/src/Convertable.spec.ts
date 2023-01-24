@@ -4,12 +4,14 @@ describe('Convertable', () => {
   describe('toArray', () => {
     it('converts iterables to arrays', () => {
       const result = [1, 2, 3][toArray]()
+
       expect(result).toEqual([1, 2, 3])
       expect(result).toBeInstanceOf(Array)
     })
 
     it('noops on arrays', () => {
       const result = [1, 2, 3][toArray]()
+
       expect(result).toBe(result)
     })
   })
@@ -22,6 +24,7 @@ describe('Convertable', () => {
         [3, 'c'],
       ]
       const result = entries[toMap]()
+
       expect(result).toEqual(
         new Map([
           [1, 'a'],
@@ -39,6 +42,7 @@ describe('Convertable', () => {
         [3, 'c'],
       ]
       const result = new Map(entries)[toMap]()
+
       expect(result).toBe(result)
     })
   })
@@ -46,12 +50,14 @@ describe('Convertable', () => {
   describe('toSet', () => {
     it('converts iterables to sets', () => {
       const result = [1, 2, 3][toSet]()
+
       expect(result).toEqual(new Set([1, 2, 3]))
       expect(result).toBeInstanceOf(Set)
     })
 
     it('noop on sets', () => {
       const result = new Set([1, 2, 3])[toSet]()
+
       expect(result).toBe(result)
     })
   })
@@ -64,6 +70,7 @@ describe('Convertable', () => {
         ['c', 3],
       ]
       const result = entries[toObject]()
+
       expect(result).toEqual({
         a: 1,
         b: 2,
@@ -82,6 +89,7 @@ describe('Convertable', () => {
         [object, 'c'],
       ]
       const result = entries[toWeakMap]()
+
       expect(result).toEqual(
         new WeakMap([
           [object, 'a'],
@@ -97,6 +105,7 @@ describe('Convertable', () => {
     it('converts iterables to weak sets', () => {
       const object = {}
       const result = [object, object, object][toWeakSet]()
+
       expect(result).toEqual(new WeakSet([object, object, object]))
       expect(result).toBeInstanceOf(WeakSet)
     })

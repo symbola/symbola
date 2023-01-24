@@ -2934,6 +2934,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -2984,6 +2985,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.6.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
   languageName: unknown
@@ -3010,6 +3012,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -3028,6 +3031,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^2.8.3
   peerDependencies:
@@ -3036,6 +3040,7 @@ __metadata:
     eslint: "*"
     eslint-config-prettier: "*"
     eslint-plugin-jest: "*"
+    eslint-plugin-jest-formatting: "*"
     eslint-plugin-tsdoc: "*"
   languageName: unknown
   linkType: soft
@@ -3062,6 +3067,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     fp-ts: ^2.13.1
     jest: ^29.3.1
@@ -3093,6 +3099,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -3129,6 +3136,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -3158,6 +3166,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -3196,6 +3205,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     jest: ^29.3.1
     microbundle: ^0.15.1
@@ -5769,6 +5779,15 @@ __metadata:
   bin:
     eslint-config-prettier: bin/cli.js
   checksum: ff0d0dfc839a556355422293428637e8d35693de58dabf8638bf0b6529131a109d0b2ade77521aa6e54573bb842d7d9d322e465dd73dd61c7590fa3834c3fa81
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-jest-formatting@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "eslint-plugin-jest-formatting@npm:3.1.0"
+  peerDependencies:
+    eslint: ">=0.8.0"
+  checksum: 350f6f3f46eefcbc3df003049e35776786829977a4da077f1793885664dfd0f34b5e8814dd29e52b2f44384df03e688454a3b905586c3cdbede83860a80cba89
   languageName: node
   linkType: hard
 
@@ -12598,6 +12617,7 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-prettier: ^8.0.0
     eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
     lint-staged: ^13.1.0

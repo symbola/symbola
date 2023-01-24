@@ -7,6 +7,7 @@ describe('Memoizable', () => {
 
   it('memoizes', () => {
     const fn = ((n: number) => Symbol(n))[memoize]()
+
     expect(fn(1)).toBe(fn(1))
     expect(fn(1)).not.toBe(fn(2))
   })

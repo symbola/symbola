@@ -6,18 +6,21 @@ export default abstract class Spliceable {
   /**
    * Sort the elements in the iterable.
    */
-  *[splice]<A>(this: Iterable<A>, start: number, deleteCount = 0, ...items: A[]) {
-    let i = 0
+  *[splice]<A>(this: Iterable<A>, start: number, deleteCount = Infinity, ...items: A[]) {
+    let count = 0
     for (const a of this) {
-      if (i === start) {
+      if (count === start) {
         yield* items
+        if (deleteCount === Infinity) {
+          return
+        }
       }
-      if (i < start || i >= start + deleteCount) {
+      if (count < start || count >= start + deleteCount) {
         yield a
       }
-      i += 1
+      count += 1
     }
-    if (i < start) {
+    if (count < start) {
       yield* items
     }
   }

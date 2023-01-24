@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       files: ['src/**/*.spec.ts'],
-      extends: ['plugin:jest/recommended'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-formatting/strict'],
       rules: {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-empty-function': 'off',

@@ -7,6 +7,7 @@ describe('Convertable', () => {
       b: 2,
     }
     const result: [string, number][] = record[entries]()
+
     expect(result).toEqual([
       ['a', 1],
       ['b', 2],
@@ -20,6 +21,7 @@ describe('Convertable', () => {
       b: 2,
     }
     const result: Map<string, number> = record[toMap]()
+
     expect(result).toEqual(
       new Map([
         ['a', 1],
@@ -35,6 +37,7 @@ describe('Convertable', () => {
       b: 2,
     }
     const result: number[] = record[values]()
+
     expect(result).toEqual([1, 2])
     expect(result).toBeInstanceOf(Array)
   })
@@ -45,6 +48,7 @@ describe('Convertable', () => {
       b: 2,
     }
     const result: string[] = record[keys]()
+
     expect(result).toEqual(['a', 'b'])
     expect(result).toBeInstanceOf(Array)
   })

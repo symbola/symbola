@@ -10,6 +10,7 @@ describe('Onceable', () => {
     onced()
     onced()
     onced()
+
     expect(count).toBe(1)
   })
 })

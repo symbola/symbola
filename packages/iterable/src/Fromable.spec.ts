@@ -8,11 +8,13 @@ describe('Fromable', () => {
       },
     }
     const iterable = iteratorLike[from]()
+
     expect(iterable[Symbol.iterator]().next()).toEqual({ done: false, value: 123 })
   })
 
   it('returns the same iterable', () => {
     const iterable = new Set([1, 2, 3, 4, 5])
+
     expect(iterable[from]()).toBe(iterable)
   })
 
@@ -23,6 +25,7 @@ describe('Fromable', () => {
       },
     }
     const iterable = iterator[from]()
+
     expect(iterable[Symbol.iterator]().next()).toEqual({ done: true })
   })
 
@@ -33,6 +36,7 @@ describe('Fromable', () => {
       },
     }
     const iterable = iterator[from]()
+
     expect(iterable[Symbol.iterator]().next()).toEqual({ done: true, value: 123 })
   })
 })
