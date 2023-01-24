@@ -1,4 +1,5 @@
 import { extend } from '@symbola/core'
+import { Buffer } from 'queueable'
 
 export const reverse = Symbol('reverse')
 
@@ -6,8 +7,8 @@ export default abstract class Reversable {
   /**
    * Reverse the order of the elements in the iterable.
    */
-  [reverse]<A>(this: Iterable<A>) {
-    return [...this].reverse()
+  *[reverse]<A>(this: Iterable<A>) {
+    yield* Buffer.from(this, Infinity).reverse()
   }
 }
 
