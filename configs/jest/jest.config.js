@@ -13,8 +13,8 @@ module.exports = {
     },
   },
   reporters: ['default', 'github-actions'],
-  rootDir: 'src',
+  roots: ['<rootDir>/src/'],
   transform: {
-    '^.+\\.tsx?$': 'esbuild-jest',
+    '^.+\\.ts$': 'esbuild-jest',
   },
 }
