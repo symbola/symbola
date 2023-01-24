@@ -1,0 +1,78 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "core",
+      "path": "packages/core"
+    },
+    {
+      "name": "function",
+      "path": "packages/function"
+    },
+    {
+      "name": "object",
+      "path": "packages/object"
+    },
+    {
+      "name": "number",
+      "path": "packages/number"
+    },
+    {
+      "name": "set",
+      "path": "packages/set"
+    },
+    {
+      "name": "async-iterable",
+      "path": "packages/async-iterable"
+    },
+    {
+      "name": "iterable",
+      "path": "packages/iterable"
+    },
+    {
+      "name": "prettier",
+      "path": "configs/prettier"
+    },
+    {
+      "name": "typescript",
+      "path": "configs/typescript"
+    },
+    {
+      "name": "jest",
+      "path": "configs/jest"
+    },
+    {
+      "name": "config",
+      "path": "configs/config"
+    },
+    {
+      "name": "babel",
+      "path": "configs/babel"
+    },
+    {
+      "name": "eslint",
+      "path": "configs/eslint"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": ".yarn/sdks/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "jest.disabledWorkspaceFolders": [
+      "symbola",
+      "core",
+      "function",
+      "object",
+      "number",
+      "set",
+      "async-iterable",
+      "iterable",
+      "prettier",
+      "typescript",
+      "config",
+      "babel",
+      "eslint"
+    ]
+  }
+}
