@@ -47,7 +47,8 @@
     "prettier": "^2.8.3"
   },
   "dependencies": {
-    "@symbola/core": "workspace:^"
+    "@symbola/core": "workspace:^",
+    "queueable": "^5.0.1"
   },
   "repository": "github:symbola/symbola",
   "license": "ISC",

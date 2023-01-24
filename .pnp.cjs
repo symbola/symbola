@@ -5796,7 +5796,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["microbundle", "npm:0.15.1"],\
-            ["prettier", "npm:2.8.3"]\
+            ["prettier", "npm:2.8.3"],\
+            ["queueable", "npm:5.0.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -9220,6 +9221,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fast-levenshtein-npm-2.0.6-fcd74b8df5-92cfec0a8d.zip/node_modules/fast-levenshtein/",\
           "packageDependencies": [\
             ["fast-levenshtein", "npm:2.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["fast-list", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/fast-list-npm-1.0.3-73493e1bdd-2bc01386f6.zip/node_modules/fast-list/",\
+          "packageDependencies": [\
+            ["fast-list", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14559,6 +14569,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/queue-microtask-npm-1.2.3-fcc98e4e2d-b676f8c040.zip/node_modules/queue-microtask/",\
           "packageDependencies": [\
             ["queue-microtask", "npm:1.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["queueable", [\
+        ["npm:5.0.1", {\
+          "packageLocation": "./.yarn/cache/queueable-npm-5.0.1-0fcc6032ea-12d94a394a.zip/node_modules/queueable/",\
+          "packageDependencies": [\
+            ["queueable", "npm:5.0.1"],\
+            ["fast-list", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
