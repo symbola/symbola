@@ -114,7 +114,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["jest-github-reporter", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:1.0.2"],\
             ["lint-staged", "npm:13.1.0"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.1"],\
@@ -6296,7 +6295,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.0.2"],\
             ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"],\
-            ["queueable", "npm:5.3.0"]\
+            ["queueable", "npm:5.3.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -12329,22 +12328,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:1.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/jest-github-reporter-virtual-aed81c45ba/0/cache/jest-github-reporter-npm-1.0.2-3af2e61c5f-de9e15e012.zip/node_modules/jest-github-reporter/",\
-          "packageDependencies": [\
-            ["jest-github-reporter", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:1.0.2"],\
-            ["@octokit/rest", "npm:16.43.2"],\
-            ["@types/jest", null],\
-            ["create-check", "npm:0.6.40"],\
-            ["jest", null],\
-            ["strip-ansi", "npm:6.0.1"]\
-          ],\
-          "packagePeers": [\
-            "@types/jest",\
-            "jest"\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.0.2", {\
           "packageLocation": "./.yarn/__virtual__/jest-github-reporter-virtual-7ef17aade9/0/cache/jest-github-reporter-npm-1.0.2-3af2e61c5f-de9e15e012.zip/node_modules/jest-github-reporter/",\
           "packageDependencies": [\
@@ -16260,10 +16243,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["queueable", [\
-        ["npm:5.3.0", {\
-          "packageLocation": "./.yarn/cache/queueable-npm-5.3.0-f5e8ba4845-4d04ed11df.zip/node_modules/queueable/",\
+        ["npm:5.3.1", {\
+          "packageLocation": "./.yarn/cache/queueable-npm-5.3.1-03bb32f500-c358e70f21.zip/node_modules/queueable/",\
           "packageDependencies": [\
-            ["queueable", "npm:5.3.0"],\
+            ["queueable", "npm:5.3.1"],\
             ["fast-list", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
@@ -17971,7 +17954,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["jest-github-reporter", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:1.0.2"],\
             ["lint-staged", "npm:13.1.0"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.1"],\

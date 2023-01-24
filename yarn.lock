@@ -3304,7 +3304,7 @@ __metadata:
     jest-github-reporter: ^1.0.2
     microbundle: ^0.15.1
     prettier: ^2.8.3
-    queueable: ^5.3.0
+    queueable: ^5.3.1
   languageName: unknown
   linkType: soft
 
@@ -11451,12 +11451,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"queueable@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "queueable@npm:5.3.0"
+"queueable@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "queueable@npm:5.3.1"
   dependencies:
     fast-list: ^1.0.3
-  checksum: 4d04ed11dfe5e65ca1cacb89113e7d49ba5a925b12bd09002540b5c897212bedb45086f46f01b6863d234aa22a7f7eda3331b579011573a47b97081f776e0f8c
+  checksum: c358e70f214c4a4af77fb418c88d655cbe3d163e5d4a4b35ce6f534dbf574b8e806ef13ef8aeae4840cb9e71457f002b973e4ee44098b87607a4d55882d3cd6f
   languageName: node
   linkType: hard
 
@@ -13006,7 +13006,6 @@ __metadata:
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
-    jest-github-reporter: ^1.0.2
     lint-staged: ^13.1.0
     microbundle: ^0.15.1
     multi-semantic-release: ^3.0.1

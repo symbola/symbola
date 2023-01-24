@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@symbola/core": "workspace:^",
-    "queueable": "^5.3.0"
+    "queueable": "^5.3.1"
   },
   "repository": "github:symbola/symbola",
   "license": "ISC",
