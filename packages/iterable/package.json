@@ -19,10 +19,8 @@
   "scripts": {
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint .",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --coverage",
     "build": "microbundle",
+    "test": "jest",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:fix": "eslint --fix ."
   },
@@ -39,10 +37,13 @@
     "@types/prettier": "^2",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
+    "esbuild": "^0.17.4",
+    "esbuild-jest": "^0.5.0",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
+    "jest": "^29.3.1",
     "microbundle": "^0.15.1",
     "prettier": "^2.8.3"
   },

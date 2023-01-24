@@ -1,15 +1,16 @@
 {
   "folders": [
     {
+      "name": "symbola",
       "path": "."
-    },
-    {
-      "name": "core",
-      "path": "packages/core"
     },
     {
       "name": "function",
       "path": "packages/function"
+    },
+    {
+      "name": "core",
+      "path": "packages/core"
     },
     {
       "name": "object",
@@ -32,47 +33,20 @@
       "path": "packages/iterable"
     },
     {
-      "name": "prettier",
-      "path": "configs/prettier"
-    },
-    {
-      "name": "typescript",
-      "path": "configs/typescript"
-    },
-    {
-      "name": "jest",
-      "path": "configs/jest"
-    },
-    {
-      "name": "config",
-      "path": "configs/config"
-    },
-    {
-      "name": "babel",
-      "path": "configs/babel"
-    },
-    {
-      "name": "eslint",
-      "path": "configs/eslint"
+      "name": "configs",
+      "path": "configs"
     }
   ],
   "settings": {
     "typescript.tsdk": ".yarn/sdks/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
-    "jest.disabledWorkspaceFolders": [
-      "symbola",
-      "core",
-      "function",
-      "object",
-      "number",
-      "set",
-      "async-iterable",
-      "iterable",
-      "prettier",
-      "typescript",
-      "config",
-      "babel",
-      "eslint"
-    ]
+    "jest.disabledWorkspaceFolders": ["symbola", "configs"],
+    "jest.jestCommandLine": "yarn test",
+    "search.exclude": {
+      "**/.yarn": true,
+      "**/.pnp.*": true
+    },
+    "eslint.nodePath": ".yarn/sdks",
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
   }
 }
