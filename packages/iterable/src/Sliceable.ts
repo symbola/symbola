@@ -3,16 +3,17 @@ import { Buffer } from 'queueable'
 
 import { reverse } from './Reversable'
 import { buffer } from './Bufferable'
+import { first, last, at } from './Gettable'
 
 export const slice = Symbol('slice')
 export const splice = Symbol('slice')
-export const first = Symbol('first')
-export const last = Symbol('last')
 export const take = Symbol('take')
 export const skip = Symbol('skip')
-export const at = Symbol('at')
 
 export default abstract class Sliceable {
+  /**
+   * Take the first `n` elements of an iterable, or the last `n` elements if `n` is negative.
+   */
   *[take]<A>(this: Iterable<A>, count: number) {
     if (count === 0) {
       return
@@ -40,6 +41,9 @@ export default abstract class Sliceable {
     }
   }
 
+  /**
+   * Skip the first `n` elements of an iterable, or the last `n` elements if `n` is negative.
+   */
   *[skip]<A>(this: Iterable<A>, count: number) {
     if (count === 0) {
       return
@@ -57,31 +61,6 @@ export default abstract class Sliceable {
       const buffer = Buffer.from(this, Infinity)
       yield* buffer[take](Math.max(0, buffer.length + count))
     }
-  }
-  /**
-   * Gets the first element of the iterable.
-   */
-  [first]<A>(this: Iterable<A>) {
-    if (Array.isArray(this)) {
-      return this[0]
-    }
-    for (const value of this) {
-      return value
-    }
-  }
-
-  /**
-   * Gets the last element of the iterable.
-   */
-  [last]<A>(this: Iterable<A>) {
-    if (Array.isArray(this)) {
-      return this[this.length - 1]
-    }
-    let lastValue: A | undefined
-    for (const value of this) {
-      lastValue = value
-    }
-    return lastValue
   }
 
   /**

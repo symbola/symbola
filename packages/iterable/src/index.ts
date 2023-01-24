@@ -1,12 +1,11 @@
 export { default as Traversable, traverse, _break, _continue, Signal } from './Traversable'
 export { default as Reducable, reduce } from './Reduceable'
-export { default as Mappable, map } from './Mappable'
+export { default as Mappable, map, flatMap } from './Mappable'
 export { default as Filterable, filter } from './Filterable'
 export { default as Takeable, take } from './Takeable'
 export { default as Zippable, zip } from './Zippable'
 export { default as Findable, find } from './Findable'
 export { default as Droppable, drop } from './Droppable'
-export { default as FlatMappable, flatMap } from './FlatMappable'
 export {
   default as Convertable,
   toArray,
