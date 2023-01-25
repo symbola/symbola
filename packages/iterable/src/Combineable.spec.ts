@@ -18,7 +18,7 @@ describe('Combineable', () => {
   })
 
   describe('zip', () => {
-    it('zips two iterables', () => {
+    it('zips one source', () => {
       const iterable1 = [1, 2, 3]
       const iterable2 = ['a', 'b', 'c']
       const result = iterable1[zip](iterable2)
@@ -27,6 +27,33 @@ describe('Combineable', () => {
         [1, 'a'],
         [2, 'b'],
         [3, 'c'],
+      ])
+    })
+
+    it('zips two sources', () => {
+      const iterable1 = [1, 2, 3]
+      const iterable2 = ['a', 'b', 'c']
+      const iterable3 = [true, false, true]
+      const result = iterable1[zip](iterable2, iterable3)
+
+      expect([...result]).toEqual([
+        [1, 'a', true],
+        [2, 'b', false],
+        [3, 'c', true],
+      ])
+    })
+
+    it('zips three sources', () => {
+      const iterable1 = [1, 2, 3]
+      const iterable2 = ['a', 'b', 'c']
+      const iterable3 = [true, false, true]
+      const iterable4 = [null, undefined, null]
+      const result = iterable1[zip](iterable2, iterable3, iterable4)
+
+      expect([...result]).toEqual([
+        [1, 'a', true, null],
+        [2, 'b', false, undefined],
+        [3, 'c', true, null],
       ])
     })
   })
