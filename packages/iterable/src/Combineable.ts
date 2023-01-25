@@ -18,62 +18,18 @@ export abstract class Combineable {
   /**
    * Zip the given iterables with this iterable.
    */
-  [zip]<A, B>(this: Iterable<A>, source: Iterable<B>[]): Iterable<[A, B]>
-  [zip]<A, B, C>(this: Iterable<A>, ...sources: [Iterable<B>, Iterable<C>]): Iterable<[A, B, C]>
-  [zip]<A, B, C, D>(
+  *[zip]<A, B extends unknown[]>(
     this: Iterable<A>,
-    ...sources: [Iterable<B>, Iterable<C>, Iterable<D>]
-  ): Iterable<[A, B, C, D]>
-  [zip]<A, B, C, D, E>(
-    this: Iterable<A>,
-    ...sources: [Iterable<B>, Iterable<C>, Iterable<D>, Iterable<E>]
-  ): Iterable<[A, B, C, D, E]>
-  [zip]<A, B, C, D, E, F>(
-    this: Iterable<A>,
-    ...sources: [Iterable<B>, Iterable<C>, Iterable<D>, Iterable<E>, Iterable<F>]
-  ): Iterable<[A, B, C, D, E, F]>
-  [zip]<A, B, C, D, E, F, G>(
-    this: Iterable<A>,
-    ...sources: [Iterable<B>, Iterable<C>, Iterable<D>, Iterable<E>, Iterable<F>, Iterable<G>]
-  ): Iterable<[A, B, C, D, E, F, G]>
-  [zip]<A, B, C, D, E, F, G, H, I>(
-    this: Iterable<A>,
-    ...sources: [
-      Iterable<B>,
-      Iterable<C>,
-      Iterable<D>,
-      Iterable<E>,
-      Iterable<F>,
-      Iterable<G>,
-      Iterable<H>,
-      Iterable<I>,
-    ]
-  ): Iterable<[A, B, C, D, E, F, G, H, I]>
-  [zip]<A, B, C, D, E, F, G, H, I, J>(
-    this: Iterable<A>,
-    ...sources: [
-      Iterable<B>,
-      Iterable<C>,
-      Iterable<D>,
-      Iterable<E>,
-      Iterable<F>,
-      Iterable<G>,
-      Iterable<H>,
-      Iterable<I>,
-      Iterable<J>,
-    ]
-  ): Iterable<[A, B, C, D, E, F, G, H, I, J]>
-  *[zip]<A>(this: Iterable<A>, ...sources: Iterable<unknown>[]): Iterable<[A, ...unknown[]]> {
-    const iterator = this[Symbol.iterator]()
-    const sourceIterators = sources.map((source) => source[Symbol.iterator]())
+    ...sources: { [K in keyof B]: Iterable<B[K]> }
+  ): Iterable<[A, ...B]> {
+    const iterators = [this, ...sources].map((source) => source[Symbol.iterator]())
 
     while (true) {
-      const result = iterator.next()
-      const sourceResults = sourceIterators.map((iterator) => iterator.next())
-      if (result.done || sourceResults.some(({ done }) => done)) {
+      const results = iterators.map((iterator) => iterator.next())
+      if (results.some(({ done }) => done)) {
         break
       }
-      yield [result.value, ...sourceResults.map(({ value }) => value)]
+      yield results.map(({ value }) => value) as [A, ...B]
     }
   }
 
