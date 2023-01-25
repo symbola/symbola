@@ -1,4 +1,4 @@
-import { slice, take, skip } from './Sliceable'
+import { slice, take, skip, splice } from './Sliceable'
 
 describe('Sliceable', () => {
   it('slices', () => {
@@ -56,6 +56,7 @@ describe('Sliceable', () => {
 
       expect([...[][skip](0)]).toEqual([])
       expect([...[][skip](1)]).toEqual([])
+      expect([...array[skip](0)]).toEqual([1, 2, 3])
       expect([...array[skip](1)]).toEqual([2, 3])
       expect([...array[skip](2)]).toEqual([3])
       expect([...array[skip](3)]).toEqual([])
@@ -88,6 +89,22 @@ describe('Sliceable', () => {
       expect([...iterable[skip](-2)]).toEqual([1])
       expect([...iterable[skip](-3)]).toEqual([])
       expect([...iterable[skip](-5)]).toEqual([])
+    })
+  })
+
+  describe.skip('splice', () => {
+    it('splices', () => {
+      const array = [1, 3, 4]
+
+      expect([...array[splice](1, 0, 2)]).toEqual([1, 2, 3, 4])
+      expect([...array[splice](4, 1, 5)]).toEqual([1, 3, 4, 5])
+      expect([...array[splice](2, 2)]).toEqual([1, 3])
+      expect([...array[splice](2, 1, 3, 4)]).toEqual([1, 3, 3, 4])
+      expect([...array[splice](0, 0, 1)]).toEqual([1, 1, 3, 4])
+      expect([...array[splice](0, 1, 1)]).toEqual([1, 3, 4])
+      expect([...array[splice](0, 1)]).toEqual([3, 4])
+      expect([...array[splice](0, 2)]).toEqual([4])
+      expect([...array[splice](0)]).toEqual([])
     })
   })
 })

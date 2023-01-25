@@ -11,7 +11,7 @@ export type Signal = typeof _break | typeof _continue
 /**
  * @alpha
  */
-export default abstract class Traversable {
+export abstract class Traversable {
   /**
    * Traverse an iterable.
    */

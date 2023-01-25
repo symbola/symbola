@@ -1,4 +1,4 @@
-import { size } from './Sizeable'
+import { size } from './Countable'
 
 describe('Sizeable', () => {
   it('should size iterables', () => {

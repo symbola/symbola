@@ -5,8 +5,9 @@ import { Buffer } from 'queueable'
 export const at = Symbol('at')
 export const first = Symbol('first')
 export const last = Symbol('last')
+export const find = Symbol('find')
 
-export default abstract class Gettable {
+export abstract class Gettable {
   /**
    * Return the element at index `i`. Negative indices count from the end.
    *
@@ -58,6 +59,21 @@ export default abstract class Gettable {
       lastValue = value
     }
     return lastValue
+  }
+
+  /**
+   * Find the first element of the iterable that satisfies the predicate.
+   */
+  [find]<A>(this: Iterable<A>, fn: (a: A) => boolean) {
+    if (Array.isArray(this)) {
+      return this.find(fn)
+    }
+    for (const a of this) {
+      if (fn(a)) {
+        return a
+      }
+    }
+    return undefined
   }
 }
 

@@ -49,6 +49,7 @@
       "**/coverage": true
     },
     "eslint.nodePath": ".yarn/sdks",
+    "eslint.packageManager": "yarn",
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
   }
 }

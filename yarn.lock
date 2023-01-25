@@ -3285,6 +3285,7 @@ __metadata:
     "@babel/preset-typescript": ^7.18.6
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
+    "@symbola/number": "workspace:^"
     "@types/babel__core": ^7
     "@types/babel__preset-env": ^7
     "@types/eslint": ^8
@@ -3314,7 +3315,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@symbola/number@workspace:packages/number":
+"@symbola/number@workspace:^, @symbola/number@workspace:packages/number":
   version: 0.0.0-use.local
   resolution: "@symbola/number@workspace:packages/number"
   dependencies:

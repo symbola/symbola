@@ -3,7 +3,7 @@ import { reduce } from './Reduceable'
 
 export const size = Symbol('size')
 
-export default abstract class Sizeable {
+export abstract class Sizeable {
   /**
    * Returns the number of elements in the iterable.
    */

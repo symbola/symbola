@@ -1,8 +1,9 @@
 import { extend } from '@symbola/core'
 
 export const some = Symbol('some')
+export const every = Symbol('every')
 
-export default abstract class Somable {
+export abstract class Somable {
   /**
    * Checks if any value in the iterable satisfies the predicate.
    */
@@ -16,6 +17,21 @@ export default abstract class Somable {
       }
     }
     return false
+  }
+
+  /**
+   * Returns true if every element in the iterable satisfies the predicate.
+   */
+  [every]<A>(this: Iterable<A>, fn: (a: A) => boolean) {
+    if (Array.isArray(this)) {
+      return this.every(fn)
+    }
+    for (const a of this) {
+      if (!fn(a)) {
+        return false
+      }
+    }
+    return true
   }
 }
 

@@ -3,7 +3,7 @@ import { extend } from '@symbola/core'
 export const map = Symbol('map')
 export const flatMap = Symbol('flatMap')
 
-export default abstract class Mappable {
+export abstract class Mappable {
   /**
    * Maps each element to a new value.
    */
@@ -13,6 +13,9 @@ export default abstract class Mappable {
     }
   }
 
+  /**
+   * Flat maps each element to a new iterable.
+   */
   *[flatMap]<A, B>(this: Iterable<A>, fn: (a: A) => Iterable<B>) {
     for (const a of this) {
       yield* fn(a)

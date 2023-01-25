@@ -6276,6 +6276,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-typescript", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:7.18.6"],\
             ["@symbola/config", "workspace:configs/config"],\
             ["@symbola/core", "workspace:packages/core"],\
+            ["@symbola/number", "workspace:packages/number"],\
             ["@types/babel__core", "npm:7.20.0"],\
             ["@types/babel__preset-env", "npm:7.9.2"],\
             ["@types/eslint", "npm:8.4.10"],\

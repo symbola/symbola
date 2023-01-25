@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const filter = Symbol('filter')
 
-export default abstract class Filterable {
+export abstract class Filterable {
   /**
    * Returns an iterable of all elements that satisfy the predicate.
    */

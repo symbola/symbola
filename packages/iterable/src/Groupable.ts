@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
 import { extend } from '@symbola/core'
 
 export const group = Symbol('group')
@@ -9,7 +8,7 @@ type Key = string | number | symbol
 /**
  * @see https://github.com/tc39/proposal-array-grouping
  */
-export default abstract class Groupable {
+export abstract class Groupable {
   /**
    */
   [group]<A>(this: Iterable<A>, fn: (a: A) => Key) {

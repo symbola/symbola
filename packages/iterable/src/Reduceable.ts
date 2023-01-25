@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const reduce = Symbol('reduce')
 
-export default abstract class Reduceable {
+export abstract class Reduceable {
   /**
    * Reduces the iterable to a single value.
    */

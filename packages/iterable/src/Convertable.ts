@@ -1,4 +1,4 @@
-import { extend } from '@symbola/core'
+import { extend, isIterable, IteratorLike } from '@symbola/core'
 
 export const toArray = Symbol('toArray')
 export const toMap = Symbol('toMap')
@@ -6,8 +6,9 @@ export const toSet = Symbol('toSet')
 export const toObject = Symbol('toObject')
 export const toWeakMap = Symbol('toWeakMap')
 export const toWeakSet = Symbol('toWeakSet')
+export const from = Symbol('from')
 
-export default abstract class Convertable {
+export abstract class Convertable {
   /**
    * Converts an iterable to an array.
    */
@@ -48,6 +49,28 @@ export default abstract class Convertable {
    */
   [toWeakSet]<A extends object>(this: Iterable<A>) {
     return new WeakSet(this)
+  }
+
+  /**
+   * Wraps an iterator-like object in an iterable.
+   */
+  [from]<A>(this: IteratorLike<A> | Iterable<A>) {
+    if (isIterable(this)) {
+      return this
+    }
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const iteratorLike = this
+    return {
+      *[Symbol.iterator]() {
+        while (true) {
+          const { done, value } = iteratorLike.next()
+          if (done) {
+            return value
+          }
+          yield value
+        }
+      },
+    }
   }
 }
 

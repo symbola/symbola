@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const sort = Symbol('sort')
 
-export default abstract class Sortable {
+export abstract class Sortable {
   /**
    * Sort the elements in the iterable.
    */
