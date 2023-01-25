@@ -44,7 +44,7 @@ export abstract class Sliceable {
   /**
    * Skip the first N elements of an iterable, or the last N elements if N is negative.
    */
-  *[skip]<A>(this: Iterable<A>, count: number) {
+  *[skip]<A>(this: Iterable<A>, count: number): Iterable<A> {
     if (count === 0) {
       yield* this
     } else if (Array.isArray(this)) {
@@ -80,11 +80,31 @@ export abstract class Sliceable {
     }
   }
 
-  *[splice]<A>(this: Iterable<A>, start = 0, deleteCount = Infinity, ...items: A[]) {
+  /**
+   * Splice the iterable.
+   */
+  *[splice]<A>(this: Iterable<A>, start: number, deleteCount = Infinity, ...items: A[]) {
     if (Array.isArray(this)) {
-      yield* this.splice(start, deleteCount, ...items)
+      const result = [...this]
+      result.splice(start, deleteCount, ...items)
+      yield* result
     } else {
-      yield* this[skip](start)
+      let count = 0
+      for (const a of this) {
+        if (count === start) {
+          yield* items
+          if (deleteCount === Infinity) {
+            return
+          }
+        }
+        if (count < start || count >= start + deleteCount) {
+          yield a
+        }
+        count += 1
+      }
+      if (count < start) {
+        yield* items
+      }
     }
   }
 }
