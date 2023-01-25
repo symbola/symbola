@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const times = Symbol('times')
 
-export default abstract class Repeatable {
+export abstract class Repeatable {
   /**
    * Repeat the given function N times, or return an iterable of numbers from 0 to N.
    */

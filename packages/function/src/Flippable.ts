@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const flip = Symbol('flip')
 
-export default abstract class Flippable {
+export abstract class Flippable {
   /**
    * Reverse the order of the arguments to a function.
    */

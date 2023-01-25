@@ -3,7 +3,7 @@ import extend from './extend'
 export const log = Symbol('log')
 export const _logger = Symbol('logger')
 
-export default abstract class Loggable {
+export abstract class Loggable {
   [_logger](...args: unknown[]): void
 
   [log]<A>(this: A, ...args: unknown[]): A {

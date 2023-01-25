@@ -5,7 +5,7 @@ export const toArray = Symbol('toArray')
 /**
  * @see https://github.com/tc39/proposal-array-from-async
  */
-export default abstract class Convertable {
+export abstract class Convertable {
   /**
    * Collects all values from an async iterable into an array.
    */

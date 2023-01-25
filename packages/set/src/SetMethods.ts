@@ -14,7 +14,7 @@ export const isDisjointFrom = Symbol('isDisjointFrom')
  * @see https://github.com/tc39/proposal-set-methods
  * @alpha
  */
-export default abstract class ExtendedSet {
+export abstract class ExtendedSet {
   [intersection]<A>(this: Set<A>, other: Set<A>): Set<A> {
     return new Set([...this].filter((a) => other.has(a)))
   }

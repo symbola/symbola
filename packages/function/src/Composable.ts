@@ -6,7 +6,7 @@ export const compose = Symbol('compose')
 /**
  * @alpha
  */
-export default abstract class Composable {
+export abstract class Composable {
   /**
    * Compose two functions.
    *

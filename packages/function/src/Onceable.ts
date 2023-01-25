@@ -2,7 +2,7 @@ import { extend } from '@symbola/core'
 
 export const once = Symbol('once')
 
-export default abstract class Onceable {
+export abstract class Onceable {
   [once]<A extends (...args: unknown[]) => B, B>(this: A) {
     let called = false
     let result: B

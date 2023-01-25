@@ -5,7 +5,7 @@ export const _catch = Symbol('catch')
 /**
  * @alpha
  */
-export default abstract class Catchable {
+export abstract class Catchable {
   /**
    * Catch errors thrown by a function.
    */

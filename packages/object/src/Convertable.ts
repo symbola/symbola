@@ -5,8 +5,9 @@ export const entries = Symbol('entries')
 export const toMap = Symbol('toMap')
 export const values = Symbol('values')
 export const keys = Symbol('keys')
+export const to = Symbol('to')
 
-export default abstract class Convertable {
+export abstract class Convertable {
   /**
    * Converts a record to an array of entries.
    */
@@ -33,6 +34,18 @@ export default abstract class Convertable {
    */
   [keys]<A extends string>(this: Record<A, unknown>) {
     return Object.keys(this) as A[]
+  }
+
+  /**
+   * Convert an object to another type.
+   *
+   * TODO: types break when used with `SetConstructor` because of iterable overloads
+   *
+   * @see https://stackoverflow.com/questions/75196941/how-to-wrap-new-without-losing-the-generic-parameters-for-the-constructed-type
+   * @alpha
+   */
+  [to]<A, B>(this: A, constructor: new (a: A) => B) {
+    return new constructor(this)
   }
 }
 

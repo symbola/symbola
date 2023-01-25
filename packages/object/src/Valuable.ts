@@ -3,7 +3,7 @@ import { ValueObject } from 'tuplerone'
 
 export const value = Symbol('value')
 
-export default abstract class Valuable {
+export abstract class Valuable {
   /**
    * Returns a value object of the given object.
    *

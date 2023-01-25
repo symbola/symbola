@@ -6,7 +6,7 @@ export const _throw = Symbol('throw')
  * @alpha
  * @see https://github.com/tc39/proposal-throw-expressions
  */
-export default abstract class Throwable {
+export abstract class Throwable {
   /**
    * @throws
    */

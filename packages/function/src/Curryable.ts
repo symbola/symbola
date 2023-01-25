@@ -5,7 +5,7 @@ export const _curry = Symbol('curry')
 /**
  * @alpha
  */
-export default abstract class Curryable {
+export abstract class Curryable {
   /**
    * Curry a binary function.
    */
