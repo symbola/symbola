@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://raw.githubusercontent.com/slikts/symbola/master/logo.png?sanitize=true" width="541" height="180" alt="Symbola"></h1>
+<h1 align="center"><img src="./symbola.svg" width="541" height="180" alt="Symbola"></h1>
 
 <p align="center">
   <a href="https://github.com/prettier/prettier#readme"><img alt="code style" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
@@ -176,3 +176,8 @@ JavaScript [symbols] provide only weak encapsulation or privacy, so it's possibl
 [Reflect.ownKeys]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys
 
 The symbol properties also won't work on objects that don't inherit from `Object.prototype`, like those created with `Object.create(null)` or `null` or `undefined` values.
+
+## Alternatives
+
+- [iter-tools](https://github.com/iter-tools/iter-tools)
+- [IxJS](https://github.com/ReactiveX/IxJS)
