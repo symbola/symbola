@@ -17,6 +17,7 @@
     "p:number": "yarn workspace @symbola/number",
     "p:set": "yarn workspace @symbola/set",
     "p:string": "yarn workspace @symbola/string",
+    "p:it": "yarn workspace @symbola/iter-tools",
     "c:config": "yarn workspace @symbola/config",
     "c:eslint": "yarn workspace @symbola/eslint-config",
     "c:jest": "yarn workspace @symbola/jest",

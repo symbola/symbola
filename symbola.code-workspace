@@ -33,6 +33,10 @@
       "path": "packages/iterable"
     },
     {
+      "name": "iter-tools",
+      "path": "packages/iter-tools"
+    },
+    {
       "name": "configs",
       "path": "configs"
     }

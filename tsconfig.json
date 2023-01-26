@@ -6,7 +6,8 @@
     { "path": "packages/iterable" },
     { "path": "packages/async-iterable" },
     { "path": "packages/set" },
-    { "path": "packages/function" }
+    { "path": "packages/function" },
+    { "path": "packages/iter-tools" }
   ],
   "files": []
 }
