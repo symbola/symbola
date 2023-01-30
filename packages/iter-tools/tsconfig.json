@@ -3,13 +3,6 @@
   "include": ["src/**/*", "generated/bla.ts"],
   "compilerOptions": {
     "outDir": "dist",
-    "plugins": [
-      {
-        "transform": "tst-reflect-transformer"
-      }
-    ]
-  },
-  "ts-node": {
-    "compiler": "ttypescript"
+    "types": ["node", "jest"]
   }
 }

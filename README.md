@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./symbola.svg" width="541" height="180" alt="Symbola"></h1>
+<h1 align="center"><img src="./symbola.jpg" width="640" height="320" alt="Symbola"></h1>
 
 <p align="center">
   <a href="https://github.com/renovatebot/github-action/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/actions/workflow/status/symbola/symbola/cicd.yml"></a>

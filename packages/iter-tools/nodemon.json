@@ -1,5 +1,0 @@
-{
-  "execMap": {
-    "ts": "yarn ts-node"
-  }
-}
