@@ -1,8 +1,9 @@
 import ts from 'typescript'
 import { log } from '@symbola/core'
-import { Project, type SourceFile } from "ts-morph";
+import { FunctionDeclaration, Project, type SourceFile } from "ts-morph";
 
 import { getDeclaration } from './declaration';
+
 
 export const getTemplateFile = (templatePath = 'src/template.ts') => {
   const sourceFile = (new Project()).addSourceFileAtPath(templatePath)
@@ -47,23 +48,29 @@ export const getTransformer = (project = new Project()) => {
   const templateStructure = getTemplateFile().getStructure()
 
   const transformTemplate = (methodName: string) => {
-    const sourceFile = project.createSourceFile(`generated/${methodName}.ts`, templateStructure)
+    const sourceFile = project.createSourceFile(`src/generated/${methodName}.ts`, templateStructure)
 
     const {
-      protocol,
       method,
-      methodParams,
-      methodTypeParams,
-      computedProp,
       call,
       symbolDeclaration,
       methodDeclaration
     } = getParts(sourceFile)
 
+    const declaration = getDeclaration(methodName)
+
+    const { typeParams, params, returnType } = transformParams(declaration)
+
+    method.addParameters(params.map(param => param.getStructure()))
+    method.addTypeParameters(typeParams.map(param => param.getStructure()))
+    method.setReturnType(returnType)
+
     symbolDeclaration.setInitializer(`Symbol('${methodName}')`)
     symbolDeclaration.rename(methodName);
     methodDeclaration.setInitializer(`require('iter-tools/__methods/${methodName}')`)
     methodDeclaration.rename(`__${methodName}`)
+
+    call.addArguments(params.map(param => param.getName()));
 
     project.saveSync()
   }
@@ -71,22 +78,13 @@ export const getTransformer = (project = new Project()) => {
   return transformTemplate
 }
 
-export const transformParams = (methodName: string) => {
-  const declaration = getDeclaration(methodName)
-
-  const result = {
-    params: [] as string[],
-    typeParams: [] as string[],
-    returnType: '',
-  }
-
+export const transformParams = (declaration: FunctionDeclaration) => {
   const params = declaration.getParameters()
-  const sourceParam = declaration.getParameter('source')
-  if (sourceParam) {
-    sourceParam.rename('this')
-    result.params.push(sourceParam.getText())
-  }
   const typeParams = declaration.getTypeParameters()
 
-  return result
+  return {
+    typeParams,
+    params,
+    returnType: declaration.getReturnType().getText(),
+  }
 }

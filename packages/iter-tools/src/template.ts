@@ -1,9 +1,6 @@
 import { extend } from '@symbola/core'
-import { type Wrappable } from 'iter-tools'
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+import { type IterableIterator } from 'iter-tools'
 const __take = require('iter-tools/__methods/take')
-
 export const take = Symbol('take')
 
 export default abstract class Protocol {

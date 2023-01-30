@@ -1,7 +1,9 @@
-import { Project } from "ts-morph";
+import fs from 'node:fs'
+import { Project, SourceFile } from 'ts-morph'
+import prettier from 'prettier'
 
-import templateFixture from './fixtures/template'
-import { getTemplateFile, getParts, getTransformer, transformParams } from "./transform"
+import { getTemplateFile, getParts, getTransformer, transformParams } from './transform'
+import { getDeclaration } from './declaration'
 
 describe('transform', () => {
   it('gets and cleans template file', () => {
@@ -24,29 +26,38 @@ describe('transform', () => {
   it('gets transformer', () => {
     const project = new Project({ useInMemoryFileSystem: true })
     const transformer = getTransformer(project)
-    
+
     expect(transformer).toBeInstanceOf(Function)
   })
-  
-  it.skip('transforms template', () => {
+
+  it('transforms template', () => {
     const project = new Project({ useInMemoryFileSystem: true })
     const transformer = getTransformer(project)
 
     const methodName = 'append'
     transformer(methodName)
 
-    const source = project.getSourceFile(`generated/${methodName}.ts`)?.getText()
-    
-    expect(source).toMatchSnapshot()
+    const source = project.getSourceFile(`src/generated/${methodName}.ts`)!
+
+    const fixtureString = fs.readFileSync('./src/fixtures/append.ts').toString()
+    const fixture = project.createSourceFile('fixture.ts', fixtureString)
+
+    const format = (source: SourceFile) => prettier.format(source.getText(), { parser: 'typescript' })
+
+    expect(format(source)).toBe(format(fixture))
   })
 
-  it.skip('transforms collate params', () => {
-    const result = transformParams('collate')
+  it('transforms collate params', () => {
+    const { typeParams, params, returnType } = transformParams(getDeclaration('collate'))
 
-    expect(result).toEqual({
+    expect({
+      typeParams: typeParams.map(param => param.getText()),
+      params: params.map(param => param.getText()),
+      returnType,
+    }).toEqual({
       typeParams: ['T'],
-      params: ['this: Iterable<T>', '...sources: Array<Iterable<T>>'],
-      returnType: 'IterableIterator<T>'
+      params: ['this: Iterable<T>', '...sources: Array<Wrappable<T>>'],
+      returnType: 'IterableIterator<T>',
     })
   })
 })

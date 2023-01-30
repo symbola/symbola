@@ -1,18 +1,100 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import path from 'node:path'
-import { StructureKind, type FunctionDeclaration, Project, type SourceFile, type ParameterDeclarationStructure } from "ts-morph";
+import {
+  StructureKind,
+  type FunctionDeclaration,
+  Project,
+  type ParameterDeclarationStructure,
+} from 'ts-morph'
 import { ZipOpenFS } from '@yarnpkg/libzip'
 
 const fs = new ZipOpenFS()
 let methodNames: string[]
 const { dir } = path.parse(require.resolve('iter-tools'))
 
+const camelCase = (text: string) => text.replace(/-([a-z])/g, (g) => g[1].toUpperCase())
+
+const skip = [
+  '$deep-equal',
+  '$equal',
+  '$interleave',
+  '$map',
+  '$spliterate',
+  '$spliterate-grouped',
+  '$str',
+  '$zip',
+  '$zip-all',
+  '$wrap',
+  '$window-ahead',
+  'wrap-values',
+  'wrap-keys',
+  'wrap-entries',
+  'when',
+  'string-from-async',
+  'string-from',
+  'repeat-times',
+  'repeat',
+  'range',
+  'pipe',
+  'object-values',
+  'object-keys',
+  'object-from-async',
+  'object-from',
+  'object-entries',
+  'not-wrappable',
+  'not-undefined',
+  'not-string',
+  'not-object',
+  'not-null',
+  'not-nil',
+  'not-loopable',
+  'not-iterable',
+  'not-async-wrappable',
+  'not-async-loopable',
+  'not-async-iterable',
+  'not-array',
+  'last-lowest',
+  'last-highest',
+  'is-wrappable',
+  'is-undefined',
+  'is-string',
+  'is-object',
+  'is-null',
+  'is-nil',
+  'is-loopable',
+  'is-iterable',
+  'is-async-wrappable',
+  'is-async-loopable',
+  'is-async-iterable',
+  'is-array',
+  'get-size',
+  'first-lowest',
+  'first-highest',
+  'exec-pipe',
+  'compose',
+  'call',
+  'async-throttle',
+  'async-interleave-ready',
+  'async-buffer',
+  'array-last-or',
+  'array-last',
+  'array-first-or',
+  'array-first',
+  'apply',
+  '$size',
+  '$reverse',
+  '$first-or',
+  '$first',
+]
+
 export const getMethodNames = () => {
   if (methodNames) {
     return methodNames
   }
 
-  methodNames = fs.readdirSync(path.join(dir, 'impls') as any)
+  methodNames = fs
+    .readdirSync(path.join(dir, 'impls') as any)
+    .filter((name) => !skip.includes(name))
 
   return methodNames
 }
@@ -20,34 +102,32 @@ export const getMethodNames = () => {
 export const getSourceText = (method: string) => {
   const isAsync = method.startsWith('async')
   const normalizedMethod = method.replace(/^async/, '').toLowerCase()
-  
+
   const methodDir = getMethodNames().find((name) => name.endsWith(normalizedMethod))
 
   if (!methodDir) {
-    throw new Error(`Unknown method ${method}`)
+    throw new Error(`Unknown method: ${method}`)
   }
 
   const fileName = `${isAsync ? `async-` : ''}${normalizedMethod}.d.ts`
   const sourcePath: any = path.join(dir, 'impls', methodDir, fileName)
 
-  console.log(23, sourcePath)
   return String(fs.readFileSync(sourcePath))
 }
 
-export const getSourceFile = (method: string, isAsync: boolean) => {
-  return (new Project()).createSourceFile(`${method}.ts`, getSourceText(method, isAsync));
+export const getSourceFile = (method: string) => {
+  return new Project().createSourceFile(`${method}.ts`, getSourceText(method))
 }
 
-export const getDeclaration = (method: string, isAsync = false) => {
-  const sourceFile = getSourceFile(method, isAsync)
-  const declaration = sourceFile.getFunctionOrThrow(method)
-  const overloads = declaration.getOverloads()
+export const getDeclaration = (method: string) => {
+  const sourceFile = getSourceFile(method)
+  const overloadedDeclaration = sourceFile.getFunctionOrThrow(camelCase(method))
+  const overloads = overloadedDeclaration.getOverloads()
 
-  for (const overload of overloads) {
-    if (overload.getReturnType()?.getCallSignatures().length > 0) {
-      overload.remove()
-    }
-  }
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  const declaration = overloads.find(
+    (overload) => overload.getReturnType()?.getCallSignatures().length === 0,
+  )!
 
   uncurry(declaration)
 
@@ -83,6 +163,4 @@ const uncurry = (declaration: FunctionDeclaration) => {
   }
 
   declaration.addParameters(newParams)
-
-  // console.log(declaration.getText())
 }
