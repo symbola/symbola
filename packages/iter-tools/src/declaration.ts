@@ -5,6 +5,8 @@ import {
   type FunctionDeclaration,
   Project,
   type ParameterDeclarationStructure,
+  type Type,
+  TypeNode,
 } from 'ts-morph'
 import { ZipOpenFS } from '@yarnpkg/libzip'
 
@@ -119,7 +121,7 @@ export const getSourceFile = (method: string) => {
   return new Project().createSourceFile(`${method}.ts`, getSourceText(method))
 }
 
-export const getDeclaration = (method: string) => {
+export const getFunctionDeclaration = (method: string) => {
   const sourceFile = getSourceFile(method)
   const overloadedDeclaration = sourceFile.getFunctionOrThrow(camelCase(method))
   const overloads = overloadedDeclaration.getOverloads()
@@ -163,4 +165,24 @@ const uncurry = (declaration: FunctionDeclaration) => {
   }
 
   declaration.addParameters(newParams)
+}
+
+const _getReferences = (node: TypeNode | Type) => {
+  return (node.getText().match(/\b(\w+)\b/g) || []).filter(({ length }) => length > 1)
+}
+
+export const getReferences = (declaration: FunctionDeclaration) => {
+  const params = declaration.getParameters()
+  const returnType = declaration.getReturnTypeNodeOrThrow()
+  const result = [
+    ...params.flatMap((param) => _getReferences(param.getType())),
+    ..._getReferences(returnType),
+  ]
+    .map((name) =>
+      name === 'SyncIterableIterator' ? 'IterableIterator as SyncIterableIterator' : name,
+    )
+    .filter((name) => name !== 'Iterable')
+    .sort()
+
+  return new Set(result)
 }

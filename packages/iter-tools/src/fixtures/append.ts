@@ -10,7 +10,7 @@ export default abstract class Protocol {
 }
 
 declare global {
-  interface Object extends Protocol { }
+  interface Object extends Protocol {}
 }
 
 extend(Object.prototype, Protocol.prototype)

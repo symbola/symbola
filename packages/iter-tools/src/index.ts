@@ -1,8 +1,8 @@
-import { getMethodNames, getDeclaration } from './declaration'
+import { getMethodNames, getFunctionDeclaration } from './declaration'
 
 for (const name of getMethodNames()) {
   try {
-    console.log(getDeclaration(name.replace('$', '')).getText())
+    console.log(getFunctionDeclaration(name.replace('$', '')).getText())
   } catch (e) {
     console.log('error', name)
   }

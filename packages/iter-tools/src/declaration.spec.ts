@@ -1,22 +1,22 @@
-import { getDeclaration, getMethodNames } from './declaration'
+import { getFunctionDeclaration, getMethodNames, getReferences } from './declaration'
 
 describe('declaration', () => {
   it('gets declaration', () => {
-    const take = getDeclaration('take')
-    const batch = getDeclaration('batch')
+    const take = getFunctionDeclaration('take')
+    const batch = getFunctionDeclaration('batch')
 
     expect(take).toBeDefined()
     expect(batch).toBeDefined()
   })
 
   it('gets method with dash in name', () => {
-    const cycleTimes = getDeclaration('cycle-times')
+    const cycleTimes = getFunctionDeclaration('cycle-times')
 
     expect(cycleTimes).toBeDefined()
   })
 
   it('gets async declaration', () => {
-    const declaration = getDeclaration('asyncTake')
+    const declaration = getFunctionDeclaration('asyncTake')
 
     expect(declaration).toBeDefined()
   })
@@ -28,14 +28,14 @@ describe('declaration', () => {
   })
 
   it('filters out overload', () => {
-    const declaration = getDeclaration('take')
+    const declaration = getFunctionDeclaration('take')
     const callSignature = declaration.getReturnType()?.getCallSignatures()
 
     expect(callSignature).toHaveLength(0)
   })
 
   it('uncurries params', () => {
-    const take = getDeclaration('take').getText()
+    const take = getFunctionDeclaration('take').getText()
 
     expect(take).toBe(
       'declare function take<T>(this: Iterable<T>, n: number): IterableIterator<T>;',
@@ -43,10 +43,18 @@ describe('declaration', () => {
   })
 
   it('uncurries rest params', () => {
-    const declaration = getDeclaration('collate').getText()
+    const declaration = getFunctionDeclaration('collate').getText()
 
     expect(declaration).toBe(
       'declare function collate<T>(this: Iterable<T>, ...sources: Array<Wrappable<T>>): IterableIterator<T>;',
+    )
+  })
+
+  it('gets references', () => {
+    const result = getReferences(getFunctionDeclaration('fork'))
+
+    expect(result).toEqual(
+      new Set(['IterableIterator as SyncIterableIterator', 'SingletonIterableIterator'].sort()),
     )
   })
 })

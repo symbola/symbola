@@ -7,6 +7,7 @@ describe('Throwable', () => {
 
   it('works as a parameter initializer', () => {
     const save = (filename: string = Error[_throw]('filename is required')) => filename
+
     expect(() => save()).toThrow(Error('filename is required'))
     expect(() => save('file.txt')).not.toThrow()
   })

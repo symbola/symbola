@@ -6,5 +6,6 @@ it('sets symbol property', () => {
   const v = 1
 
   setSymbolProperty(o, s, v)
+
   expect(o[s]).toBe(v)
 })

@@ -1,5 +1,6 @@
 import { extend } from '@symbola/core'
 import { type IterableIterator } from 'iter-tools'
+
 const __take = require('iter-tools/__methods/take')
 export const take = Symbol('take')
 

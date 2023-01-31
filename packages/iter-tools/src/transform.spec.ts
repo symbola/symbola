@@ -2,8 +2,14 @@ import fs from 'node:fs'
 import { Project, SourceFile } from 'ts-morph'
 import prettier from 'prettier'
 
-import { getTemplateFile, getParts, getTransformer, transformParams } from './transform'
-import { getDeclaration } from './declaration'
+import {
+  getTemplateFile,
+  getParts,
+  getTransformer,
+  transformParams,
+  updateImports,
+} from './transform'
+import { getFunctionDeclaration } from './declaration'
 
 describe('transform', () => {
   it('gets and cleans template file', () => {
@@ -21,6 +27,7 @@ describe('transform', () => {
     expect(parts).toHaveProperty('call')
     expect(parts).toHaveProperty('symbolDeclaration')
     expect(parts).toHaveProperty('methodDeclaration')
+    expect(parts).toHaveProperty('importDeclaration')
   })
 
   it('gets transformer', () => {
@@ -42,22 +49,33 @@ describe('transform', () => {
     const fixtureString = fs.readFileSync('./src/fixtures/append.ts').toString()
     const fixture = project.createSourceFile('fixture.ts', fixtureString)
 
-    const format = (source: SourceFile) => prettier.format(source.getText(), { parser: 'typescript' })
+    const format = (source: SourceFile) =>
+      prettier.format(source.getText(), { parser: 'typescript' })
 
     expect(format(source)).toBe(format(fixture))
   })
 
   it('transforms collate params', () => {
-    const { typeParams, params, returnType } = transformParams(getDeclaration('collate'))
+    const { typeParams, params, returnType } = transformParams(getFunctionDeclaration('collate'))
 
     expect({
-      typeParams: typeParams.map(param => param.getText()),
-      params: params.map(param => param.getText()),
+      typeParams: typeParams.map((param) => param.getText()),
+      params: params.map((param) => param.getText()),
       returnType,
     }).toEqual({
       typeParams: ['T'],
       params: ['this: Iterable<T>', '...sources: Array<Wrappable<T>>'],
       returnType: 'IterableIterator<T>',
     })
+  })
+
+  it('updates imports', () => {
+    const functionDeclaration = getFunctionDeclaration('fork')
+    const { importDeclaration } = getParts(getTemplateFile())
+    updateImports(importDeclaration, functionDeclaration)
+
+    const expected = `import { type IterableIterator as SyncIterableIterator, type SingletonIterableIterator } from 'iter-tools'`
+
+    expect(importDeclaration.getText()).toBe(expected)
   })
 })

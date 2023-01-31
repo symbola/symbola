@@ -1,19 +1,12 @@
 import ts from 'typescript'
-import { log } from '@symbola/core'
-import { FunctionDeclaration, Project, type SourceFile } from "ts-morph";
+import { FunctionDeclaration, ImportDeclaration, Project, type SourceFile } from 'ts-morph'
 
-import { getDeclaration } from './declaration';
-
+import { getFunctionDeclaration, getReferences } from './declaration'
 
 export const getTemplateFile = (templatePath = 'src/template.ts') => {
-  const sourceFile = (new Project()).addSourceFileAtPath(templatePath)
-  const {
-    method,
-    methodParams,
-    methodTypeParams,
-    call,
-  } = getParts(sourceFile)
-  
+  const sourceFile = new Project().addSourceFileAtPath(templatePath)
+  const { method, methodParams, methodTypeParams, call } = getParts(sourceFile)
+
   method.removeReturnType()
   methodParams.forEach((param) => void param.remove())
   methodTypeParams.forEach((param) => void param.remove())
@@ -31,6 +24,7 @@ export const getParts = (template: SourceFile) => {
   const call = method.getDescendantsOfKind(ts.SyntaxKind.CallExpression)[0]
   const symbolDeclaration = template.getVariableDeclarationOrThrow('take')
   const methodDeclaration = template.getVariableDeclarationOrThrow('__take')
+  const importDeclaration = template.getImportDeclarationOrThrow('iter-tools')
 
   return {
     protocol,
@@ -41,6 +35,7 @@ export const getParts = (template: SourceFile) => {
     call,
     symbolDeclaration,
     methodDeclaration,
+    importDeclaration,
   }
 }
 
@@ -50,27 +45,25 @@ export const getTransformer = (project = new Project()) => {
   const transformTemplate = (methodName: string) => {
     const sourceFile = project.createSourceFile(`src/generated/${methodName}.ts`, templateStructure)
 
-    const {
-      method,
-      call,
-      symbolDeclaration,
-      methodDeclaration
-    } = getParts(sourceFile)
+    const { method, call, symbolDeclaration, methodDeclaration, importDeclaration } =
+      getParts(sourceFile)
 
-    const declaration = getDeclaration(methodName)
+    const functionDeclaration = getFunctionDeclaration(methodName)
 
-    const { typeParams, params, returnType } = transformParams(declaration)
+    const { typeParams, params, returnType } = transformParams(functionDeclaration)
 
-    method.addParameters(params.map(param => param.getStructure()))
-    method.addTypeParameters(typeParams.map(param => param.getStructure()))
+    method.addParameters(params.map((param) => param.getStructure()))
+    method.addTypeParameters(typeParams.map((param) => param.getStructure()))
     method.setReturnType(returnType)
 
     symbolDeclaration.setInitializer(`Symbol('${methodName}')`)
-    symbolDeclaration.rename(methodName);
+    symbolDeclaration.rename(methodName)
     methodDeclaration.setInitializer(`require('iter-tools/__methods/${methodName}')`)
     methodDeclaration.rename(`__${methodName}`)
 
-    call.addArguments(params.map(param => param.getName()));
+    call.addArguments(params.map((param) => param.getName()))
+
+    updateImports(importDeclaration, functionDeclaration)
 
     project.saveSync()
   }
@@ -87,4 +80,14 @@ export const transformParams = (declaration: FunctionDeclaration) => {
     params,
     returnType: declaration.getReturnType().getText(),
   }
+}
+
+export const updateImports = (
+  importDeclaration: ImportDeclaration,
+  functionDeclaration: FunctionDeclaration,
+) => {
+  const references = getReferences(functionDeclaration)
+
+  importDeclaration.removeNamedImports()
+  importDeclaration.addNamedImports([...references].map((ref) => `type ${ref}`))
 }
