@@ -3355,14 +3355,13 @@ __metadata:
     eslint-plugin-jest: ^27.2.1
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    iter-tools: ^7.5.0
+    iter-tools: ^7.5.1
     jest: ^29.3.1
     jest-github-reporter: ^1.0.2
     microbundle: ^0.15.1
     prettier: ^2.8.3
     ts-morph: ^17.0.1
     tsx: ^3.12.2
-    ttypescript: ^1.5.15
     typescript: ^4.9.4
   languageName: unknown
   linkType: soft
@@ -8419,13 +8418,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iter-tools@portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "iter-tools@portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A."
+"iter-tools@npm:^7.5.1":
+  version: 7.5.1
+  resolution: "iter-tools@npm:7.5.1"
   dependencies:
     "@babel/runtime": ^7.12.1
+  checksum: efa5e8b0a6b5b2b162bf27816abc0eacdfbb07d79830bf26a7c600135869c5dddc2f94f7f0eb3f39510ed4a45c84a7e54d0d8317e2201db06c8bc330d1ecfc9b
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "jake@npm:^10.8.5":
   version: 10.8.5
@@ -12211,7 +12211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:>=1.9.0, resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0, resolve@npm:^1.19.0, resolve@npm:^1.20.0":
+"resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0, resolve@npm:^1.19.0, resolve@npm:^1.20.0":
   version: 1.22.1
   resolution: "resolve@npm:1.22.1"
   dependencies:
@@ -12234,7 +12234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@>=1.9.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
   version: 1.22.1
   resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
@@ -13385,7 +13385,6 @@ __metadata:
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
-    iter-tools: "file:.yalc/iter-tools"
     lint-staged: ^13.1.0
     microbundle: ^0.15.1
     multi-semantic-release: ^3.0.1
@@ -13682,21 +13681,6 @@ __metadata:
   bin:
     tsx: dist/cli.js
   checksum: c227512ed7b480bd295c5420c560ec8311a4827b92e8040b7ca519627c7e1d35d48c25b26b4b11277cc437bba98696149f5148a9a06334f37b48bbaa870bff64
-  languageName: node
-  linkType: hard
-
-"ttypescript@npm:^1.5.15":
-  version: 1.5.15
-  resolution: "ttypescript@npm:1.5.15"
-  dependencies:
-    resolve: ">=1.9.0"
-  peerDependencies:
-    ts-node: ">=8.0.2"
-    typescript: ">=3.2.2"
-  bin:
-    ttsc: bin/tsc
-    ttsserver: bin/tsserver
-  checksum: 0328578050f08f9d12e6732a9fe71e93cc693ed5e825aefb7f4ba142d4d3d6912caa59a723f775de89cd066c8e609665fd5a7ccfa3b69fb3456c7f24d695db90
   languageName: node
   linkType: hard
 

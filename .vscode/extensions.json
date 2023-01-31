@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "arcanis.vscode-zipfs",
-    "q.typescript-mono-repo-import-helper"
+    "q.typescript-mono-repo-import-helper",
+    "orta.vscode-jest"
   ]
 }

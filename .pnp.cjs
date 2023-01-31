@@ -119,7 +119,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["iter-tools", "portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A."],\
             ["lint-staged", "npm:13.1.0"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.1"],\
@@ -6354,14 +6353,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:7933fbc5f6433e7436fce46063f57439ec27989ceac25d56061fe30238da0174aedbcbdb08f0724856c2ebaa88830a698031bda64141a5b83e477a6e27249a20#npm:27.2.1"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
-            ["iter-tools", "portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A."],\
+            ["iter-tools", "npm:7.5.1"],\
             ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:29.3.1"],\
             ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.0.2"],\
             ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.3"],\
             ["ts-morph", "npm:17.0.1"],\
             ["tsx", "npm:3.12.2"],\
-            ["ttypescript", "virtual:7933fbc5f6433e7436fce46063f57439ec27989ceac25d56061fe30238da0174aedbcbdb08f0724856c2ebaa88830a698031bda64141a5b83e477a6e27249a20#npm:1.5.15"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
           ],\
           "linkType": "SOFT"\
@@ -12463,13 +12461,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["iter-tools", [\
-        ["portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A.", {\
-          "packageLocation": "../iter-tools-es5/",\
+        ["npm:7.5.1", {\
+          "packageLocation": "./.yarn/cache/iter-tools-npm-7.5.1-43c162462f-efa5e8b0a6.zip/node_modules/iter-tools/",\
           "packageDependencies": [\
-            ["iter-tools", "portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A."],\
+            ["iter-tools", "npm:7.5.1"],\
             ["@babel/runtime", "npm:7.20.13"]\
           ],\
-          "linkType": "SOFT"\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["jake", [\
@@ -18380,7 +18378,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["iter-tools", "portal:/home/slikts/work/iter-tools-es5::locator=symbola%40workspace%3A."],\
             ["lint-staged", "npm:13.1.0"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.1"],\
@@ -18736,33 +18733,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@esbuild-kit/core-utils", "npm:3.0.0"],\
             ["@esbuild-kit/esm-loader", "npm:2.5.4"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["ttypescript", [\
-        ["npm:1.5.15", {\
-          "packageLocation": "./.yarn/cache/ttypescript-npm-1.5.15-49330c274e-0328578050.zip/node_modules/ttypescript/",\
-          "packageDependencies": [\
-            ["ttypescript", "npm:1.5.15"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:7933fbc5f6433e7436fce46063f57439ec27989ceac25d56061fe30238da0174aedbcbdb08f0724856c2ebaa88830a698031bda64141a5b83e477a6e27249a20#npm:1.5.15", {\
-          "packageLocation": "./.yarn/__virtual__/ttypescript-virtual-1ad7c15ba3/0/cache/ttypescript-npm-1.5.15-49330c274e-0328578050.zip/node_modules/ttypescript/",\
-          "packageDependencies": [\
-            ["ttypescript", "virtual:7933fbc5f6433e7436fce46063f57439ec27989ceac25d56061fe30238da0174aedbcbdb08f0724856c2ebaa88830a698031bda64141a5b83e477a6e27249a20#npm:1.5.15"],\
-            ["@types/ts-node", null],\
-            ["@types/typescript", null],\
-            ["resolve", "patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"],\
-            ["ts-node", null],\
-            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
-          ],\
-          "packagePeers": [\
-            "@types/ts-node",\
-            "@types/typescript",\
-            "ts-node",\
-            "typescript"\
           ],\
           "linkType": "HARD"\
         }]\
