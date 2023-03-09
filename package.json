@@ -39,7 +39,7 @@
   },
   "engineStrict": true,
   "volta": {
-    "node": "18.13.0"
+    "node": "18.15.0"
   },
   "homepage": "https://github.com/symbola/symbola#readme",
   "repository": "github:symbola/symbola",
