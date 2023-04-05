@@ -5888,7 +5888,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.7"],\
-            ["queueable", "npm:5.0.1"]\
+            ["queueable", "npm:5.3.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -14935,10 +14935,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["queueable", [\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/queueable-npm-5.0.1-0fcc6032ea-12d94a394a.zip/node_modules/queueable/",\
+        ["npm:5.3.1", {\
+          "packageLocation": "./.yarn/cache/queueable-npm-5.3.1-03bb32f500-c358e70f21.zip/node_modules/queueable/",\
           "packageDependencies": [\
-            ["queueable", "npm:5.0.1"],\
+            ["queueable", "npm:5.3.1"],\
             ["fast-list", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\

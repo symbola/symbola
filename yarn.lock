@@ -10285,11 +10285,11 @@ __metadata:
   linkType: hard
 
 "queueable@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "queueable@npm:5.0.1"
+  version: 5.3.1
+  resolution: "queueable@npm:5.3.1"
   dependencies:
     fast-list: ^1.0.3
-  checksum: 12d94a394aa3af396775d94b21d7f8360567599578f72fbbbeec994af40410dff11a36ed6c9cb4f95ab2af64ec69b740ffa9ec60ff109c8b203004c39730e748
+  checksum: c358e70f214c4a4af77fb418c88d655cbe3d163e5d4a4b35ce6f534dbf574b8e806ef13ef8aeae4840cb9e71457f002b973e4ee44098b87607a4d55882d3cd6f
   languageName: node
   linkType: hard
 
