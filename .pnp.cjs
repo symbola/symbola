@@ -117,7 +117,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
             ["microbundle", "npm:0.15.1"],\
-            ["multi-semantic-release", "npm:3.0.1"],\
+            ["multi-semantic-release", "npm:3.0.2"],\
             ["prettier", "npm:2.8.7"],\
             ["rimraf", "npm:4.4.1"],\
             ["semantic-release", "npm:20.1.3"],\
@@ -12763,10 +12763,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["multi-semantic-release", [\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/multi-semantic-release-npm-3.0.1-eb67782c1e-52228839d8.zip/node_modules/multi-semantic-release/",\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/cache/multi-semantic-release-npm-3.0.2-6c4c5bbff5-f9a8ff77ff.zip/node_modules/multi-semantic-release/",\
           "packageDependencies": [\
-            ["multi-semantic-release", "npm:3.0.1"],\
+            ["multi-semantic-release", "npm:3.0.2"],\
             ["@manypkg/get-packages", "npm:1.1.3"],\
             ["blork", "npm:9.3.0"],\
             ["cosmiconfig", "npm:7.1.0"],\
@@ -16344,7 +16344,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
             ["microbundle", "npm:0.15.1"],\
-            ["multi-semantic-release", "npm:3.0.1"],\
+            ["multi-semantic-release", "npm:3.0.2"],\
             ["prettier", "npm:2.8.7"],\
             ["rimraf", "npm:4.4.1"],\
             ["semantic-release", "npm:20.1.3"],\
