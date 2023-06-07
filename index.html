@@ -12,16 +12,14 @@
 <div class="col-8 col-content">
 <div class="tsd-page-title">
 <h2>symbola</h2></div>
-<div class="tsd-panel tsd-typography"><h1 align="center"><img src="https://raw.githubusercontent.com/slikts/symbola/master/logo.png?sanitize=true" width="541" height="180" alt="Symbola"></h1>
+<div class="tsd-panel tsd-typography"><h1 align="center"><img src="./symbola.jpg" width="640" height="320" alt="Symbola"></h1>
 
 <p align="center">
-  <a href="https://github.com/prettier/prettier#readme"><img alt="code style" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
-  <a href="https://conventionalcommits.org"><img alt="Conventional Commits: 1.0.0" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square"></a>
-  <a href="https://renovatebot.com"><img alt="Renovate enabled" src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square"></a>
   <a href="https://github.com/renovatebot/github-action/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/actions/workflow/status/symbola/symbola/cicd.yml"></a>
-  <a href="https://codecov.io/github/symbola/symbola" > 
- <img src="https://codecov.io/github/symbola/symbola/branch/main/graph/badge.svg?token=4GR7BO7977"/> 
- </a>
+  <a href="https://codecov.io/github/symbola/symbola" ><img src="https://codecov.io/github/symbola/symbola/branch/main/graph/badge.svg?token=4GR7BO7977"/></a>
+  <a href="https://semver.org/#semantic-versioning-200"><img src="https://img.shields.io/static/v1?label=versioning&message=semver&color=informational"/></a>
+  <a href="https://conventionalcommits.org"><img alt="Conventional Commits: 1.0.0" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square"></a>
+  <a href="https://github.com/prettier/prettier#readme"><img alt="code style" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
 <p><strong>Symbola</strong> is a proof-of-concept library for 🤯 extending the native JavaScript prototypes 🤯 with methods identified by <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbols</a> to prevent naming collisions, which enables method chaining syntax without having to wrap or convert the target. For example, <code>Map</code> and <code>Set</code> objects don&#39;t have built-in iteration methods, so iterating over them requires a conversion to an array:</p>
@@ -114,6 +112,14 @@
 </a>
 <p>JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbols</a> provide only weak encapsulation or privacy, so it&#39;s possible for code that uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys">Reflect.ownKeys</a> on native prototypes to conflict with the custom symbol properties, but the practical chances of it are exceedingly low.</p>
 <p>The symbol properties also won&#39;t work on objects that don&#39;t inherit from <code>Object.prototype</code>, like those created with <code>Object.create(null)</code> or <code>null</code> or <code>undefined</code> values.</p>
+
+<a href="#alternatives" id="alternatives" style="color: inherit; text-decoration: none;">
+  <h2>Alternatives</h2>
+</a>
+<ul>
+<li><a href="https://github.com/iter-tools/iter-tools">iter-tools</a></li>
+<li><a href="https://github.com/ReactiveX/IxJS">IxJS</a></li>
+</ul>
 </div></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
@@ -139,6 +145,7 @@
 <li class="tsd-kind-module"><a href="modules/_symbola_async_iterable.html">@symbola/async-<wbr/>iterable</a></li>
 <li class="tsd-kind-module"><a href="modules/_symbola_core.html">@symbola/core</a></li>
 <li class="tsd-kind-module"><a href="modules/_symbola_function.html">@symbola/function</a></li>
+<li class="tsd-kind-module"><a href="modules/_symbola_iter_tools.html">@symbola/iter-<wbr/>tools</a></li>
 <li class="tsd-kind-module"><a href="modules/_symbola_iterable.html">@symbola/iterable</a></li>
 <li class="tsd-kind-module"><a href="modules/_symbola_number.html">@symbola/number</a></li>
 <li class="tsd-kind-module"><a href="modules/_symbola_object.html">@symbola/object</a></li>
