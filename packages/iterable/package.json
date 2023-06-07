@@ -21,6 +21,7 @@
     "lint:eslint": "eslint .",
     "build": "microbundle",
     "test": "jest",
+    "test:ci": "jest --coverage",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:fix": "eslint --fix ."
   },
