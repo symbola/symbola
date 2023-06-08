@@ -9648,15 +9648,16 @@ __metadata:
   linkType: hard
 
 "jest-github-reporter@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "jest-github-reporter@npm:1.0.2"
+  version: 1.1.1
+  resolution: "jest-github-reporter@npm:1.1.1"
   dependencies:
     "@octokit/rest": ^16.28.7
     create-check: ^0.6.40
+    execa: ^1.0.0
     strip-ansi: ^6.0.0
   peerDependencies:
     jest: ">= 24.x"
-  checksum: de9e15e0123cd9d200ad7a9f150aa89e047e5fd38b0fc8100d2cf5a190705442aa3877cf67f67e36a569af67993f2ff3e093555ffe4b5ebbdd2fdc1500adcb1e
+  checksum: 9136929ee821f73a38f289438e48bdfda13669607915a952e2183f110a1714b1c5ed8c71a1522fbb3a99f75120989bbf52168033a0177e269d3550353f2829bb
   languageName: node
   linkType: hard
 
