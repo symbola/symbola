@@ -125,7 +125,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:4.4.1"],\
             ["semantic-release", "npm:21.0.3"],\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.23.28"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.24.8"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
@@ -16110,14 +16110,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.4.4", {\
-          "packageLocation": "./.yarn/cache/minimatch-npm-7.4.4-f84bbddfc6-a96494db55.zip/node_modules/minimatch/",\
-          "packageDependencies": [\
-            ["minimatch", "npm:7.4.4"],\
-            ["brace-expansion", "npm:2.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:7.4.5", {\
           "packageLocation": "./.yarn/cache/minimatch-npm-7.4.5-855d582459-dfb82497bd.zip/node_modules/minimatch/",\
           "packageDependencies": [\
@@ -16130,6 +16122,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/minimatch-npm-8.0.3-275165fa34-8957d8105b.zip/node_modules/minimatch/",\
           "packageDependencies": [\
             ["minimatch", "npm:8.0.3"],\
+            ["brace-expansion", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:9.0.1", {\
+          "packageLocation": "./.yarn/cache/minimatch-npm-9.0.1-277fdc6fbd-97f5f5284b.zip/node_modules/minimatch/",\
+          "packageDependencies": [\
+            ["minimatch", "npm:9.0.1"],\
             ["brace-expansion", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
@@ -20639,7 +20639,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:4.4.1"],\
             ["semantic-release", "npm:21.0.3"],\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.23.28"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.24.8"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
@@ -21151,21 +21151,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typedoc", [\
-        ["npm:0.23.28", {\
-          "packageLocation": "./.yarn/cache/typedoc-npm-0.23.28-9a9eb64ab5-40eb4e207a.zip/node_modules/typedoc/",\
+        ["npm:0.24.8", {\
+          "packageLocation": "./.yarn/cache/typedoc-npm-0.24.8-7f9229d7f2-a46a14497f.zip/node_modules/typedoc/",\
           "packageDependencies": [\
-            ["typedoc", "npm:0.23.28"]\
+            ["typedoc", "npm:0.24.8"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.23.28", {\
-          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-0e1d310ecc/0/cache/typedoc-npm-0.23.28-9a9eb64ab5-40eb4e207a.zip/node_modules/typedoc/",\
+        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.24.8", {\
+          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-4cfe5b43f5/0/cache/typedoc-npm-0.24.8-7f9229d7f2-a46a14497f.zip/node_modules/typedoc/",\
           "packageDependencies": [\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.23.28"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.24.8"],\
             ["@types/typescript", null],\
             ["lunr", "npm:2.3.9"],\
             ["marked", "npm:4.3.0"],\
-            ["minimatch", "npm:7.4.4"],\
+            ["minimatch", "npm:9.0.1"],\
             ["shiki", "npm:0.14.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=b5f058"]\
           ],\
