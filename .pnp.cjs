@@ -7397,7 +7397,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
             ["microbundle", "npm:0.15.1"],\
             ["prettier", "npm:2.8.8"],\
-            ["ts-morph", "npm:17.0.1"],\
+            ["ts-morph", "npm:18.0.0"],\
             ["tsx", "npm:3.12.7"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"]\
           ],\
@@ -7599,13 +7599,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@ts-morph/common", [\
-        ["npm:0.18.1", {\
-          "packageLocation": "./.yarn/cache/@ts-morph-common-npm-0.18.1-277a53bb62-848fff5f7a.zip/node_modules/@ts-morph/common/",\
+        ["npm:0.19.0", {\
+          "packageLocation": "./.yarn/cache/@ts-morph-common-npm-0.19.0-002aa2f632-6b02a63ded.zip/node_modules/@ts-morph/common/",\
           "packageDependencies": [\
-            ["@ts-morph/common", "npm:0.18.1"],\
+            ["@ts-morph/common", "npm:0.19.0"],\
             ["fast-glob", "npm:3.2.12"],\
-            ["minimatch", "npm:5.1.6"],\
-            ["mkdirp", "npm:1.0.4"],\
+            ["minimatch", "npm:7.4.5"],\
+            ["mkdirp", "npm:2.1.6"],\
             ["path-browserify", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
@@ -9947,10 +9947,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["code-block-writer", [\
-        ["npm:11.0.3", {\
-          "packageLocation": "./.yarn/cache/code-block-writer-npm-11.0.3-01e06f4812-f0a2605f19.zip/node_modules/code-block-writer/",\
+        ["npm:12.0.0", {\
+          "packageLocation": "./.yarn/cache/code-block-writer-npm-12.0.0-943b9e5c78-9f6505a4d6.zip/node_modules/code-block-writer/",\
           "packageDependencies": [\
-            ["code-block-writer", "npm:11.0.3"]\
+            ["code-block-writer", "npm:12.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16294,6 +16294,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mkdirp", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.1.6", {\
+          "packageLocation": "./.yarn/cache/mkdirp-npm-2.1.6-832c38f12a-8a1d09ffac.zip/node_modules/mkdirp/",\
+          "packageDependencies": [\
+            ["mkdirp", "npm:2.1.6"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mkdirp-infer-owner", [\
@@ -20907,12 +20914,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ts-morph", [\
-        ["npm:17.0.1", {\
-          "packageLocation": "./.yarn/cache/ts-morph-npm-17.0.1-6097358fba-4748ab45d0.zip/node_modules/ts-morph/",\
+        ["npm:18.0.0", {\
+          "packageLocation": "./.yarn/cache/ts-morph-npm-18.0.0-4399ce8f6e-e3d3099b9a.zip/node_modules/ts-morph/",\
           "packageDependencies": [\
-            ["ts-morph", "npm:17.0.1"],\
-            ["@ts-morph/common", "npm:0.18.1"],\
-            ["code-block-writer", "npm:11.0.3"]\
+            ["ts-morph", "npm:18.0.0"],\
+            ["@ts-morph/common", "npm:0.19.0"],\
+            ["code-block-writer", "npm:12.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
