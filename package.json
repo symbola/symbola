@@ -75,7 +75,7 @@
     "microbundle": "^0.15.1",
     "multi-semantic-release": "^3.0.1",
     "prettier": "^2.8.3",
-    "rimraf": "^4.1.1",
+    "rimraf": "^5.0.0",
     "semantic-release": "^21.0.0",
     "typedoc": "^0.24.0",
     "typescript": "^5.0.0"
