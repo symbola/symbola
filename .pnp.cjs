@@ -7355,7 +7355,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:27.2.1"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
-            ["fp-ts", "npm:2.13.1"],\
+            ["fp-ts", "npm:2.16.0"],\
             ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:29.5.0"],\
             ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
             ["microbundle", "npm:0.15.1"],\
@@ -12324,10 +12324,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["fp-ts", [\
-        ["npm:2.13.1", {\
-          "packageLocation": "./.yarn/cache/fp-ts-npm-2.13.1-5da5e5e8c1-618e0028ac.zip/node_modules/fp-ts/",\
+        ["npm:2.16.0", {\
+          "packageLocation": "./.yarn/cache/fp-ts-npm-2.16.0-edfc855005-0724a4d8b2.zip/node_modules/fp-ts/",\
           "packageDependencies": [\
-            ["fp-ts", "npm:2.13.1"]\
+            ["fp-ts", "npm:2.16.0"]\
           ],\
           "linkType": "HARD"\
         }]\
