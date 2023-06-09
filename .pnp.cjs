@@ -7391,7 +7391,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:7933fbc5f6433e7436fce46063f57439ec27989ceac25d56061fe30238da0174aedbcbdb08f0724856c2ebaa88830a698031bda64141a5b83e477a6e27249a20#npm:27.2.1"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
-            ["iter-tools", "npm:7.5.1"],\
+            ["iter-tools", "npm:7.5.3"],\
             ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:29.5.0"],\
             ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
             ["microbundle", "npm:0.15.1"],\
@@ -14024,10 +14024,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["iter-tools", [\
-        ["npm:7.5.1", {\
-          "packageLocation": "./.yarn/cache/iter-tools-npm-7.5.1-43c162462f-efa5e8b0a6.zip/node_modules/iter-tools/",\
+        ["npm:7.5.3", {\
+          "packageLocation": "./.yarn/cache/iter-tools-npm-7.5.3-d2ba3d8b03-d25debdcc7.zip/node_modules/iter-tools/",\
           "packageDependencies": [\
-            ["iter-tools", "npm:7.5.1"],\
+            ["iter-tools", "npm:7.5.3"],\
             ["@babel/runtime", "npm:7.20.13"]\
           ],\
           "linkType": "HARD"\
