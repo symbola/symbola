@@ -3774,7 +3774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^10.0.0":
+"@semantic-release/commit-analyzer@npm:^10.0.0, @semantic-release/commit-analyzer@npm:^10.0.1":
   version: 10.0.1
   resolution: "@semantic-release/commit-analyzer@npm:10.0.1"
   dependencies:
@@ -3822,7 +3822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:^8.1.0":
+"@semantic-release/github@npm:^8.0.0":
   version: 8.1.0
   resolution: "@semantic-release/github@npm:8.1.0"
   dependencies:
@@ -3872,6 +3872,32 @@ __metadata:
   peerDependencies:
     semantic-release: ">=20.1.0"
   checksum: e92c4e580de4603c30fae88c2d4563bb0e280f3bdb632c7513a740227a087666de52762c89d5d57fd242e41bee7567733d76383af2b0f7238001759df4ec80b5
+  languageName: node
+  linkType: hard
+
+"@semantic-release/github@npm:^9.0.3":
+  version: 9.0.3
+  resolution: "@semantic-release/github@npm:9.0.3"
+  dependencies:
+    "@octokit/core": ^4.2.1
+    "@octokit/plugin-paginate-rest": ^7.0.0
+    "@octokit/plugin-retry": ^5.0.0
+    "@octokit/plugin-throttling": ^6.0.0
+    "@semantic-release/error": ^4.0.0
+    aggregate-error: ^4.0.1
+    debug: ^4.3.4
+    dir-glob: ^3.0.1
+    globby: ^13.1.4
+    http-proxy-agent: ^7.0.0
+    https-proxy-agent: ^7.0.0
+    issue-parser: ^6.0.0
+    lodash-es: ^4.17.21
+    mime: ^3.0.0
+    p-filter: ^3.0.0
+    url-join: ^5.0.0
+  peerDependencies:
+    semantic-release: ">=20.1.0"
+  checksum: 98efe68dd358b99fb6438d4412b143aca942a873f4dbe56a94e22fcc99a239d17d8ff3a3ea171f2b5dab90dcc4d716dad9e47f127cc61e391d6baea3b2f089e1
   languageName: node
   linkType: hard
 
@@ -4048,7 +4074,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4127,7 +4153,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4183,7 +4209,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4216,7 +4242,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4236,7 +4262,7 @@ __metadata:
     prettier: ^2.8.8
     ts-morph: ^18.0.0
     tsx: ^3.12.7
-    typescript: ^4.9.5
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -4254,7 +4280,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4292,7 +4318,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4323,7 +4349,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4363,7 +4389,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.40.1
     "@types/jest": ^29.5.2
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
@@ -4589,7 +4615,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>= 8":
+"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^20.2.5":
   version: 20.2.5
   resolution: "@types/node@npm:20.2.5"
   checksum: 38ce7c7e9d76880dc632f71d71e0d5914fcda9d5e9a7095d6c339abda55ca4affb0f2a882aeb29398f8e09d2c5151f0b6586c81c8ccdfe529c34b1ea3337425e
@@ -4600,13 +4626,6 @@ __metadata:
   version: 12.20.55
   resolution: "@types/node@npm:12.20.55"
   checksum: e4f86785f4092706e0d3b0edff8dca5a13b45627e4b36700acd8dfe6ad53db71928c8dee914d4276c7fd3b6ccd829aa919811c9eb708a2c8e4c6eb3701178c37
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^18.16.16":
-  version: 18.16.16
-  resolution: "@types/node@npm:18.16.16"
-  checksum: 0efad726dd1e0bef71c392c708fc5d78c5b39c46b0ac5186fee74de4ccb1b2e847b3fa468da67d62812f56569da721b15bf31bdc795e6c69b56c73a45079ed2d
   languageName: node
   linkType: hard
 
@@ -14690,7 +14709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^21.0.4":
+"semantic-release@npm:^21.0.5":
   version: 21.0.5
   resolution: "semantic-release@npm:21.0.5"
   dependencies:
@@ -15539,13 +15558,13 @@ __metadata:
     "@commitlint/cli": ^17.6.5
     "@commitlint/config-conventional": ^17.6.5
     "@dmeents/semantic-release-yarn": ^1.1.8
-    "@semantic-release/commit-analyzer": ^9.0.2
-    "@semantic-release/github": ^8.1.0
+    "@semantic-release/commit-analyzer": ^10.0.1
+    "@semantic-release/github": ^9.0.3
     "@semantic-release/npm": ^10.0.4
     "@semantic-release/release-notes-generator": ^11.0.3
     "@symbola/config": "workspace:^"
     "@types/eslint": ^8.40.1
-    "@types/node": ^18.16.16
+    "@types/node": ^20.2.5
     "@types/prettier": ^2.7.3
     "@types/semantic-release": ^20.0.1
     "@typescript-eslint/eslint-plugin": ^5.59.9
@@ -15562,7 +15581,7 @@ __metadata:
     multi-semantic-release: ^3.0.2
     prettier: ^2.8.8
     rimraf: ^5.0.1
-    semantic-release: ^21.0.4
+    semantic-release: ^21.0.5
     typedoc: ^0.24.8
     typescript: ^5.1.3
   languageName: unknown
@@ -16007,7 +16026,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.1.3, typescript@npm:^4.9.5":
+"typescript@npm:^4.1.3":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -16037,7 +16056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.1.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.1.3#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"
   bin:
