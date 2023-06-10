@@ -8,5 +8,5 @@ runs:
       shell: bash
     - run: yarn --version
       shell: bash
-    - run: yarn install --immutable
+    - run: yarn install --immutable --immutable-cache
       shell: bash
