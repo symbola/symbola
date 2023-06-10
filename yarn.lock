@@ -3822,7 +3822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:^8.1.0":
+"@semantic-release/github@npm:^8.0.0":
   version: 8.1.0
   resolution: "@semantic-release/github@npm:8.1.0"
   dependencies:
@@ -15539,8 +15539,8 @@ __metadata:
     "@commitlint/cli": ^17.6.5
     "@commitlint/config-conventional": ^17.6.5
     "@dmeents/semantic-release-yarn": ^1.1.8
-    "@semantic-release/commit-analyzer": ^9.0.2
-    "@semantic-release/github": ^8.1.0
+    "@semantic-release/commit-analyzer": ^10.0.0
+    "@semantic-release/github": ^9.0.0
     "@semantic-release/npm": ^10.0.4
     "@semantic-release/release-notes-generator": ^11.0.3
     "@symbola/config": "workspace:^"
