@@ -33,7 +33,7 @@
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
     "build": "tsc -b",
     "build:dev": "tsc -b -w",
-    "build:prod": "yarn workspaces foreach -ptv run build",
+    "build:prod": "yarn workspaces foreach --exclude @symbola/iter-tools --exclude symbola -ptv run build",
     "docs": "typedoc"
   },
   "engines": {
