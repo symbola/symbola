@@ -4,7 +4,9 @@ export const log = Symbol('log')
 export const _logger = Symbol('logger')
 
 export abstract class Loggable {
-  [_logger](...args: unknown[]): void
+  [_logger](...args: unknown[]) {
+    console.log(...args)
+  }
 
   [log]<A>(this: A, ...args: unknown[]): A {
     // TODO
@@ -20,6 +22,4 @@ declare global {
   interface Object extends Loggable {}
 }
 
-extend(Object.prototype, Loggable.prototype, {
-  [_logger]: console.log,
-})
+extend(Object.prototype, Loggable.prototype)
