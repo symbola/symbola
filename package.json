@@ -17,7 +17,6 @@
     "p:number": "yarn workspace @symbola/number",
     "p:set": "yarn workspace @symbola/set",
     "p:string": "yarn workspace @symbola/string",
-    "p:it": "yarn workspace @symbola/iter-tools",
     "c:config": "yarn workspace @symbola/config",
     "c:eslint": "yarn workspace @symbola/eslint-config",
     "c:jest": "yarn workspace @symbola/jest",
@@ -33,7 +32,7 @@
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
     "build": "tsc -b",
     "build:dev": "tsc -b -w",
-    "build:prod": "yarn workspaces foreach --exclude @symbola/iter-tools --exclude symbola -ptv run build",
+    "build:prod": "yarn workspaces foreach --exclude symbola -ptv run build",
     "docs": "typedoc"
   },
   "engines": {
