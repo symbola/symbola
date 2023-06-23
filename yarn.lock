@@ -2089,15 +2089,15 @@ __metadata:
   linkType: hard
 
 "@dmeents/semantic-release-yarn@npm:^1.1.8":
-  version: 1.1.9
-  resolution: "@dmeents/semantic-release-yarn@npm:1.1.9"
+  version: 1.1.10
+  resolution: "@dmeents/semantic-release-yarn@npm:1.1.10"
   dependencies:
     "@semantic-release/error": ^3.0.0
     execa: ^5.1.1
     js-yaml: ^4.1.0
     read-pkg: ^5.2.0
     semver: ^7.3.8
-  checksum: 62fb5e208fe9a1a426453bf8efdf47f0336f6dfb599af51b401cfb5cd58f7a5ac8a7dd6dad045520152780f5e8344192dd84ab7bc3b23c22dac23c04ebb072c4
+  checksum: b93d29555e484ec4332cb375f9fc5d2bb7dd5fb935b567848563bea87e88e09c030331f9eed373d1d75f7dcf22cbce3c2485cca26850cac99ef9d821cbe3a0fe
   languageName: node
   linkType: hard
 
