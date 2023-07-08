@@ -95,7 +95,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@commitlint/cli", "npm:17.6.6"],\
             ["@commitlint/config-conventional", "npm:17.6.6"],\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.10"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@semantic-release/commit-analyzer", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.3"],\
             ["@semantic-release/npm", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.4"],\
@@ -4841,10 +4841,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dmeents/semantic-release-yarn", [\
-        ["npm:1.1.10", {\
-          "packageLocation": "./.yarn/cache/@dmeents-semantic-release-yarn-npm-1.1.10-5f052e8fec-b93d29555e.zip/node_modules/@dmeents/semantic-release-yarn/",\
+        ["npm:1.1.11", {\
+          "packageLocation": "./.yarn/cache/@dmeents-semantic-release-yarn-npm-1.1.11-cb1422e9b2-d753482063.zip/node_modules/@dmeents/semantic-release-yarn/",\
           "packageDependencies": [\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.10"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["execa", "npm:5.1.1"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -20418,7 +20418,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["symbola", "workspace:."],\
             ["@commitlint/cli", "npm:17.6.6"],\
             ["@commitlint/config-conventional", "npm:17.6.6"],\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.10"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@semantic-release/commit-analyzer", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:9.0.3"],\
             ["@semantic-release/npm", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:10.0.4"],\
