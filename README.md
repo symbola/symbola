@@ -29,6 +29,8 @@ const xs = new Set([1, 2, 3, 4])
 const ys = xs[map]((x) => x + 1)[filter]((x) => x % 2)
 ```
 
+**_[⭐ Try Symbola in an interactive sandbox](https://codepen.io/slikts/pen/jOQxGWb?editors=0010)_**.
+
 ## Rationale for symbol protocol extensions
 
 The key difference when extending native prototypes with [symbols] as keys is that symbol primitives are unique, so there is no practical chance of repeating situations like [SmooshGate], where a non-standard `Array.prototype.flatten` method prevented a standard method with the same name from being added. The trade off is that accessing methods with symbols requires the `[]` operator instead of the `.`, but it's a small difference compared to overcoming the limitations of method chaining that are well documented in, for example, the [pipeline operator proposal]. In short, extending native prototoypes is a workaround for making [fluent interfaces] more widely applicable without the downsides of other workarounds like temporary variables or wrappers like [_.chain].
