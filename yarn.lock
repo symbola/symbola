@@ -70,7 +70,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:*, @babel/core@npm:^7.1.0, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.12.17, @babel/core@npm:^7.12.3, @babel/core@npm:^7.22.5":
+"@babel/core@npm:*, @babel/core@npm:^7.1.0, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.12.17, @babel/core@npm:^7.12.3, @babel/core@npm:^7.22.9":
   version: 7.22.9
   resolution: "@babel/core@npm:7.22.9"
   dependencies:
@@ -1711,7 +1711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.12.11, @babel/preset-env@npm:^7.22.5":
+"@babel/preset-env@npm:^7.12.11, @babel/preset-env@npm:^7.22.9":
   version: 7.22.9
   resolution: "@babel/preset-env@npm:7.22.9"
   dependencies:
@@ -2025,7 +2025,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^17.6.5":
+"@commitlint/cli@npm:^17.6.6":
   version: 17.6.6
   resolution: "@commitlint/cli@npm:17.6.6"
   dependencies:
@@ -2045,7 +2045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.6.5":
+"@commitlint/config-conventional@npm:^17.6.6":
   version: 17.6.6
   resolution: "@commitlint/config-conventional@npm:17.6.6"
   dependencies:
@@ -2231,7 +2231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/semantic-release-yarn@npm:^1.1.8":
+"@dmeents/semantic-release-yarn@npm:^1.1.11":
   version: 1.1.11
   resolution: "@dmeents/semantic-release-yarn@npm:1.1.11"
   dependencies:
@@ -2241,6 +2241,33 @@ __metadata:
     read-pkg: ^5.2.0
     semver: ^7.3.8
   checksum: d7534820633f7c894efcbde9a83dd7a60dce68c68ce5b9823feb47e1ecbed0f64f7ae7772b06d071a779d4f9ed3b21fde32a7d4cdfed1689bc18f5cb6d91ad7c
+  languageName: node
+  linkType: hard
+
+"@ericcornelissen/bash-parser@npm:^0.5.2":
+  version: 0.5.2
+  resolution: "@ericcornelissen/bash-parser@npm:0.5.2"
+  dependencies:
+    array-last: ^1.1.1
+    babylon: ^6.9.1
+    compose-function: ^3.0.3
+    deep-freeze: 0.0.1
+    filter-iterator: 0.0.1
+    filter-obj: ^1.1.0
+    has-own-property: ^0.1.0
+    identity-function: ^1.0.0
+    is-iterable: ^1.1.0
+    iterable-lookahead: ^1.0.0
+    lodash.curry: ^4.1.1
+    magic-string: ^0.16.0
+    map-obj: ^2.0.0
+    object-pairs: ^0.1.0
+    object-values: ^1.0.0
+    reverse-arguments: ^1.0.0
+    shell-quote-word: ^1.0.1
+    to-pascal-case: ^1.0.0
+    unescape-js: ^1.0.5
+  checksum: ed6feb775a45e529e36b8ab01cfe2ba39446d8403f30022d4c00f009a45ae47e9c2fd43d5607b7120366c29c42aaf4c5b0bc202066e71d543f3cde235240a87b
   languageName: node
   linkType: hard
 
@@ -4051,7 +4078,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^9.0.0, @semantic-release/github@npm:^9.0.3":
+"@semantic-release/github@npm:^9.0.0, @semantic-release/github@npm:^9.0.4":
   version: 9.0.4
   resolution: "@semantic-release/github@npm:9.0.4"
   dependencies:
@@ -4166,7 +4193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^11.0.0, @semantic-release/release-notes-generator@npm:^11.0.3":
+"@semantic-release/release-notes-generator@npm:^11.0.0, @semantic-release/release-notes-generator@npm:^11.0.4":
   version: 11.0.4
   resolution: "@semantic-release/release-notes-generator@npm:11.0.4"
   dependencies:
@@ -4254,27 +4281,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/async-iterable@workspace:packages/async-iterable"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4286,14 +4313,14 @@ __metadata:
   resolution: "@symbola/babel-config@workspace:configs/babel"
   dependencies:
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
+    "@types/eslint": ^8.44.0
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
     babel-plugin-transform-async-to-promises: ^0.8.18
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^3.0.0
   peerDependencies:
@@ -4307,8 +4334,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/config@workspace:configs/config"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/babel-config": "workspace:^"
     "@symbola/eslint-config": "workspace:^"
@@ -4317,13 +4344,13 @@ __metadata:
     "@symbola/typescript-config": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
+    "@types/eslint": ^8.44.0
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    eslint: ^8.42.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^3.0.0
@@ -4334,26 +4361,26 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/core@workspace:packages/core"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4364,13 +4391,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/eslint-config@workspace:configs/eslint"
   dependencies:
-    "@types/eslint": ^8.40.1
+    "@types/eslint": ^8.44.0
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    eslint: ^8.42.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     prettier: ^3.0.0
@@ -4389,28 +4416,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/function@workspace:packages/function"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     fp-ts: ^2.16.0
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4422,28 +4449,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/iterable@workspace:packages/iterable"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@symbola/number": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4461,27 +4488,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/number@workspace:packages/number"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4492,27 +4519,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/object@workspace:packages/object"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4532,27 +4559,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/set@workspace:packages/set"
   dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.22.5
+    "@babel/core": ^7.22.9
+    "@babel/preset-env": ^7.22.9
     "@babel/preset-typescript": ^7.22.5
     "@symbola/config": "workspace:^"
     "@symbola/core": "workspace:^"
     "@types/babel__core": ^7.20.1
     "@types/babel__preset-env": ^7.9.2
-    "@types/eslint": ^8.40.1
-    "@types/jest": ^29.5.2
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/jest": ^29.5.3
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    esbuild: ^0.18.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
+    esbuild: ^0.18.14
     esbuild-jest: ^0.5.0
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
-    jest: ^29.5.0
+    jest: ^29.6.1
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
     prettier: ^3.0.0
@@ -4563,7 +4590,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/typescript-config@workspace:configs/typescript"
   dependencies:
-    "@types/jest": ^29.5.2
+    "@types/jest": ^29.5.3
   languageName: unknown
   linkType: soft
 
@@ -4666,7 +4693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8.40.1":
+"@types/eslint@npm:^8.44.0":
   version: 8.44.0
   resolution: "@types/eslint@npm:8.44.0"
   dependencies:
@@ -4724,13 +4751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.2":
-  version: 29.5.2
-  resolution: "@types/jest@npm:29.5.2"
+"@types/jest@npm:^29.5.3":
+  version: 29.5.3
+  resolution: "@types/jest@npm:29.5.3"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 7d205599ea3cccc262bad5cc173d3242d6bf8138c99458509230e4ecef07a52d6ddcde5a1dbd49ace655c0af51d2dbadef3748697292ea4d86da19d9e03e19c0
+  checksum: e36bb92e0b9e5ea7d6f8832baa42f087fc1697f6cd30ec309a07ea4c268e06ec460f1f0cfd2581daf5eff5763475190ec1ad8ac6520c49ccfe4f5c0a48bfa676
   languageName: node
   linkType: hard
 
@@ -4755,7 +4782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^20.2.5":
+"@types/node@npm:*, @types/node@npm:>= 8":
   version: 20.4.1
   resolution: "@types/node@npm:20.4.1"
   checksum: 22cbcc792f2eb636fe4188778ed0f32658ab872aa7fcb9847b3fa289a42b14b9f5e30c6faec50ef3c7adbc6c2a246926e5858136bb8b10c035a3fcaa6afbeed2
@@ -4766,6 +4793,13 @@ __metadata:
   version: 12.20.55
   resolution: "@types/node@npm:12.20.55"
   checksum: e4f86785f4092706e0d3b0edff8dca5a13b45627e4b36700acd8dfe6ad53db71928c8dee914d4276c7fd3b6ccd829aa919811c9eb708a2c8e4c6eb3701178c37
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.4.2":
+  version: 20.4.2
+  resolution: "@types/node@npm:20.4.2"
+  checksum: 99e544ea7560d51f01f95627fc40394c24a13da8f041121a0da13e4ef0a2aa332932eaf9a5e8d0e30d1c07106e96a183be392cbba62e8cf0bf6a085d5c0f4149
   languageName: node
   linkType: hard
 
@@ -4854,7 +4888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^6.0.0":
+"@typescript-eslint/eslint-plugin@npm:^6.1.0":
   version: 6.1.0
   resolution: "@typescript-eslint/eslint-plugin@npm:6.1.0"
   dependencies:
@@ -4880,7 +4914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^6.0.0":
+"@typescript-eslint/parser@npm:^6.1.0":
   version: 6.1.0
   resolution: "@typescript-eslint/parser@npm:6.1.0"
   dependencies:
@@ -5724,35 +5758,6 @@ __metadata:
     mixin-deep: ^1.2.0
     pascalcase: ^0.1.1
   checksum: a4a146b912e27eea8f66d09cb0c9eab666f32ce27859a7dfd50f38cd069a2557b39f16dba1bc2aecb3b44bf096738dd207b7970d99b0318423285ab1b1994edd
-  languageName: node
-  linkType: hard
-
-"bash-parser@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "bash-parser@npm:0.5.0"
-  dependencies:
-    array-last: ^1.1.1
-    babylon: ^6.9.1
-    compose-function: ^3.0.3
-    curry: ^1.2.0
-    deep-freeze: 0.0.1
-    filter-iterator: 0.0.1
-    filter-obj: ^1.1.0
-    has-own-property: ^0.1.0
-    identity-function: ^1.0.0
-    iterable-lookahead: ^1.0.0
-    iterable-transform-replace: ^1.1.1
-    magic-string: ^0.16.0
-    map-iterable: ^1.0.1
-    map-obj: ^2.0.0
-    object-pairs: ^0.1.0
-    object-values: ^1.0.0
-    reverse-arguments: ^1.0.0
-    shell-quote-word: ^1.0.1
-    to-pascal-case: ^1.0.0
-    transform-spread-iterable: ^1.1.0
-    unescape-js: ^1.0.5
-  checksum: 9bf1db1f9e1ef9cdee6da7d9c129d7854d8989fc91bff22acd7b7ba09369927002e1b2dff6af8f489475b343bbb2e566d18806e3292d0f91f6e811e04e0b1917
   languageName: node
   linkType: hard
 
@@ -6906,13 +6911,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"curry@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "curry@npm:1.2.0"
-  checksum: 5cec021ecf1e4da7fc7a67aec64fd1a63311d247da764d3b6020a749e941c7a3f0833a2e75a0866d36f287b4825469070dcd001e7093fd375eaba18232bf3f6f
-  languageName: node
-  linkType: hard
-
 "dargs@npm:^7.0.0":
   version: 7.0.0
   resolution: "dargs@npm:7.0.0"
@@ -7472,7 +7470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.18.0":
+"esbuild@npm:^0.18.14":
   version: 0.18.14
   resolution: "esbuild@npm:0.18.14"
   dependencies:
@@ -7604,7 +7602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^27.2.1":
+"eslint-plugin-jest@npm:^27.2.3":
   version: 27.2.3
   resolution: "eslint-plugin-jest@npm:27.2.3"
   dependencies:
@@ -7684,7 +7682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.42.0":
+"eslint@npm:^8.45.0":
   version: 8.45.0
   resolution: "eslint@npm:8.45.0"
   dependencies:
@@ -9854,15 +9852,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iterable-transform-replace@npm:^1.1.1":
-  version: 1.2.0
-  resolution: "iterable-transform-replace@npm:1.2.0"
-  dependencies:
-    curry: ^1.2.0
-  checksum: 987c5077ed3ae0669c81efe16064438b39dc1fa4142e2690ec33fcac5b19a17a4c86c002356b6bd4d11946582bb9ce953debf24787408662239aa4e907441335
-  languageName: node
-  linkType: hard
-
 "jackspeak@npm:^2.0.3":
   version: 2.2.1
   resolution: "jackspeak@npm:2.2.1"
@@ -10461,7 +10450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.5.0":
+"jest@npm:^29.6.1":
   version: 29.6.1
   resolution: "jest@npm:29.6.1"
   dependencies:
@@ -10480,12 +10469,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:1.18.2":
-  version: 1.18.2
-  resolution: "jiti@npm:1.18.2"
+"jiti@npm:1.19.1":
+  version: 1.19.1
+  resolution: "jiti@npm:1.19.1"
   bin:
     jiti: bin/jiti.js
-  checksum: 46c41cd82d01c6efdee3fc0ae9b3e86ed37457192d6366f19157d863d64961b07982ab04e9d5879576a1af99cc4d132b0b73b336094f86a5ce9fb1029ec2d29f
+  checksum: fdf55e315f9e81c04ae902416642062851d92c6cdcc17a59d5d1d35e1a0842e4e79be38da86613c5776fa18c579954542a441b93d1c347a50137dee2e558cbd0
   languageName: node
   linkType: hard
 
@@ -10754,18 +10743,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knip@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "knip@npm:2.13.0"
+"knip@npm:^2.16.0":
+  version: 2.16.0
+  resolution: "knip@npm:2.16.0"
   dependencies:
+    "@ericcornelissen/bash-parser": ^0.5.2
     "@npmcli/map-workspaces": ^3.0.4
     "@snyk/github-codeowners": ^1.1.0
-    bash-parser: ^0.5.0
     chalk: ^5.2.0
     easy-table: ^1.2.0
     fast-glob: ^3.2.12
     globby: ^13.1.3
-    jiti: 1.18.2
+    jiti: 1.19.1
     js-yaml: ^4.1.0
     micromatch: ^4.0.5
     minimist: ^1.2.8
@@ -10774,10 +10763,10 @@ __metadata:
     summary: ^2.1.0
     typescript: ^5.0.2
     zod: ^3.20.6
-    zod-validation-error: 1.3.0
+    zod-validation-error: 1.3.1
   bin:
     knip: dist/cli.js
-  checksum: 9c428f24a987d81eb681d1b55a59591081b4a70a75288a05b9f9d38c276bf9f53613c317083760c7553d0c5fcc195a61ddcaafbd9fdcfd790dfdce6b2d268c2c
+  checksum: 276fb94c0491007921ef6149b8928362687b8ccd7764dcbb61d173642cf33287e94f8cf74193de6320b3f4aa9755cce21185d04db899c306d9954afbf488e695
   languageName: node
   linkType: hard
 
@@ -11097,7 +11086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.2.2":
+"lint-staged@npm:^13.2.3":
   version: 13.2.3
   resolution: "lint-staged@npm:13.2.3"
   dependencies:
@@ -11222,6 +11211,13 @@ __metadata:
   version: 4.2.0
   resolution: "lodash.chunk@npm:4.2.0"
   checksum: 6286c6d06814fbeda502164015c42ef53a9194e6ebaac52ec2b41e83344aefe7bc3d94fdfec525adcd2c66cefdf05dc333b6a1128e4de739797342315c17cbc7
+  languageName: node
+  linkType: hard
+
+"lodash.curry@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.curry@npm:4.1.1"
+  checksum: 9192b70fe7df4d1ff780c0260bee271afa9168c93fe4fa24bc861900240531b59781b5fdaadf4644fea8f4fbcd96f0700539ab294b579ffc1022c6c15dcc462a
   languageName: node
   linkType: hard
 
@@ -11545,16 +11541,6 @@ __metadata:
   version: 0.2.2
   resolution: "map-cache@npm:0.2.2"
   checksum: 3067cea54285c43848bb4539f978a15dedc63c03022abeec6ef05c8cb6829f920f13b94bcaf04142fc6a088318e564c4785704072910d120d55dbc2e0c421969
-  languageName: node
-  linkType: hard
-
-"map-iterable@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "map-iterable@npm:1.0.1"
-  dependencies:
-    curry: ^1.2.0
-    is-iterable: ^1.1.0
-  checksum: ca491b2396a063be2da4841a94baef0124eacd0c6cc6b00287f7d339b3a2ddad615312096b5c39871c7ce6b47280c3a9c5fd9242086c771ae3c689561db4e737
   languageName: node
   linkType: hard
 
@@ -14848,7 +14834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^21.0.5":
+"semantic-release@npm:^21.0.7":
   version: 21.0.7
   resolution: "semantic-release@npm:21.0.7"
   dependencies:
@@ -15753,36 +15739,36 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "symbola@workspace:."
   dependencies:
-    "@commitlint/cli": ^17.6.5
-    "@commitlint/config-conventional": ^17.6.5
-    "@dmeents/semantic-release-yarn": ^1.1.8
+    "@commitlint/cli": ^17.6.6
+    "@commitlint/config-conventional": ^17.6.6
+    "@dmeents/semantic-release-yarn": ^1.1.11
     "@semantic-release/commit-analyzer": ^10.0.1
-    "@semantic-release/github": ^9.0.3
+    "@semantic-release/github": ^9.0.4
     "@semantic-release/npm": ^10.0.4
-    "@semantic-release/release-notes-generator": ^11.0.3
+    "@semantic-release/release-notes-generator": ^11.0.4
     "@symbola/config": "workspace:^"
-    "@types/eslint": ^8.40.1
-    "@types/node": ^20.2.5
+    "@types/eslint": ^8.44.0
+    "@types/node": ^20.4.2
     "@types/prettier": ^2.7.3
     "@types/semantic-release": ^20.0.1
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
+    "@typescript-eslint/eslint-plugin": ^6.1.0
+    "@typescript-eslint/parser": ^6.1.0
     babel-plugin-transform-async-to-promises: ^0.8.18
-    eslint: ^8.42.0
+    eslint: ^8.45.0
     eslint-config-prettier: ^8.8.0
-    eslint-plugin-jest: ^27.2.1
+    eslint-plugin-jest: ^27.2.3
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
     husky: ^8.0.3
-    knip: ^2.13.0
-    lint-staged: ^13.2.2
+    knip: ^2.16.0
+    lint-staged: ^13.2.3
     microbundle: ^0.15.1
     multi-semantic-release: ^3.0.2
     prettier: ^3.0.0
     rimraf: ^5.0.1
-    semantic-release: ^21.0.5
+    semantic-release: ^21.0.7
     typedoc: ^0.24.8
-    typescript: ^5.1.3
+    typescript: ^5.1.6
   languageName: unknown
   linkType: soft
 
@@ -15997,15 +15983,6 @@ __metadata:
   version: 0.0.3
   resolution: "tr46@npm:0.0.3"
   checksum: 726321c5eaf41b5002e17ffbd1fb7245999a073e8979085dacd47c4b4e8068ff5777142fc6726d6ca1fd2ff16921b48788b87225cbc57c72636f6efa8efbffe3
-  languageName: node
-  linkType: hard
-
-"transform-spread-iterable@npm:^1.1.0":
-  version: 1.4.1
-  resolution: "transform-spread-iterable@npm:1.4.1"
-  dependencies:
-    curry: ^1.2.0
-  checksum: 44231cecd440c3b6caf8f187f04095b3ce6d2be3a79db5cd1371e308666396a74cd6912143e2bc45ec5bb5aa5718ab3769ef69ef6611d87ad002c08119dc53a5
   languageName: node
   linkType: hard
 
@@ -16258,7 +16235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2, typescript@npm:^5.1.3":
+"typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2, typescript@npm:^5.1.6":
   version: 5.1.6
   resolution: "typescript@npm:5.1.6"
   bin:
@@ -16278,7 +16255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
   resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
   bin:
@@ -16909,12 +16886,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod-validation-error@npm:1.3.0":
-  version: 1.3.0
-  resolution: "zod-validation-error@npm:1.3.0"
+"zod-validation-error@npm:1.3.1":
+  version: 1.3.1
+  resolution: "zod-validation-error@npm:1.3.1"
   peerDependencies:
     zod: ^3.18.0
-  checksum: 4ff5ec35e77b04218f12da15ee910b7ae35add9addf0a551ba66bd5b61e312c828c274534fb563e1e1a1de2cdfb261a55b5fdeb8efd86f8dd70cb3bb71a59b89
+  checksum: f27484377be368e41f29b122df6d4b9276e03774e1ceb26c8b77dd3dff0a216221ae8fd63643f75742236a4df80b27fc43b4c8efae80ae8c8fe38c4d12bbd104
   languageName: node
   linkType: hard
 
