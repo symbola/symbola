@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./symbola.jpg" alt="Symbola"></h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/symbola/symbola/main/symbola.jpg" alt="Symbola"></h1>
 
 <p align="center">
   <a href="https://github.com/renovatebot/github-action/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/actions/workflow/status/symbola/symbola/cicd.yml"></a>
@@ -29,7 +29,7 @@ const xs = new Set([1, 2, 3, 4])
 const ys = xs[map]((x) => x + 1)[filter]((x) => x % 2)
 ```
 
-**_[⭐ Try Symbola in an interactive sandbox](https://codepen.io/slikts/pen/jOQxGWb?editors=0010)_**.
+**_[⭐ Try Symbola in an interactive sandbox](https://codepen.io/slikts/pen/jOQxGWb?editors=0010)_**
 
 ## Rationale for symbol protocol extensions
 
