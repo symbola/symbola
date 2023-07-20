@@ -29,7 +29,8 @@ const xs = new Set([1, 2, 3, 4])
 const ys = xs[map]((x) => x + 1)[filter]((x) => x % 2)
 ```
 
-**_[⭐ Try Symbola in an interactive sandbox](https://codepen.io/slikts/pen/jOQxGWb?editors=0010)_**
+**_[⭐ Try Symbola in an interactive sandbox](https://codepen.io/slikts/pen/jOQxGWb?editors=0010)_**<br>
+[📖 Article exploring symbol protocol extensions in more depth](https://dev.to/slikts/extending-native-js-prototypes-is-not-such-a-crazy-idea-with-symbols-2h8l)
 
 ## Rationale for symbol protocol extensions
 
