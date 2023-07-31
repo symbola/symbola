@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["knip", "npm:2.17.1"],\
+            ["knip", "npm:2.17.2"],\
             ["lint-staged", "npm:13.2.3"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.2"],\
@@ -15150,10 +15150,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["knip", [\
-        ["npm:2.17.1", {\
-          "packageLocation": "./.yarn/cache/knip-npm-2.17.1-7fd39110fa-46fd5a573f.zip/node_modules/knip/",\
+        ["npm:2.17.2", {\
+          "packageLocation": "./.yarn/cache/knip-npm-2.17.2-3a16d5478e-6233cb9442.zip/node_modules/knip/",\
           "packageDependencies": [\
-            ["knip", "npm:2.17.1"],\
+            ["knip", "npm:2.17.2"],\
             ["@ericcornelissen/bash-parser", "npm:0.5.2"],\
             ["@npmcli/map-workspaces", "npm:3.0.4"],\
             ["@snyk/github-codeowners", "npm:1.1.0"],\
@@ -15170,7 +15170,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["summary", "npm:2.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
             ["zod", "npm:3.21.4"],\
-            ["zod-validation-error", "virtual:7fd39110fa1097003620c4b43c80f9046db123c996070d621d62728c42652b97fec561b1484ed813504b84e91e96ad3a2da2b3c952d500af4d17d4ed99cb1491#npm:1.3.1"]\
+            ["zod-validation-error", "virtual:3a16d5478ee1727d11b248a221c9c599805e5dfdf1a2eef4cc897d6a7aa5c6ad63564bfc081a2a86f9c2d9fe0a2198372b65280a45c7c3f791cc2ec63451954f#npm:1.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -20964,7 +20964,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["husky", "npm:8.0.3"],\
-            ["knip", "npm:2.17.1"],\
+            ["knip", "npm:2.17.2"],\
             ["lint-staged", "npm:13.2.3"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.2"],\
@@ -22268,10 +22268,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:7fd39110fa1097003620c4b43c80f9046db123c996070d621d62728c42652b97fec561b1484ed813504b84e91e96ad3a2da2b3c952d500af4d17d4ed99cb1491#npm:1.3.1", {\
-          "packageLocation": "./.yarn/__virtual__/zod-validation-error-virtual-5b91f8957a/0/cache/zod-validation-error-npm-1.3.1-5772c0dc6a-f27484377b.zip/node_modules/zod-validation-error/",\
+        ["virtual:3a16d5478ee1727d11b248a221c9c599805e5dfdf1a2eef4cc897d6a7aa5c6ad63564bfc081a2a86f9c2d9fe0a2198372b65280a45c7c3f791cc2ec63451954f#npm:1.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/zod-validation-error-virtual-824b282e85/0/cache/zod-validation-error-npm-1.3.1-5772c0dc6a-f27484377b.zip/node_modules/zod-validation-error/",\
           "packageDependencies": [\
-            ["zod-validation-error", "virtual:7fd39110fa1097003620c4b43c80f9046db123c996070d621d62728c42652b97fec561b1484ed813504b84e91e96ad3a2da2b3c952d500af4d17d4ed99cb1491#npm:1.3.1"],\
+            ["zod-validation-error", "virtual:3a16d5478ee1727d11b248a221c9c599805e5dfdf1a2eef4cc897d6a7aa5c6ad63564bfc081a2a86f9c2d9fe0a2198372b65280a45c7c3f791cc2ec63451954f#npm:1.3.1"],\
             ["@types/zod", null],\
             ["zod", "npm:3.21.4"]\
           ],\
