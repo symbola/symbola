@@ -65,7 +65,7 @@
     "@typescript-eslint/parser": "^6.1.0",
     "babel-plugin-transform-async-to-promises": "^0.8.18",
     "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-tsdoc": "^0.2.17",
