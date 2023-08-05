@@ -10759,8 +10759,8 @@ __metadata:
   linkType: hard
 
 "knip@npm:^2.16.0":
-  version: 2.17.2
-  resolution: "knip@npm:2.17.2"
+  version: 2.19.0
+  resolution: "knip@npm:2.19.0"
   dependencies:
     "@ericcornelissen/bash-parser": ^0.5.2
     "@npmcli/map-workspaces": ^3.0.4
@@ -10781,7 +10781,7 @@ __metadata:
     zod-validation-error: 1.3.1
   bin:
     knip: dist/cli.js
-  checksum: 6233cb94426e0073c27028b8bd1a41691d788132f2adc748c97ae615b385f044041d6cacc0332ba534da0e363cce1cf6aaa5dcdfc6210f1ba8b6e248de9bfc0b
+  checksum: db280e567e8c3af89e33e3f74115e58489c9d43d9561becdd368fa101ca185a86f44fed4b664654e5c420e32c8cb9a10ab2293ae386c015e7e6d8735c1f2fb17
   languageName: node
   linkType: hard
 
