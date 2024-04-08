@@ -121,7 +121,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:3.0.3"],\
             ["rimraf", "npm:5.0.1"],\
             ["semantic-release", "npm:21.1.2"],\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.0"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.13"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -20869,10 +20869,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["shiki", [\
-        ["npm:0.14.1", {\
-          "packageLocation": "./.yarn/cache/shiki-npm-0.14.1-f41a21e5be-b19ea337cc.zip/node_modules/shiki/",\
+        ["npm:0.14.7", {\
+          "packageLocation": "./.yarn/cache/shiki-npm-0.14.7-a8806632f6-2aec3b3519.zip/node_modules/shiki/",\
           "packageDependencies": [\
-            ["shiki", "npm:0.14.1"],\
+            ["shiki", "npm:0.14.7"],\
             ["ansi-sequence-parser", "npm:1.1.0"],\
             ["jsonc-parser", "npm:3.2.0"],\
             ["vscode-oniguruma", "npm:1.7.0"],\
@@ -21680,7 +21680,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:3.0.3"],\
             ["rimraf", "npm:5.0.1"],\
             ["semantic-release", "npm:21.1.2"],\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.0"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.13"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -22218,22 +22218,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typedoc", [\
-        ["npm:0.25.0", {\
-          "packageLocation": "./.yarn/cache/typedoc-npm-0.25.0-15b82dad2e-f0c5980017.zip/node_modules/typedoc/",\
+        ["npm:0.25.13", {\
+          "packageLocation": "./.yarn/cache/typedoc-npm-0.25.13-6a1fb5bfd8-703d1f4813.zip/node_modules/typedoc/",\
           "packageDependencies": [\
-            ["typedoc", "npm:0.25.0"]\
+            ["typedoc", "npm:0.25.13"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.0", {\
-          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-0a0d95dee5/0/cache/typedoc-npm-0.25.0-15b82dad2e-f0c5980017.zip/node_modules/typedoc/",\
+        ["virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.13", {\
+          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-9bde0520a7/0/cache/typedoc-npm-0.25.13-6a1fb5bfd8-703d1f4813.zip/node_modules/typedoc/",\
           "packageDependencies": [\
-            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.0"],\
+            ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.25.13"],\
             ["@types/typescript", null],\
             ["lunr", "npm:2.3.9"],\
             ["marked", "npm:4.3.0"],\
             ["minimatch", "npm:9.0.3"],\
-            ["shiki", "npm:0.14.1"],\
+            ["shiki", "npm:0.14.7"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "packagePeers": [\
