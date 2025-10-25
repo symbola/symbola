@@ -30,7 +30,7 @@
     "lint:eslint:fix": "yarn workspaces foreach -pv run lint:eslint:fix",
     "lint:prettier": "yarn workspaces foreach -pv run lint:prettier",
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
-    "build": "tsc -b",
+    "build": "yarn workspaces foreach --exclude symbola -ptv run build",
     "build:dev": "tsc -b -w",
     "build:prod": "yarn workspaces foreach --exclude symbola -ptv run build",
     "docs": "typedoc"
@@ -58,6 +58,7 @@
     "@semantic-release/release-notes-generator": "^11.0.7",
     "@symbola/config": "workspace:^",
     "@types/eslint": "^8.56.12",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20.19.23",
     "@types/prettier": "^2.7.3",
     "@types/semantic-release": "^20.0.6",
