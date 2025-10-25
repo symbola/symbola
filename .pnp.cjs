@@ -103,7 +103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@symbola/config", "workspace:configs/config"],\
             ["@types/eslint", "npm:8.56.12"],\
             ["@types/jest", "npm:30.0.0"],\
-            ["@types/node", "npm:20.19.23"],\
+            ["@types/node", "npm:24.9.1"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/semantic-release", "npm:20.0.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:6.21.0"],\
@@ -114,14 +114,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:27.9.0"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["fp-ts", "npm:2.16.11"],\
             ["husky", "npm:8.0.3"],\
             ["knip", "npm:2.43.0"],\
             ["lint-staged", "npm:14.0.1"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.2"],\
             ["prettier", "npm:3.6.2"],\
+            ["queueable", "npm:5.3.2"],\
             ["rimraf", "npm:5.0.10"],\
             ["semantic-release", "npm:21.1.2"],\
+            ["tuplerone", "npm:3.3.3"],\
             ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.28.14"],\
             ["typescript", "patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=f3b441"]\
           ],\
@@ -9278,6 +9281,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/node", "npm:22.13.1"],\
             ["undici-types", "npm:6.20.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:24.9.1", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-24.9.1-fc092b2b0d-f32abf3f89.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:24.9.1"],\
+            ["undici-types", "npm:7.16.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -22955,7 +22966,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@symbola/config", "workspace:configs/config"],\
             ["@types/eslint", "npm:8.56.12"],\
             ["@types/jest", "npm:30.0.0"],\
-            ["@types/node", "npm:20.19.23"],\
+            ["@types/node", "npm:24.9.1"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/semantic-release", "npm:20.0.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:6.21.0"],\
@@ -22966,14 +22977,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:27.9.0"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["fp-ts", "npm:2.16.11"],\
             ["husky", "npm:8.0.3"],\
             ["knip", "npm:2.43.0"],\
             ["lint-staged", "npm:14.0.1"],\
             ["microbundle", "npm:0.15.1"],\
             ["multi-semantic-release", "npm:3.0.2"],\
             ["prettier", "npm:3.6.2"],\
+            ["queueable", "npm:5.3.2"],\
             ["rimraf", "npm:5.0.10"],\
             ["semantic-release", "npm:21.1.2"],\
+            ["tuplerone", "npm:3.3.3"],\
             ["typedoc", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:0.28.14"],\
             ["typescript", "patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=f3b441"]\
           ],\
@@ -23604,6 +23618,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/undici-types-npm-6.21.0-eb2b0ed56a-46331c7d60.zip/node_modules/undici-types/",\
           "packageDependencies": [\
             ["undici-types", "npm:6.21.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.16.0", {\
+          "packageLocation": "./.yarn/cache/undici-types-npm-7.16.0-0e23b08124-1ef68fc6c5.zip/node_modules/undici-types/",\
+          "packageDependencies": [\
+            ["undici-types", "npm:7.16.0"]\
           ],\
           "linkType": "HARD"\
         }]\

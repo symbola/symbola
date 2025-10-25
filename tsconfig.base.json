@@ -10,6 +10,17 @@
     "moduleResolution": "node",
     "incremental": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "baseUrl": ".",
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "paths": {
+      "@symbola/core": ["./packages/core/src"],
+      "@symbola/iterable": ["./packages/iterable/src"],
+      "@symbola/async-iterable": ["./packages/async-iterable/src"],
+      "@symbola/object": ["./packages/object/src"],
+      "@symbola/function": ["./packages/function/src"],
+      "@symbola/number": ["./packages/number/src"],
+      "@symbola/set": ["./packages/set/src"]
+    }
   }
 }

@@ -6344,6 +6344,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^24.9.1":
+  version: 24.9.1
+  resolution: "@types/node@npm:24.9.1"
+  dependencies:
+    undici-types: ~7.16.0
+  checksum: f32abf3f89f51587238997787242873df6be5081afbd0f4f33354913c939262aa979a7c7693a4ad676843cdb65c03c71565e5aade08a7a699eb001bda98abe1e
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0, @types/normalize-package-data@npm:^2.4.1":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -18207,7 +18216,7 @@ __metadata:
     "@symbola/config": "workspace:^"
     "@types/eslint": ^8.56.12
     "@types/jest": ^30.0.0
-    "@types/node": ^20.19.23
+    "@types/node": ^24.9.1
     "@types/prettier": ^2.7.3
     "@types/semantic-release": ^20.0.6
     "@typescript-eslint/eslint-plugin": ^6.21.0
@@ -18218,14 +18227,17 @@ __metadata:
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.2.17
+    fp-ts: ^2.16.11
     husky: ^8.0.3
     knip: ^2.43.0
     lint-staged: ^14.0.1
     microbundle: ^0.15.1
     multi-semantic-release: ^3.0.2
     prettier: ^3.6.2
+    queueable: ^5.3.2
     rimraf: ^5.0.10
     semantic-release: ^21.1.2
+    tuplerone: ^3.3.3
     typedoc: ^0.28.14
     typescript: ^5.9.3
   languageName: unknown
@@ -18791,6 +18803,13 @@ __metadata:
   version: 6.21.0
   resolution: "undici-types@npm:6.21.0"
   checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 1ef68fc6c5bad200c8b6f17de8e5bc5cfdcadc164ba8d7208cd087cfa8583d922d8316a7fd76c9a658c22b4123d3ff847429185094484fbc65377d695c905857
   languageName: node
   linkType: hard
 
