@@ -2,7 +2,7 @@
   "name": "@symbola/typescript-config",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^29.5.14"
+    "@types/jest": "^30.0.0"
   },
   "scripts": {
     "lint:prettier": "prettier --check .",

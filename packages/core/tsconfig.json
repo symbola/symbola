@@ -3,7 +3,6 @@
   "include": ["src/**/*"],
   "exclude": ["src/**/*.spec.ts"],
   "compilerOptions": {
-    "outDir": "dist",
-    "composite": true
+    "outDir": "dist"
   }
 }
