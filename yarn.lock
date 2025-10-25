@@ -4225,22 +4225,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/tsdoc-config@npm:0.16.2":
-  version: 0.16.2
-  resolution: "@microsoft/tsdoc-config@npm:0.16.2"
+"@microsoft/tsdoc-config@npm:0.17.1":
+  version: 0.17.1
+  resolution: "@microsoft/tsdoc-config@npm:0.17.1"
   dependencies:
-    "@microsoft/tsdoc": 0.14.2
-    ajv: ~6.12.6
+    "@microsoft/tsdoc": 0.15.1
+    ajv: ~8.12.0
     jju: ~1.4.0
-    resolve: ~1.19.0
-  checksum: 12b0d703154076bcaac75ca42e804e4fc292672396441e54346d7eadd0d6b57f90980eda2b1bab89b224af86da34a2389f9054002e282011e795ca5919a4386f
+    resolve: ~1.22.2
+  checksum: 19d3301af62c62eac5b3c244564070b18c529c0985d299b9e93d04cc75d2c1342458063d494c941f814c7154463ee364acdc76ea552db92cbbb0a3e28bbca87c
   languageName: node
   linkType: hard
 
-"@microsoft/tsdoc@npm:0.14.2":
-  version: 0.14.2
-  resolution: "@microsoft/tsdoc@npm:0.14.2"
-  checksum: b167c89e916ba73ee20b9c9d5dba6aa3a0de25ed3d50050e8a344dca7cd43cb2e1059bd515c820369b6e708901dd3fda476a42bc643ca74a35671ce77f724a3a
+"@microsoft/tsdoc@npm:0.15.1":
+  version: 0.15.1
+  resolution: "@microsoft/tsdoc@npm:0.15.1"
+  checksum: 526f125c48b4e5511571ee552ff38691405131c0b72df85f091b1aa47571315e7ba5258cd9f48c41b8ef80f2c1f489e9b09c8b1fcc1599b7f8a35f917e03ec65
   languageName: node
   linkType: hard
 
@@ -5795,7 +5795,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -5816,7 +5816,7 @@ __metadata:
     eslint: ^8.57.1
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     prettier: ^3.6.2
   peerDependencies:
     "@babel/core": ^7
@@ -5847,7 +5847,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     prettier: ^3.6.2
   languageName: unknown
   linkType: soft
@@ -5874,7 +5874,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -5894,7 +5894,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     prettier: ^3.6.2
   peerDependencies:
     "@typescript-eslint/eslint-plugin": "*"
@@ -5930,7 +5930,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     fp-ts: ^2.16.11
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
@@ -5964,7 +5964,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -6002,7 +6002,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -6033,7 +6033,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -6073,7 +6073,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     jest: ^29.7.0
     jest-github-reporter: ^1.1.1
     microbundle: ^0.15.1
@@ -6798,7 +6798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.12.4, ajv@npm:~6.12.6":
+"ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -6810,7 +6810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.11.0":
+"ajv@npm:^8.11.0, ajv@npm:~8.12.0":
   version: 8.12.0
   resolution: "ajv@npm:8.12.0"
   dependencies:
@@ -9422,13 +9422,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tsdoc@npm:^0.2.17":
-  version: 0.2.17
-  resolution: "eslint-plugin-tsdoc@npm:0.2.17"
+"eslint-plugin-tsdoc@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "eslint-plugin-tsdoc@npm:0.4.0"
   dependencies:
-    "@microsoft/tsdoc": 0.14.2
-    "@microsoft/tsdoc-config": 0.16.2
-  checksum: d143a5f1c5967812d75f246ae2776cb030f6e7966b981406c9df9352a9ab02b035f294cedb30054eac2c4a217ee4ab2ed9fb76292bdccda9438e54d2d7b0146e
+    "@microsoft/tsdoc": 0.15.1
+    "@microsoft/tsdoc-config": 0.17.1
+  checksum: 331ab299df18d351d4e85c4bd3d758a3fb8891ab0595ef4924e8c7a6fc611ba20d45f19e62c00c5916b9504f973c68dfc07504c7ebfb93c43dbd00cf6a5962c6
   languageName: node
   linkType: hard
 
@@ -11388,21 +11388,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.1.0, is-core-module@npm:^2.5.0, is-core-module@npm:^2.8.1, is-core-module@npm:^2.9.0":
-  version: 2.11.0
-  resolution: "is-core-module@npm:2.11.0"
-  dependencies:
-    has: ^1.0.3
-  checksum: f96fd490c6b48eb4f6d10ba815c6ef13f410b0ba6f7eb8577af51697de523e5f2cd9de1c441b51d27251bf0e4aebc936545e33a5d26d5d51f28d25698d4a8bab
-  languageName: node
-  linkType: hard
-
 "is-core-module@npm:^2.16.1":
   version: 2.16.1
   resolution: "is-core-module@npm:2.16.1"
   dependencies:
     hasown: ^2.0.2
   checksum: 6ec5b3c42d9cbf1ac23f164b16b8a140c3cec338bf8f884c076ca89950c7cc04c33e78f02b8cae7ff4751f3247e3174b2330f1fe4de194c7210deb8b1ea316a7
+  languageName: node
+  linkType: hard
+
+"is-core-module@npm:^2.5.0, is-core-module@npm:^2.8.1, is-core-module@npm:^2.9.0":
+  version: 2.11.0
+  resolution: "is-core-module@npm:2.11.0"
+  dependencies:
+    has: ^1.0.3
+  checksum: f96fd490c6b48eb4f6d10ba815c6ef13f410b0ba6f7eb8577af51697de523e5f2cd9de1c441b51d27251bf0e4aebc936545e33a5d26d5d51f28d25698d4a8bab
   languageName: node
   linkType: hard
 
@@ -15621,7 +15621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-parse@npm:^1.0.6, path-parse@npm:^1.0.7":
+"path-parse@npm:^1.0.7":
   version: 1.0.7
   resolution: "path-parse@npm:1.0.7"
   checksum: 49abf3d81115642938a8700ec580da6e830dde670be21893c62f4e10bd7dd4c3742ddc603fe24f898cba7eb0c6bc1777f8d9ac14185d34540c6d4d80cd9cae8a
@@ -16946,7 +16946,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.22.10":
+"resolve@npm:^1.22.10, resolve@npm:~1.22.2":
   version: 1.22.11
   resolution: "resolve@npm:1.22.11"
   dependencies:
@@ -16956,16 +16956,6 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: 6d5baa2156b95a65ac431e7642e21106584e9f4194da50871cae8bc1bbd2b53bb7cee573c92543d83bb999620b224a087f62379d800ed1ccb189da6df5d78d50
-  languageName: node
-  linkType: hard
-
-"resolve@npm:~1.19.0":
-  version: 1.19.0
-  resolution: "resolve@npm:1.19.0"
-  dependencies:
-    is-core-module: ^2.1.0
-    path-parse: ^1.0.6
-  checksum: a05b356e47b85ad3613d9e2a39a824f3c27f4fcad9c9ff6c7cc71a2e314c5904a90ab37481ad0069d03cab9eaaac6eb68aca1bc3355fdb05f1045cd50e2aacea
   languageName: node
   linkType: hard
 
@@ -16982,7 +16972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.22.10#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.22.10#~builtin<compat/resolve>, resolve@patch:resolve@~1.22.2#~builtin<compat/resolve>":
   version: 1.22.11
   resolution: "resolve@patch:resolve@npm%3A1.22.11#~builtin<compat/resolve>::version=1.22.11&hash=c3c19d"
   dependencies:
@@ -16992,16 +16982,6 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: 1462da84ac3410d7c2e12e4f5f25c1423d8a174c3b4245c43eafea85e7bbe6af3eb7ec10a4850b5e518e8531608604742b8cbd761e1acd7ad1035108b7c98013
-  languageName: node
-  linkType: hard
-
-"resolve@patch:resolve@~1.19.0#~builtin<compat/resolve>":
-  version: 1.19.0
-  resolution: "resolve@patch:resolve@npm%3A1.19.0#~builtin<compat/resolve>::version=1.19.0&hash=c3c19d"
-  dependencies:
-    is-core-module: ^2.1.0
-    path-parse: ^1.0.6
-  checksum: 2443b94d347e6946c87c85faf13071f605e609e0b54784829b0ed2b917d050bfc1cbaf4ecc6453f224cfa7d0c5dcd97cbb273454cd210bee68e4af15c1a5abc9
   languageName: node
   linkType: hard
 
@@ -18217,7 +18197,7 @@ __metadata:
     eslint-config-prettier: ^9.1.2
     eslint-plugin-jest: ^27.9.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-tsdoc: ^0.2.17
+    eslint-plugin-tsdoc: ^0.4.0
     husky: ^8.0.3
     knip: ^2.43.0
     lint-staged: ^14.0.1
