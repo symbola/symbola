@@ -40,7 +40,7 @@
   },
   "engineStrict": true,
   "volta": {
-    "node": "24.0.0"
+    "node": "24.10.0"
   },
   "homepage": "https://github.com/symbola/symbola#readme",
   "repository": "git@github.com:symbola/symbola.git",
@@ -87,5 +87,5 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.10.3"
 }
