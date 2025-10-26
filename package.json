@@ -30,9 +30,9 @@
     "lint:eslint:fix": "yarn workspaces foreach -pv run lint:eslint:fix",
     "lint:prettier": "yarn workspaces foreach -pv run lint:prettier",
     "lint:prettier:fix": "yarn workspaces foreach -pv run lint:prettier:fix",
-    "build": "yarn workspaces foreach --exclude symbola -ptv run build",
+    "build": "yarn workspaces foreach --all --exclude symbola -ptv run build",
     "build:dev": "tsc -b -w",
-    "build:prod": "yarn workspaces foreach --exclude symbola -ptv run build",
+    "build:prod": "yarn workspaces foreach --all --exclude symbola -ptv run build",
     "docs": "typedoc"
   },
   "engines": {
