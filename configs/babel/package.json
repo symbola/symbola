@@ -1,6 +1,6 @@
 {
   "name": "@symbola/babel-config",
-  "version": "1.0.1",
+  "private": true,
   "main": "./babel.config.js",
   "license": "ISC",
   "scripts": {

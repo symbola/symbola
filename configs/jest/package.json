@@ -1,6 +1,6 @@
 {
   "name": "@symbola/jest-config",
-  "version": "1.0.1",
+  "private": true,
   "main": "./jest.config.js",
   "license": "ISC",
   "scripts": {
