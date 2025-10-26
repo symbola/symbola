@@ -116,7 +116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.4.0"],\
             ["fp-ts", "npm:2.16.11"],\
-            ["globals", "npm:15.15.0"],\
+            ["globals", "npm:16.4.0"],\
             ["husky", "npm:9.1.7"],\
             ["knip", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:5.66.3"],\
             ["lint-staged", "npm:16.2.6"],\
@@ -9295,7 +9295,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:29.0.1"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.4.0"],\
-            ["globals", "npm:15.15.0"],\
+            ["globals", "npm:16.4.0"],\
             ["prettier", "npm:3.6.2"],\
             ["typescript-eslint", "virtual:6cd1d271f339efffb640e33c66c3172e64fec4a779f53edcd9655d4061173b3ac85865d35ee9354a7ae474d06f236dbf078921f387ce05d519d3a1790448ca11#npm:8.46.2"]\
           ],\
@@ -9328,7 +9328,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:a6dccfc76e228f003e6a88242b4a37edcd50ce9c30f0a6ef3b86535c5d061b0961cd5c01dc0922bc5692d003c6c2701a263c7f561d4e3bae54e46910c8a5e295#npm:29.0.1"],\
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.4.0"],\
-            ["globals", "npm:15.15.0"],\
+            ["globals", "npm:16.4.0"],\
             ["prettier", "npm:3.6.2"],\
             ["typescript-eslint", "virtual:6cd1d271f339efffb640e33c66c3172e64fec4a779f53edcd9655d4061173b3ac85865d35ee9354a7ae474d06f236dbf078921f387ce05d519d3a1790448ca11#npm:8.46.2"]\
           ],\
@@ -14983,10 +14983,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:15.15.0", {\
-          "packageLocation": "./.yarn/cache/globals-npm-15.15.0-5ddcb6c553-a2a92199a1.zip/node_modules/globals/",\
+        ["npm:16.4.0", {\
+          "packageLocation": "./.yarn/cache/globals-npm-16.4.0-1986d69a8b-934180f5c6.zip/node_modules/globals/",\
           "packageDependencies": [\
-            ["globals", "npm:15.15.0"]\
+            ["globals", "npm:16.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -23505,7 +23505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
             ["eslint-plugin-tsdoc", "npm:0.4.0"],\
             ["fp-ts", "npm:2.16.11"],\
-            ["globals", "npm:15.15.0"],\
+            ["globals", "npm:16.4.0"],\
             ["husky", "npm:9.1.7"],\
             ["knip", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:5.66.3"],\
             ["lint-staged", "npm:16.2.6"],\

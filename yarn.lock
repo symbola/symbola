@@ -5972,7 +5972,7 @@ __metadata:
     eslint-plugin-jest: ^29.0.1
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.4.0
-    globals: ^15.14.0
+    globals: ^16.0.0
     prettier: ^3.6.2
     typescript-eslint: ^8.46.2
   peerDependencies:
@@ -10671,10 +10671,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.14.0":
-  version: 15.15.0
-  resolution: "globals@npm:15.15.0"
-  checksum: a2a92199a112db00562a2f85eeef2a7e3943e171f7f7d9b17dfa9231e35fd612588f3c199d1509ab1757273467e413b08c80424cf6e399e96acdaf93deb3ee88
+"globals@npm:^16.0.0":
+  version: 16.4.0
+  resolution: "globals@npm:16.4.0"
+  checksum: 934180f5c6cbb26f8b2832caa255050fface970eee45bde8757fabba384807c85640a12716aa5bcc47d781807839fee470c8c1f6159c6b8dc877668c56103880
   languageName: node
   linkType: hard
 
@@ -18219,7 +18219,7 @@ __metadata:
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.4.0
     fp-ts: ^2.16.11
-    globals: ^15.14.0
+    globals: ^16.0.0
     husky: ^9.1.7
     knip: ^5.66.3
     lint-staged: ^16.2.6
