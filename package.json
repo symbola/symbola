@@ -23,7 +23,7 @@
     "c:prettier": "yarn workspace @symbola/prettier-config",
     "c:typescript": "yarn workspace @symbola/typescript-config",
     "c:babel": "yarn workspace @symbola/babel-config",
-    "postinstall": "husky install",
+    "postinstall": "[ -z \"$CI\" ] && husky install || true",
     "test": "yarn workspaces foreach -pv run test",
     "test:ci": "yarn workspaces foreach -pv run test:ci",
     "lint:eslint": "yarn workspaces foreach -pv run lint:eslint",
