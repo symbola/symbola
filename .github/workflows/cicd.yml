@@ -44,14 +44,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: ./.github/actions/setup
 
       - name: ESLint
-        run: yarn lint:eslint
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            yarn workspaces foreach --since origin/${{ github.base_ref }} -pv run lint:eslint
+          else
+            yarn lint:eslint
+          fi
 
       - name: Prettier
-        run: yarn lint:prettier
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            yarn workspaces foreach --since origin/${{ github.base_ref }} -pv run lint:prettier
+          else
+            yarn lint:prettier
+          fi
 
   build:
     name: Build

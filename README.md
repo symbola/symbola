@@ -1,7 +1,7 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/symbola/symbola/main/symbola.jpg" alt="Symbola"></h1>
 
 <p align="center">
-  <a href="https://github.com/renovatebot/github-action/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/actions/workflow/status/symbola/symbola/cicd.yml"></a>
+  <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/symbola/symbola/cicd.yml">
   <a href="https://codecov.io/github/symbola/symbola" ><img src="https://codecov.io/github/symbola/symbola/branch/main/graph/badge.svg?token=4GR7BO7977"/></a>
   <a href="https://semver.org/#semantic-versioning-200"><img src="https://img.shields.io/static/v1?label=versioning&message=semver&color=informational"/></a>
   <a href="https://conventionalcommits.org"><img alt="Conventional Commits: 1.0.0" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square"></a>
