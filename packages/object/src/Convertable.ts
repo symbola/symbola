@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { extend } from '@symbola/core'
 
 export const entries = Symbol('entries')

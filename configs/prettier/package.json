@@ -6,10 +6,8 @@
     "prettier": "*"
   },
   "scripts": {
-    "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
-    "lint:prettier:fix": "prettier --write .",
-    "lint:eslint:fix": "eslint --fix ."
+    "lint:prettier:fix": "prettier --write ."
   },
   "files": [
     "prettier.config.js"

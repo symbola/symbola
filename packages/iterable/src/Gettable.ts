@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
 import { extend } from '@symbola/core'
 import { Buffer } from 'queueable'
 

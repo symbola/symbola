@@ -4,9 +4,7 @@
   "license": "ISC",
   "scripts": {
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint .",
-    "lint:prettier:fix": "prettier --write .",
-    "lint:eslint:fix": "eslint --fix ."
+    "lint:prettier:fix": "prettier --write ."
   },
   "peerDependencies": {
     "@babel/core": "^7",

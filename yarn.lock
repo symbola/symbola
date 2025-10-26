@@ -3652,7 +3652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.38.0":
+"@eslint/js@npm:9.38.0, @eslint/js@npm:^9.38.0":
   version: 9.38.0
   resolution: "@eslint/js@npm:9.38.0"
   checksum: 24219b9547c9a7b584c68e8cdab1f3ec607f8e3ce5d9f5fbde51664db5cacc5606e436f3c2bea688f7e7e416cf155d0ea3b725c66055e0e0e8ce28d003b828e0
@@ -5964,24 +5964,26 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@symbola/eslint-config@workspace:configs/eslint"
   dependencies:
+    "@eslint/js": ^9.38.0
     "@types/eslint": ^9.6.1
     "@types/prettier": ^3.0.0
-    "@typescript-eslint/eslint-plugin": ^8.46.2
-    "@typescript-eslint/parser": ^8.46.2
     eslint: ^9.38.0
     eslint-config-prettier: ^10.1.8
     eslint-plugin-jest: ^29.0.1
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.4.0
+    globals: ^15.14.0
     prettier: ^3.6.2
+    typescript-eslint: ^8.46.2
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": "*"
-    "@typescript-eslint/parser": "*"
+    "@eslint/js": "*"
     eslint: "*"
     eslint-config-prettier: "*"
     eslint-plugin-jest: "*"
     eslint-plugin-jest-formatting: "*"
     eslint-plugin-tsdoc: "*"
+    globals: "*"
+    typescript-eslint: "*"
   languageName: unknown
   linkType: soft
 
@@ -6497,7 +6499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.46.2":
+"@typescript-eslint/eslint-plugin@npm:8.46.2, @typescript-eslint/eslint-plugin@npm:^8.46.2":
   version: 8.46.2
   resolution: "@typescript-eslint/eslint-plugin@npm:8.46.2"
   dependencies:
@@ -6518,7 +6520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.46.2":
+"@typescript-eslint/parser@npm:8.46.2, @typescript-eslint/parser@npm:^8.46.2":
   version: 8.46.2
   resolution: "@typescript-eslint/parser@npm:8.46.2"
   dependencies:
@@ -10666,6 +10668,13 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 534b8216736a5425737f59f6e6a5c7f386254560c9f41d24a9227d60ee3ad4a9e82c5b85def0e212e9d92162f83a92544be4c7fd4c902cb913736c10e08237ac
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.14.0":
+  version: 15.15.0
+  resolution: "globals@npm:15.15.0"
+  checksum: a2a92199a112db00562a2f85eeef2a7e3943e171f7f7d9b17dfa9231e35fd612588f3c199d1509ab1757273467e413b08c80424cf6e399e96acdaf93deb3ee88
   languageName: node
   linkType: hard
 
@@ -18190,6 +18199,7 @@ __metadata:
     "@commitlint/cli": ^20.1.0
     "@commitlint/config-conventional": ^20.0.0
     "@dmeents/semantic-release-yarn": ^1.1.13
+    "@eslint/js": ^9.38.0
     "@semantic-release/commit-analyzer": ^13.0.1
     "@semantic-release/github": ^12.0.0
     "@semantic-release/npm": ^13.1.1
@@ -18209,6 +18219,7 @@ __metadata:
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-tsdoc: ^0.4.0
     fp-ts: ^2.16.11
+    globals: ^15.14.0
     husky: ^9.1.7
     knip: ^5.66.3
     lint-staged: ^16.2.6
@@ -18221,6 +18232,7 @@ __metadata:
     tuplerone: ^3.3.3
     typedoc: ^0.28.14
     typescript: ^5.9.3
+    typescript-eslint: ^8.46.2
   languageName: unknown
   linkType: soft
 
@@ -18668,6 +18680,21 @@ __metadata:
   bin:
     typedoc: bin/typedoc
   checksum: d579280e58f50dfdb4c0017ab1ed5807a98c468ebd2aca4ae4d725194c3b575de2524543d142382c0fa7cd1b7a7b3732245f459677406365c7ba7151b3c87ebc
+  languageName: node
+  linkType: hard
+
+"typescript-eslint@npm:^8.46.2":
+  version: 8.46.2
+  resolution: "typescript-eslint@npm:8.46.2"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": 8.46.2
+    "@typescript-eslint/parser": 8.46.2
+    "@typescript-eslint/typescript-estree": 8.46.2
+    "@typescript-eslint/utils": 8.46.2
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0
+    typescript: ">=4.8.4 <6.0.0"
+  checksum: ed9e4587f6b437642413699a55caf50c7c2b912c9b251e6f1d055a5adee09a7ac0cc4fb0fa96a4ea9dcf32b11e3a4f386ec1d2b20cf6ba34ecba388215a04e62
   languageName: node
   linkType: hard
 

@@ -30,7 +30,7 @@ export abstract class Groupable {
       if (!result.has(key)) {
         result.set(key, [])
       }
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
       result.get(key)!.push(a)
     }
     return result

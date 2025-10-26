@@ -1,9 +1,9 @@
 runs:
   using: composite
   steps:
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 24
     - run: node --version
       shell: bash
     - run: yarn --version

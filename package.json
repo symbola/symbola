@@ -36,11 +36,11 @@
     "docs": "typedoc"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 24"
   },
   "engineStrict": true,
   "volta": {
-    "node": "19.9.0"
+    "node": "24.0.0"
   },
   "homepage": "https://github.com/symbola/symbola#readme",
   "repository": "git@github.com:symbola/symbola.git",
@@ -52,6 +52,7 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@dmeents/semantic-release-yarn": "^1.1.13",
+    "@eslint/js": "^9.38.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/github": "^12.0.0",
     "@semantic-release/npm": "^13.1.1",
@@ -71,6 +72,7 @@
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-tsdoc": "^0.4.0",
     "fp-ts": "^2.16.11",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "knip": "^5.66.3",
     "lint-staged": "^16.2.6",
@@ -82,7 +84,8 @@
     "semantic-release": "^25.0.1",
     "tuplerone": "^3.3.3",
     "typedoc": "^0.28.14",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
   },
   "packageManager": "yarn@3.6.3"
 }

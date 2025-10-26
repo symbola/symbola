@@ -15,7 +15,7 @@ export abstract class Reduceable {
     }
     const iterator = this[Symbol.iterator]()
     let previous = args.length ? args[0] : iterator.next().value
-    // eslint-disable-next-line no-constant-condition
+
     while (true) {
       const { value, done } = iterator.next()
       if (done) {
