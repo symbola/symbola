@@ -68,7 +68,7 @@
     "url": "https://github.com/symbola/symbola/issues"
   },
   "volta": {
-    "node": "19.9.0"
+    "node": "24.11.0"
   },
   "keywords": [
     "protocol-oriented",

@@ -41,7 +41,7 @@
   },
   "engineStrict": true,
   "volta": {
-    "node": "24.10.0"
+    "node": "24.11.0"
   },
   "homepage": "https://github.com/symbola/symbola#readme",
   "repository": "git@github.com:symbola/symbola.git",
