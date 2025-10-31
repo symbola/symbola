@@ -124,7 +124,7 @@ const RAW_RUNTIME_STATE =
           ["multi-semantic-release", "npm:3.0.2"],\
           ["prettier", "npm:3.6.2"],\
           ["queueable", "npm:5.3.2"],\
-          ["rimraf", "npm:6.0.1"],\
+          ["rimraf", "npm:6.1.0"],\
           ["semantic-release", "npm:25.0.1"],\
           ["symbola", "workspace:."],\
           ["tuplerone", "npm:3.3.3"],\
@@ -22097,12 +22097,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:6.0.1", {\
-        "packageLocation": "./.yarn/cache/rimraf-npm-6.0.1-2d0b0aeb1b-0eb7edf08a.zip/node_modules/rimraf/",\
+      ["npm:6.1.0", {\
+        "packageLocation": "./.yarn/cache/rimraf-npm-6.1.0-e5f11dcd79-ce376c041e.zip/node_modules/rimraf/",\
         "packageDependencies": [\
           ["glob", "npm:11.0.3"],\
           ["package-json-from-dist", "npm:1.0.1"],\
-          ["rimraf", "npm:6.0.1"]\
+          ["rimraf", "npm:6.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -23449,7 +23449,7 @@ const RAW_RUNTIME_STATE =
           ["multi-semantic-release", "npm:3.0.2"],\
           ["prettier", "npm:3.6.2"],\
           ["queueable", "npm:5.3.2"],\
-          ["rimraf", "npm:6.0.1"],\
+          ["rimraf", "npm:6.1.0"],\
           ["semantic-release", "npm:25.0.1"],\
           ["symbola", "workspace:."],\
           ["tuplerone", "npm:3.3.3"],\
