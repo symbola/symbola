@@ -119,7 +119,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:16.4.0"],\
           ["husky", "npm:9.1.7"],\
           ["knip", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:5.69.0"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["microbundle", "npm:0.15.1"],\
           ["multi-semantic-release", "npm:3.0.2"],\
           ["prettier", "npm:3.6.2"],\
@@ -17939,11 +17939,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.2.6", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.2.6-0ee184c358-c419f13471.zip/node_modules/lint-staged/",\
+      ["npm:16.2.7", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.2.7-9ab2185fb2-c1fd768530.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.2"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:2.0.0"],\
@@ -23687,7 +23687,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:16.4.0"],\
           ["husky", "npm:9.1.7"],\
           ["knip", "virtual:1895dd9a4e33fdbe34da1cf1153e8601ccd96a14f8ce3cd5f186e0c74a3f002a227a446ed368cd04710ad1c6e68c74af6795a3d5078404f10f1706431f206ea1#npm:5.69.0"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["microbundle", "npm:0.15.1"],\
           ["multi-semantic-release", "npm:3.0.2"],\
           ["prettier", "npm:3.6.2"],\
