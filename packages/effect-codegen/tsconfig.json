@@ -6,8 +6,5 @@
   "compilerOptions": {
     "types": ["node"]
   },
-  "references": [
-    { "path": "../effect" },
-    { "path": "../effect-oxlint" }
-  ]
+  "references": [{ "path": "../effect" }, { "path": "../effect-oxlint" }]
 }

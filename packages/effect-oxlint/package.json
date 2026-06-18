@@ -1,13 +1,11 @@
 {
   "name": "@symbola/effect-oxlint",
-  "version": "0.0.0",
-  "type": "module",
+  "version": "4.0.0-beta.83-symbola.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/symbola/symbola.git",
     "directory": "packages/effect-oxlint"
   },
-  "sideEffects": false,
   "files": [
     "src/**/*.ts",
     "!src/**/*.test.ts",
@@ -16,6 +14,8 @@
     "dist/**/*.d.ts",
     "dist/**/*.d.ts.map"
   ],
+  "type": "module",
+  "sideEffects": false,
   "exports": {
     "./package.json": "./package.json",
     ".": "./src/index.ts",
@@ -23,14 +23,14 @@
     "./internal/*": null
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true,
     "exports": {
       "./package.json": "./package.json",
       ".": "./dist/index.js",
       "./rules/*": "./dist/rules/*.js",
       "./internal/*": null
-    }
+    },
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
     "build": "tsc -b tsconfig.json",
@@ -44,5 +44,8 @@
     "@types/node": "catalog:",
     "oxlint": "catalog:",
     "typescript": "catalog:"
+  },
+  "symbola": {
+    "targetEffect": "4.0.0-beta.83"
   }
 }

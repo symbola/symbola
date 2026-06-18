@@ -1,0 +1,89 @@
+amends "package://github.com/jdx/hk/releases/download/v1.45.0/hk@1.45.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.45.0/hk@1.45.0#/Builtins.pkl"
+
+local fixable = new Mapping<String, Step> {
+  ["oxlint"] {
+    glob = List("*.js", "*.jsx", "*.ts", "*.tsx", "*.mjs", "*.cjs", "*.mts", "*.cts")
+    check = "pnpm exec oxlint --deny-warnings {{files}}"
+    fix = "pnpm exec oxlint --fix --deny-warnings {{files}}"
+  }
+
+  ["oxfmt"] {
+    glob = List(
+      "*.js", "*.jsx", "*.ts", "*.tsx", "*.mjs", "*.cjs", "*.mts", "*.cts",
+      "*.json", "*.jsonc", "*.json5",
+      "*.yml", "*.yaml",
+      "*.css", "*.scss", "*.less",
+      "*.html"
+    )
+    check = "pnpm exec oxfmt --check {{files}}"
+    fix = "pnpm exec oxfmt --write {{files}}"
+  }
+
+  ["trailing-whitespace"] = Builtins.trailing_whitespace
+  ["newlines"] = Builtins.newlines
+}
+
+local staged = new Mapping<String, Step> {
+  ...fixable
+
+  ["actionlint"] {
+    glob = List(".github/workflows/*.yml", ".github/workflows/*.yaml")
+    check = "actionlint"
+  }
+
+  ["zizmor"] {
+    glob = List(".github/workflows/*.yml", ".github/workflows/*.yaml")
+    check = "sh -c 'out=$(mktemp); if zizmor .github/workflows >\"$out\" 2>&1; then rm -f \"$out\"; else status=$?; cat \"$out\"; rm -f \"$out\"; exit \"$status\"; fi'"
+  }
+
+  ["typos"] {
+    check = "typos"
+  }
+}
+
+local full = new Mapping<String, Step> {
+  ["version-check"] {
+    check = "pnpm run version:check"
+  }
+
+  ["codegen-check"] {
+    check = "pnpm run codegen:check"
+  }
+
+  ["build"] {
+    check = "pnpm run build"
+  }
+
+  ["package-check"] {
+    check = "pnpm run package:check"
+  }
+
+  ["test"] {
+    check = "pnpm run test"
+  }
+}
+
+hooks {
+  ["pre-commit"] {
+    fix = true
+    stash = "git"
+    steps = staged
+  }
+
+  ["pre-push"] {
+    steps = full
+  }
+
+  ["check"] {
+    steps {
+      ...staged
+      ...full
+    }
+  }
+
+  ["fix"] {
+    fix = true
+    steps = fixable
+  }
+}

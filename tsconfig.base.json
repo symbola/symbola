@@ -28,16 +28,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": [],
-    "plugins": [
-      {
-        "name": "@effect/language-service",
-        "transform": "@effect/language-service/transform",
-        "namespaceImportPackages": ["effect", "@effect/*"],
-        "includeSuggestionsInTsc": false,
-        "ignoreEffectWarningsInTscExitCode": true,
-        "ignoreEffectErrorsInTscExitCode": true
-      }
-    ]
+    "types": []
   }
 }

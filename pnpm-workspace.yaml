@@ -2,17 +2,16 @@ packages:
   - packages/*
 
 catalog:
-  '@arethetypeswrong/cli': 0.18.3
-  '@changesets/changelog-github': ^0.7.0
-  '@changesets/cli': ^2.31.0
-  '@effect/language-service': ^0.86.2
-  '@effect/platform-node': 4.0.0-beta.83
-  '@effect/vitest': 4.0.0-beta.83
-  '@fast-check/vitest': ^0.4.1
-  '@types/node': ^22.19.19
-  dprint: ^0.54.0
+  "@arethetypeswrong/cli": 0.18.3
+  "@changesets/changelog-github": ^0.7.0
+  "@changesets/cli": ^2.31.0
+  "@effect/platform-node": 4.0.0-beta.83
+  "@effect/vitest": 4.0.0-beta.83
+  "@fast-check/vitest": ^0.4.1
+  "@types/node": ^22.19.19
   effect: 4.0.0-beta.83
   oxc-parser: 0.135.0
+  oxfmt: ^0.55.0
   oxlint: ^1.66.0
   publint: 0.3.21
   typescript: ^6.0.3
@@ -22,4 +21,4 @@ catalogMode: strict
 
 peerDependencyRules:
   allowedVersions:
-    '@effect/vitest>vitest': '4'
+    "@effect/vitest>vitest": "4"

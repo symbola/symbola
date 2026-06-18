@@ -6,7 +6,5 @@
   "compilerOptions": {
     "types": ["node"]
   },
-  "references": [
-    { "path": "../effect" }
-  ]
+  "references": [{ "path": "../effect" }]
 }

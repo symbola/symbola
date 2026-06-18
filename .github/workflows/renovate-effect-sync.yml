@@ -1,0 +1,52 @@
+name: Renovate Effect Sync
+
+on:
+  pull_request:
+    branches: [effect]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  sync:
+    name: Sync
+    if: github.event.pull_request.user.id == 29139614
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: false
+
+      - name: Install dependencies
+        uses: ./.github/actions/setup
+
+      - name: Sync generated files
+        run: |
+          pnpm run version:sync
+          pnpm run codegen
+          pnpm run format
+
+      - name: Check
+        run: pnpm run check
+
+      - name: Commit changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --cached --quiet && exit 0
+          git commit -m 'Sync Symbola for updated Effect'
+          git -c http.extraheader="AUTHORIZATION: bearer ${GITHUB_TOKEN}" \
+            push origin HEAD:${GITHUB_HEAD_REF}
+        env:
+          GITHUB_HEAD_REF: ${{ github.head_ref }}
+          GITHUB_TOKEN: ${{ github.token }}

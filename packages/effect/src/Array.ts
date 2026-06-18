@@ -1,1 +1,1 @@
-export { filter, flatMap, map } from "./internal/generated/Array.ts"
+export { filter, flatMap, map } from "./internal/generated/Array.ts";

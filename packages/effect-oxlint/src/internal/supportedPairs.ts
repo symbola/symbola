@@ -2,23 +2,23 @@
 // Run `pnpm --filter @symbola/effect-codegen codegen` to update.
 
 export type DirectFix = {
-  readonly kind: "receiverFirst"
-}
+  readonly kind: "receiverFirst";
+};
 
 export type PipeFix = {
-  readonly kind: "pipeOperator"
-}
+  readonly kind: "pipeOperator";
+};
 
 export type SymbolaPair = {
-  readonly module: string
-  readonly direct: DirectFix | false
-  readonly method: string
-  readonly pipe: PipeFix | false
-  readonly symbol: string
-}
+  readonly module: string;
+  readonly direct: DirectFix | false;
+  readonly method: string;
+  readonly pipe: PipeFix | false;
+  readonly symbol: string;
+};
 
-const receiverFirst = { kind: "receiverFirst" } as const satisfies DirectFix
-const pipeOperator = { kind: "pipeOperator" } as const satisfies PipeFix
+const receiverFirst = { kind: "receiverFirst" } as const satisfies DirectFix;
+const pipeOperator = { kind: "pipeOperator" } as const satisfies PipeFix;
 
 export const supportedPairs = [
   // effect/Array
@@ -27,21 +27,21 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/Array",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Array",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   // effect/Chunk
   {
@@ -49,35 +49,35 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "append",
     pipe: pipeOperator,
-    symbol: "append"
+    symbol: "append",
   },
   {
     module: "effect/Chunk",
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/Chunk",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Chunk",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Chunk",
     direct: receiverFirst,
     method: "take",
     pipe: pipeOperator,
-    symbol: "take"
+    symbol: "take",
   },
   // effect/Effect
   {
@@ -85,147 +85,147 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "andThen",
     pipe: pipeOperator,
-    symbol: "andThen"
+    symbol: "andThen",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "as",
     pipe: pipeOperator,
-    symbol: "as"
+    symbol: "as",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "asVoid",
     pipe: false,
-    symbol: "asVoid"
+    symbol: "asVoid",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "catchTag",
     pipe: pipeOperator,
-    symbol: "catchTag"
+    symbol: "catchTag",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "ensuring",
     pipe: pipeOperator,
-    symbol: "ensuring"
+    symbol: "ensuring",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "fail",
     pipe: false,
-    symbol: "fail"
+    symbol: "fail",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "flip",
     pipe: false,
-    symbol: "flip"
+    symbol: "flip",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "gen",
     pipe: false,
-    symbol: "gen"
+    symbol: "gen",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "mapError",
     pipe: pipeOperator,
-    symbol: "mapError"
+    symbol: "mapError",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "promise",
     pipe: false,
-    symbol: "promise"
+    symbol: "promise",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "provideService",
     pipe: pipeOperator,
-    symbol: "provideService"
+    symbol: "provideService",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "runPromise",
     pipe: false,
-    symbol: "runPromise"
+    symbol: "runPromise",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "runSync",
     pipe: false,
-    symbol: "runSync"
+    symbol: "runSync",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "succeed",
     pipe: false,
-    symbol: "succeed"
+    symbol: "succeed",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "sync",
     pipe: false,
-    symbol: "sync"
+    symbol: "sync",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "tap",
     pipe: pipeOperator,
-    symbol: "tap"
+    symbol: "tap",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "tapError",
     pipe: pipeOperator,
-    symbol: "tapError"
+    symbol: "tapError",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "try",
     pipe: false,
-    symbol: "try_"
+    symbol: "try_",
   },
   {
     module: "effect/Effect",
     direct: receiverFirst,
     method: "tryPromise",
     pipe: false,
-    symbol: "tryPromise"
+    symbol: "tryPromise",
   },
   // effect/Exit
   {
@@ -233,14 +233,14 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Exit",
     direct: receiverFirst,
     method: "match",
     pipe: pipeOperator,
-    symbol: "match"
+    symbol: "match",
   },
   // effect/HashMap
   {
@@ -248,35 +248,35 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/HashMap",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/HashMap",
     direct: receiverFirst,
     method: "get",
     pipe: pipeOperator,
-    symbol: "get"
+    symbol: "get",
   },
   {
     module: "effect/HashMap",
     direct: receiverFirst,
     method: "has",
     pipe: pipeOperator,
-    symbol: "has"
+    symbol: "has",
   },
   {
     module: "effect/HashMap",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   // effect/HashSet
   {
@@ -284,21 +284,21 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/HashSet",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/HashSet",
     direct: receiverFirst,
     method: "union",
     pipe: pipeOperator,
-    symbol: "union"
+    symbol: "union",
   },
   // effect/Option
   {
@@ -306,77 +306,77 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "filterMap",
     pipe: pipeOperator,
-    symbol: "filterMap"
+    symbol: "filterMap",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "flatMapNullishOr",
     pipe: pipeOperator,
-    symbol: "flatMapNullishOr"
+    symbol: "flatMapNullishOr",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "gen",
     pipe: false,
-    symbol: "gen"
+    symbol: "gen",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "getOrElse",
     pipe: pipeOperator,
-    symbol: "getOrElse"
+    symbol: "getOrElse",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "match",
     pipe: pipeOperator,
-    symbol: "match"
+    symbol: "match",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "orElse",
     pipe: pipeOperator,
-    symbol: "orElse"
+    symbol: "orElse",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "orElseSome",
     pipe: pipeOperator,
-    symbol: "orElseSome"
+    symbol: "orElseSome",
   },
   {
     module: "effect/Option",
     direct: receiverFirst,
     method: "some",
     pipe: false,
-    symbol: "some"
+    symbol: "some",
   },
   // effect/Result
   {
@@ -384,70 +384,70 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filterOrFail",
     pipe: pipeOperator,
-    symbol: "filterOrFail"
+    symbol: "filterOrFail",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "getOrElse",
     pipe: pipeOperator,
-    symbol: "getOrElse"
+    symbol: "getOrElse",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "mapBoth",
     pipe: pipeOperator,
-    symbol: "mapBoth"
+    symbol: "mapBoth",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "mapError",
     pipe: pipeOperator,
-    symbol: "mapError"
+    symbol: "mapError",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "match",
     pipe: pipeOperator,
-    symbol: "match"
+    symbol: "match",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "orElse",
     pipe: pipeOperator,
-    symbol: "orElse"
+    symbol: "orElse",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "succeed",
     pipe: false,
-    symbol: "succeed"
+    symbol: "succeed",
   },
   {
     module: "effect/Result",
     direct: receiverFirst,
     method: "try",
     pipe: false,
-    symbol: "try_"
+    symbol: "try_",
   },
   // effect/Schema
   {
@@ -455,147 +455,147 @@ export const supportedPairs = [
     direct: false,
     method: "annotate",
     pipe: pipeOperator,
-    symbol: "annotate"
+    symbol: "annotate",
   },
   {
     module: "effect/Schema",
     direct: false,
     method: "brand",
     pipe: pipeOperator,
-    symbol: "brand"
+    symbol: "brand",
   },
   {
     module: "effect/Schema",
     direct: false,
     method: "check",
     pipe: pipeOperator,
-    symbol: "check"
+    symbol: "check",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeEffect",
     pipe: false,
-    symbol: "decodeEffect"
+    symbol: "decodeEffect",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeOption",
     pipe: false,
-    symbol: "decodeOption"
+    symbol: "decodeOption",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeResult",
     pipe: false,
-    symbol: "decodeResult"
+    symbol: "decodeResult",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeSync",
     pipe: false,
-    symbol: "decodeSync"
+    symbol: "decodeSync",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeUnknownOption",
     pipe: false,
-    symbol: "decodeUnknownOption"
+    symbol: "decodeUnknownOption",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeUnknownResult",
     pipe: false,
-    symbol: "decodeUnknownResult"
+    symbol: "decodeUnknownResult",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "decodeUnknownSync",
     pipe: false,
-    symbol: "decodeUnknownSync"
+    symbol: "decodeUnknownSync",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeEffect",
     pipe: false,
-    symbol: "encodeEffect"
+    symbol: "encodeEffect",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeOption",
     pipe: false,
-    symbol: "encodeOption"
+    symbol: "encodeOption",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeResult",
     pipe: false,
-    symbol: "encodeResult"
+    symbol: "encodeResult",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeSync",
     pipe: false,
-    symbol: "encodeSync"
+    symbol: "encodeSync",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeUnknownEffect",
     pipe: false,
-    symbol: "encodeUnknownEffect"
+    symbol: "encodeUnknownEffect",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeUnknownOption",
     pipe: false,
-    symbol: "encodeUnknownOption"
+    symbol: "encodeUnknownOption",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeUnknownResult",
     pipe: false,
-    symbol: "encodeUnknownResult"
+    symbol: "encodeUnknownResult",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "encodeUnknownSync",
     pipe: false,
-    symbol: "encodeUnknownSync"
+    symbol: "encodeUnknownSync",
   },
   {
     module: "effect/Schema",
     direct: false,
     method: "extendTo",
     pipe: pipeOperator,
-    symbol: "extendTo"
+    symbol: "extendTo",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "optional",
     pipe: false,
-    symbol: "optional"
+    symbol: "optional",
   },
   {
     module: "effect/Schema",
     direct: receiverFirst,
     method: "required",
     pipe: false,
-    symbol: "required"
+    symbol: "required",
   },
   // effect/SchemaParser
   {
@@ -603,112 +603,112 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "decodeEffect",
     pipe: false,
-    symbol: "decodeEffect"
+    symbol: "decodeEffect",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeOption",
     pipe: false,
-    symbol: "decodeOption"
+    symbol: "decodeOption",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeResult",
     pipe: false,
-    symbol: "decodeResult"
+    symbol: "decodeResult",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeSync",
     pipe: false,
-    symbol: "decodeSync"
+    symbol: "decodeSync",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeUnknownEffect",
     pipe: false,
-    symbol: "decodeUnknownEffect"
+    symbol: "decodeUnknownEffect",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeUnknownOption",
     pipe: false,
-    symbol: "decodeUnknownOption"
+    symbol: "decodeUnknownOption",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeUnknownResult",
     pipe: false,
-    symbol: "decodeUnknownResult"
+    symbol: "decodeUnknownResult",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "decodeUnknownSync",
     pipe: false,
-    symbol: "decodeUnknownSync"
+    symbol: "decodeUnknownSync",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeEffect",
     pipe: false,
-    symbol: "encodeEffect"
+    symbol: "encodeEffect",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeOption",
     pipe: false,
-    symbol: "encodeOption"
+    symbol: "encodeOption",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeResult",
     pipe: false,
-    symbol: "encodeResult"
+    symbol: "encodeResult",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeSync",
     pipe: false,
-    symbol: "encodeSync"
+    symbol: "encodeSync",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeUnknownEffect",
     pipe: false,
-    symbol: "encodeUnknownEffect"
+    symbol: "encodeUnknownEffect",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeUnknownOption",
     pipe: false,
-    symbol: "encodeUnknownOption"
+    symbol: "encodeUnknownOption",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeUnknownResult",
     pipe: false,
-    symbol: "encodeUnknownResult"
+    symbol: "encodeUnknownResult",
   },
   {
     module: "effect/SchemaParser",
     direct: receiverFirst,
     method: "encodeUnknownSync",
     pipe: false,
-    symbol: "encodeUnknownSync"
+    symbol: "encodeUnknownSync",
   },
   // effect/Stream
   {
@@ -716,44 +716,50 @@ export const supportedPairs = [
     direct: receiverFirst,
     method: "filter",
     pipe: pipeOperator,
-    symbol: "filter"
+    symbol: "filter",
   },
   {
     module: "effect/Stream",
     direct: receiverFirst,
     method: "flatMap",
     pipe: pipeOperator,
-    symbol: "flatMap"
+    symbol: "flatMap",
   },
   {
     module: "effect/Stream",
     direct: receiverFirst,
     method: "map",
     pipe: pipeOperator,
-    symbol: "map"
+    symbol: "map",
   },
   {
     module: "effect/Stream",
     direct: receiverFirst,
     method: "runCollect",
     pipe: false,
-    symbol: "runCollect"
+    symbol: "runCollect",
   },
   {
     module: "effect/Stream",
     direct: receiverFirst,
     method: "tap",
     pipe: pipeOperator,
-    symbol: "tap"
-  }
-] as const satisfies readonly SymbolaPair[]
+    symbol: "tap",
+  },
+] as const satisfies readonly SymbolaPair[];
 
-export const supportedPairsByModule = new Map<string, ReadonlyMap<string, SymbolaPair>>(
+export const supportedPairsByModule = new Map<
+  string,
+  ReadonlyMap<string, SymbolaPair>
+>(
   Object.entries(
-    supportedPairs.reduce<Record<string, Record<string, SymbolaPair>>>((modules, pair) => {
-      modules[pair.module] ??= {}
-      modules[pair.module][pair.method] = pair
-      return modules
-    }, {})
-  ).map(([module, pairs]) => [module, new Map(Object.entries(pairs))])
-)
+    supportedPairs.reduce<Record<string, Record<string, SymbolaPair>>>(
+      (modules, pair) => {
+        modules[pair.module] ??= {};
+        modules[pair.module][pair.method] = pair;
+        return modules;
+      },
+      {},
+    ),
+  ).map(([module, pairs]) => [module, new Map(Object.entries(pairs))]),
+);
