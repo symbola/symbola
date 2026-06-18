@@ -7,15 +7,16 @@
   },
   "type": "module",
   "scripts": {
+    "build": "tsc -b tsconfig.json",
     "codegen": "node ./src/GenerateSupportedPairs.ts --write",
     "codegen:check": "node ./src/GenerateSupportedPairs.ts --check",
     "test": "vitest run --project unit",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -b tsconfig.json"
   },
   "dependencies": {
     "@effect/platform-node": "catalog:",
-    "@symbola/effect": "workspace:*",
-    "@symbola/effect-oxlint": "workspace:*",
+    "@symbola/effect": "workspace:^",
+    "@symbola/effect-oxlint": "workspace:^",
     "effect": "catalog:",
     "oxc-parser": "catalog:"
   },

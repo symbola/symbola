@@ -3,19 +3,24 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run codegen:check && pnpm run test",
+    "build": "tsc -b tsconfig.packages.json",
+    "check": "pnpm run format:check && pnpm run lint && pnpm run build && pnpm run codegen:check && pnpm run test",
+    "changeset-publish": "pnpm run build && changeset publish",
+    "changeset-version": "changeset version",
     "codegen": "pnpm --filter @symbola/effect-codegen codegen",
     "codegen:check": "pnpm --filter @symbola/effect-codegen codegen:check",
-    "format": "oxfmt --write .",
-    "format:check": "oxfmt --check .",
+    "format": "dprint fmt",
+    "format:check": "dprint check",
     "lint": "oxlint --deny-warnings",
     "test": "vitest run --project unit",
-    "typecheck": "pnpm --filter @symbola/effect typecheck && pnpm --filter @symbola/effect-oxlint typecheck && pnpm --filter @symbola/effect-codegen typecheck"
+    "typecheck": "pnpm run build"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "catalog:",
+    "@changesets/cli": "catalog:",
     "@effect/language-service": "catalog:",
     "@types/node": "catalog:",
-    "oxfmt": "catalog:",
+    "dprint": "catalog:",
     "oxlint": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"

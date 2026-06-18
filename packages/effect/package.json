@@ -1,10 +1,18 @@
 {
   "name": "@symbola/effect",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "sideEffects": [
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "./dist/**/*.js"
+  ],
+  "files": [
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "dist/**/*.d.ts",
+    "dist/**/*.d.ts.map"
   ],
   "exports": {
     ".": "./src/index.ts",
@@ -26,9 +34,34 @@
     "./*/index": null,
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "exports": {
+      ".": "./dist/index.js",
+      "./Effect": "./dist/Effect.js",
+      "./Array": "./dist/Array.js",
+      "./Chunk": "./dist/Chunk.js",
+      "./Constructors": "./dist/Constructors.js",
+      "./Exit": "./dist/Exit.js",
+      "./HashMap": "./dist/HashMap.js",
+      "./HashSet": "./dist/HashSet.js",
+      "./Install": "./dist/Install.js",
+      "./Option": "./dist/Option.js",
+      "./Result": "./dist/Result.js",
+      "./Schema": "./dist/Schema.js",
+      "./SchemaValue": "./dist/SchemaValue.js",
+      "./Stream": "./dist/Stream.js",
+      "./Symbols": "./dist/Symbols.js",
+      "./internal/*": null,
+      "./*/index": null,
+      "./package.json": "./package.json"
+    }
+  },
   "scripts": {
+    "build": "tsc -b tsconfig.json",
     "test": "vitest run --project unit",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -b tsconfig.json"
   },
   "dependencies": {
     "effect": "catalog:"

@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
-import type { SymbolaMethod } from "./symbola.types.ts";
-import { renderSupportedPairs } from "./renderSupportedPairs.ts";
+import { describe, expect, it } from "vitest"
+import { renderSupportedPairs } from "./renderSupportedPairs.ts"
+import type { SymbolaMethod } from "./symbola.types.ts"
 
 describe("renderSupportedPairs", () => {
   it("renders deterministic generated pair data", () => {
@@ -11,7 +11,7 @@ describe("renderSupportedPairs", () => {
         effectModule: "effect/Effect",
         implementation: "constructor",
         pipe: false,
-        symbol: "try_",
+        symbol: "try_"
       },
       {
         direct: false,
@@ -19,13 +19,13 @@ describe("renderSupportedPairs", () => {
         effectModule: "effect/Schema",
         implementation: "receiverFirst",
         pipe: { kind: "pipeOperator" },
-        symbol: "brand",
-      },
-    ];
+        symbol: "brand"
+      }
+    ]
 
-    expect(renderSupportedPairs(methods)).toContain("// effect/Effect");
-    expect(renderSupportedPairs(methods)).toContain("direct: receiverFirst");
-    expect(renderSupportedPairs(methods)).toContain("pipe: pipeOperator");
-    expect(renderSupportedPairs(methods)).toContain('symbol: "try_"');
-  });
-});
+    expect(renderSupportedPairs(methods)).toContain("// effect/Effect")
+    expect(renderSupportedPairs(methods)).toContain("direct: receiverFirst")
+    expect(renderSupportedPairs(methods)).toContain("pipe: pipeOperator")
+    expect(renderSupportedPairs(methods)).toContain("symbol: \"try_\"")
+  })
+})

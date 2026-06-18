@@ -1,22 +1,22 @@
-import { Effect } from "effect";
+import { Effect } from "effect"
 
-export type SymbolProtocolImplementation = (...args: readonly never[]) => unknown;
+export type SymbolProtocolImplementation = (...args: readonly never[]) => unknown
 
 export interface SymbolProtocolEntry {
-  readonly symbol: symbol;
-  readonly implementation: SymbolProtocolImplementation;
+  readonly symbol: symbol
+  readonly implementation: SymbolProtocolImplementation
 }
 
-export type SymbolProtocol = Iterable<SymbolProtocolEntry> | object;
+export type SymbolProtocol = Iterable<SymbolProtocolEntry> | object
 
 export interface GuardedSymbolProtocolEntry {
-  readonly symbol: symbol;
-  readonly guard: (value: unknown) => boolean;
-  readonly implementation: SymbolProtocolImplementation;
+  readonly symbol: symbol
+  readonly guard: (value: unknown) => boolean
+  readonly implementation: SymbolProtocolImplementation
 }
 
 const isEntryIterable = (protocol: SymbolProtocol): protocol is Iterable<SymbolProtocolEntry> =>
-  Symbol.iterator in protocol && typeof protocol[Symbol.iterator] === "function";
+  Symbol.iterator in protocol && typeof protocol[Symbol.iterator] === "function"
 
 const installProperty = (target: object, symbol: symbol, value: unknown): void => {
   // oxlint-disable-next-line no-extend-native
@@ -24,9 +24,9 @@ const installProperty = (target: object, symbol: symbol, value: unknown): void =
     value,
     enumerable: false,
     writable: true,
-    configurable: true,
-  });
-};
+    configurable: true
+  })
+}
 
 /**
  * Registry of guarded handlers per symbol. When multiple type-protocols share
@@ -42,69 +42,69 @@ const registry = new Map<
   symbol,
   {
     guards: {
-      guard: (value: unknown) => boolean;
-      implementation: SymbolProtocolImplementation;
-    }[];
-    default?: SymbolProtocolImplementation;
+      guard: (value: unknown) => boolean
+      implementation: SymbolProtocolImplementation
+    }[]
+    default?: SymbolProtocolImplementation
   }
->();
+>()
 
 const getOrCreateEntry = (symbol: symbol) => {
-  let entry = registry.get(symbol);
+  let entry = registry.get(symbol)
   if (!entry) {
-    entry = { guards: [] };
-    registry.set(symbol, entry);
+    entry = { guards: [] }
+    registry.set(symbol, entry)
   }
-  return entry;
-};
+  return entry
+}
 
 const buildDispatcher = (symbol: symbol) =>
-  function (this: unknown, ...args: readonly unknown[]) {
-    const entry = registry.get(symbol)!;
+  function(this: unknown, ...args: readonly unknown[]) {
+    const entry = registry.get(symbol)!
     for (const { guard, implementation } of entry.guards) {
       if (guard(this)) {
-        return Reflect.apply(implementation, undefined, [this, ...args]);
+        return Reflect.apply(implementation, undefined, [this, ...args])
       }
     }
     if (entry.default) {
-      return Reflect.apply(entry.default, undefined, [this, ...args]);
+      return Reflect.apply(entry.default, undefined, [this, ...args])
     }
     throw new TypeError(
-      `No protocol handler found for symbol ${String(symbol)} on ${String(this)}`,
-    );
-  };
+      `No protocol handler found for symbol ${String(symbol)} on ${String(this)}`
+    )
+  }
 
 const installDefault = (symbol: symbol, implementation: SymbolProtocolImplementation): void => {
-  const reg = getOrCreateEntry(symbol);
+  const reg = getOrCreateEntry(symbol)
   if (reg.default !== undefined && reg.default !== implementation) {
     throw new TypeError(
-      `Symbol ${String(symbol)} already has an unguarded default; install shared symbols with installGuarded`,
-    );
+      `Symbol ${String(symbol)} already has an unguarded default; install shared symbols with installGuarded`
+    )
   }
-  reg.default = implementation;
-};
+  reg.default = implementation
+}
 
 export const install = (
   protocol: SymbolProtocol,
-  target: object = Object.prototype,
+  target: object = Object.prototype
 ): Effect.Effect<void> =>
   Effect.sync(() => {
     if (isEntryIterable(protocol)) {
       for (const entry of protocol) {
-        installDefault(entry.symbol, entry.implementation);
-        installProperty(target, entry.symbol, buildDispatcher(entry.symbol));
+        installDefault(entry.symbol, entry.implementation)
+        installProperty(target, entry.symbol, buildDispatcher(entry.symbol))
       }
-      return;
+      return
     }
 
     for (const symbol of Object.getOwnPropertySymbols(protocol)) {
-      const descriptor = Object.getOwnPropertyDescriptor(protocol, symbol);
+      const descriptor = Object.getOwnPropertyDescriptor(protocol, symbol)
       if (descriptor === undefined || !("value" in descriptor)) {
-        continue;
+        continue
       }
-      installProperty(target, symbol, descriptor.value);
+      installProperty(target, symbol, descriptor.value)
     }
-  });
+  })
 
 /**
  * Install guarded protocol entries on Object.prototype using the dispatch
@@ -121,15 +121,15 @@ export const install = (
  */
 export const installGuarded = (
   entries: readonly GuardedSymbolProtocolEntry[],
-  target: object = Object.prototype,
+  target: object = Object.prototype
 ): Effect.Effect<void> =>
   Effect.sync(() => {
     for (const entry of entries) {
-      const reg = getOrCreateEntry(entry.symbol);
+      const reg = getOrCreateEntry(entry.symbol)
       reg.guards.push({
         guard: entry.guard,
-        implementation: entry.implementation,
-      });
-      installProperty(target, entry.symbol, buildDispatcher(entry.symbol));
+        implementation: entry.implementation
+      })
+      installProperty(target, entry.symbol, buildDispatcher(entry.symbol))
     }
-  });
+  })

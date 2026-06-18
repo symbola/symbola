@@ -3,4 +3,4 @@ node_modules
 dist
 coverage
 repomix-output.md
-
+*.tsbuildinfo

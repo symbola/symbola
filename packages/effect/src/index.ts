@@ -1,1 +1,1 @@
-export * from "./Effect.ts";
+export * from "./Effect.ts"

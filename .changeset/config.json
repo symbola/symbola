@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@1.6.4/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "symbola/symbola" }],
+  "commit": false,
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": ["@symbola/effect-codegen"],
+  "privatePackages": false,
+  "fixed": [["@symbola/effect", "@symbola/effect-oxlint"]],
+  "snapshot": {
+    "useCalculatedVersion": false,
+    "prereleaseTemplate": "{tag}-{commit}"
+  }
+}

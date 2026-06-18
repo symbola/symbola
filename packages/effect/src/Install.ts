@@ -1,1 +1,1 @@
-export * from "./internal/install.ts";
+export * from "./internal/install.ts"

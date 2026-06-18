@@ -1,20 +1,39 @@
 {
   "name": "@symbola/effect-oxlint",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
+  "sideEffects": false,
+  "files": [
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "dist/**/*.d.ts",
+    "dist/**/*.d.ts.map"
+  ],
   "exports": {
     "./package.json": "./package.json",
     ".": "./src/index.ts",
     "./rules/*": "./src/rules/*.ts",
     "./internal/*": null
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./dist/index.js",
+      "./rules/*": "./dist/rules/*.js",
+      "./internal/*": null
+    }
+  },
   "scripts": {
+    "build": "tsc -b tsconfig.json",
     "test": "vitest run --project unit",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@symbola/effect": "workspace:*"
+    "@symbola/effect": "workspace:^"
   },
   "devDependencies": {
     "@types/node": "catalog:",

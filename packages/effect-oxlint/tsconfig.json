@@ -1,5 +1,12 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../../tsconfig.base.json",
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.integration.ts"]
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.integration.ts"],
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "references": [
+    { "path": "../effect" }
+  ]
 }
