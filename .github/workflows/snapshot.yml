@@ -1,0 +1,35 @@
+name: Snapshot
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [effect]
+  push:
+    branches: [effect]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  snapshot:
+    name: Snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        uses: ./.github/actions/setup
+
+      - name: Build packages
+        run: pnpm run build
+
+      - name: Publish snapshot packages
+        run: pnpx pkg-pr-new@0.0.62 publish --pnpm ./packages/effect ./packages/effect-oxlint

@@ -4,7 +4,7 @@
   "commit": false,
   "linked": [],
   "access": "public",
-  "baseBranch": "main",
+  "baseBranch": "effect",
   "updateInternalDependencies": "patch",
   "ignore": ["@symbola/effect-codegen"],
   "privatePackages": false,

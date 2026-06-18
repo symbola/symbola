@@ -2,6 +2,11 @@
   "name": "@symbola/effect",
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symbola/symbola.git",
+    "directory": "packages/effect"
+  },
   "sideEffects": [
     "./src/**/*.ts",
     "./dist/**/*.js"
