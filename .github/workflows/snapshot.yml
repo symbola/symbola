@@ -31,5 +31,8 @@ jobs:
       - name: Build packages
         run: pnpm run build
 
+      - name: Validate packages
+        run: pnpm run package:check
+
       - name: Publish snapshot packages
         run: pnpx pkg-pr-new@0.0.62 publish --pnpm ./packages/effect ./packages/effect-oxlint
