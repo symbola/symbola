@@ -1,0 +1,42 @@
+{
+  "name": "@symbola/effect",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "./src/**/*.ts"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./Effect": "./src/Effect.ts",
+    "./Array": "./src/Array.ts",
+    "./Chunk": "./src/Chunk.ts",
+    "./Constructors": "./src/Constructors.ts",
+    "./Exit": "./src/Exit.ts",
+    "./HashMap": "./src/HashMap.ts",
+    "./HashSet": "./src/HashSet.ts",
+    "./Install": "./src/Install.ts",
+    "./Option": "./src/Option.ts",
+    "./Result": "./src/Result.ts",
+    "./Schema": "./src/Schema.ts",
+    "./SchemaValue": "./src/SchemaValue.ts",
+    "./Stream": "./src/Stream.ts",
+    "./Symbols": "./src/Symbols.ts",
+    "./internal/*": null,
+    "./*/index": null,
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "vitest run --project unit",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "effect": "catalog:"
+  },
+  "devDependencies": {
+    "@effect/vitest": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

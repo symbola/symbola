@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "import", "unicorn", "oxc"],
+  "jsPlugins": ["./packages/effect-oxlint/src/index.ts"],
+  "overrides": [
+    {
+      "files": ["packages/effect/src/**"],
+      "rules": {
+        "symbola/prefer-method-form": "off"
+      }
+    }
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "style": "off",
+    "pedantic": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "rules": {
+    "symbola/prefer-method-form": "error",
+    "no-underscore-dangle": [
+      "warn",
+      {
+        "allow": ["_tag", "try_"]
+      }
+    ],
+    "unicorn/no-array-reverse": "off",
+    "unicorn/no-array-sort": "off",
+    "typescript/array-type": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unsafe-type-assertion": "off",
+    "typescript/no-unnecessary-type-assertion": "off",
+    "typescript/no-unnecessary-type-parameters": "off",
+    "import/no-unassigned-import": "off"
+  }
+}

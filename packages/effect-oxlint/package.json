@@ -1,0 +1,25 @@
+{
+  "name": "@symbola/effect-oxlint",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts",
+    "./rules/*": "./src/rules/*.ts",
+    "./internal/*": null
+  },
+  "scripts": {
+    "test": "vitest run --project unit",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@symbola/effect": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "oxlint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

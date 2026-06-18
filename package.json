@@ -1,0 +1,24 @@
+{
+  "name": "symbola-effect-workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run codegen:check && pnpm run test",
+    "codegen": "pnpm --filter @symbola/effect-codegen codegen",
+    "codegen:check": "pnpm --filter @symbola/effect-codegen codegen:check",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --deny-warnings",
+    "test": "vitest run --project unit",
+    "typecheck": "pnpm --filter @symbola/effect typecheck && pnpm --filter @symbola/effect-oxlint typecheck && pnpm --filter @symbola/effect-codegen typecheck"
+  },
+  "devDependencies": {
+    "@effect/language-service": "catalog:",
+    "@types/node": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "packageManager": "pnpm@10.19.0"
+}

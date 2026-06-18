@@ -1,0 +1,28 @@
+{
+  "name": "@symbola/effect-codegen",
+  "version": "0.0.0",
+  "private": true,
+  "bin": {
+    "symbola-effect-codegen": "./src/GenerateSupportedPairs.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "codegen": "node ./src/GenerateSupportedPairs.ts --write",
+    "codegen:check": "node ./src/GenerateSupportedPairs.ts --check",
+    "test": "vitest run --project unit",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@effect/platform-node": "catalog:",
+    "@symbola/effect": "workspace:*",
+    "@symbola/effect-oxlint": "workspace:*",
+    "effect": "catalog:",
+    "oxc-parser": "catalog:"
+  },
+  "devDependencies": {
+    "@fast-check/vitest": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
