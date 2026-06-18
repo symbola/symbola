@@ -68,6 +68,12 @@ importers:
       '@effect/language-service':
         specifier: 'catalog:'
         version: 0.86.2
+      '@effect/vitest':
+        specifier: 'catalog:'
+        version: 4.0.0-beta.83(effect@4.0.0-beta.83)(vitest@4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0)))
+      '@fast-check/vitest':
+        specifier: 'catalog:'
+        version: 0.4.1(vitest@4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0)))
       '@types/node':
         specifier: 'catalog:'
         version: 22.19.21
@@ -93,18 +99,12 @@ importers:
         specifier: 'catalog:'
         version: 4.0.0-beta.83
     devDependencies:
-      '@effect/vitest':
-        specifier: 'catalog:'
-        version: 4.0.0-beta.83(effect@4.0.0-beta.83)(vitest@4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0)))
       '@types/node':
         specifier: 'catalog:'
         version: 22.19.21
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0))
 
   packages/effect-codegen:
     dependencies:
@@ -124,18 +124,12 @@ importers:
         specifier: 'catalog:'
         version: 0.135.0
     devDependencies:
-      '@fast-check/vitest':
-        specifier: 'catalog:'
-        version: 0.4.1(vitest@4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0)))
       '@types/node':
         specifier: 'catalog:'
         version: 22.19.21
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0))
 
   packages/effect-oxlint:
     dependencies:
@@ -152,9 +146,6 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 4.1.7(@types/node@22.19.21)(vite@8.0.16(@types/node@22.19.21)(yaml@2.9.0))
 
 packages:
 

@@ -43,7 +43,6 @@
   "devDependencies": {
     "@types/node": "catalog:",
     "oxlint": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   }
 }

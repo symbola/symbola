@@ -21,6 +21,8 @@
     "@changesets/changelog-github": "catalog:",
     "@changesets/cli": "catalog:",
     "@effect/language-service": "catalog:",
+    "@effect/vitest": "catalog:",
+    "@fast-check/vitest": "catalog:",
     "@types/node": "catalog:",
     "dprint": "catalog:",
     "oxlint": "catalog:",

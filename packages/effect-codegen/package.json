@@ -21,9 +21,7 @@
     "oxc-parser": "catalog:"
   },
   "devDependencies": {
-    "@fast-check/vitest": "catalog:",
     "@types/node": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   }
 }
