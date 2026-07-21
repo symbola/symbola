@@ -122,7 +122,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["microbundle", "npm:0.15.1"],\
           ["multi-semantic-release", "npm:3.0.2"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["queueable", "npm:5.3.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["semantic-release", "npm:25.0.2"],\
@@ -9190,7 +9190,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9216,7 +9216,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-prettier", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:10.1.8"],\
           ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:29.2.0"],\
           ["eslint-plugin-tsdoc", "npm:0.5.0"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -9242,7 +9242,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-prettier", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:10.1.8"],\
           ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:29.2.0"],\
           ["eslint-plugin-tsdoc", "npm:0.5.0"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9272,7 +9272,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-jest", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:29.2.0"],\
           ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
           ["eslint-plugin-tsdoc", "npm:0.5.0"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9305,7 +9305,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9332,7 +9332,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
           ["eslint-plugin-tsdoc", "npm:0.5.0"],\
           ["globals", "npm:16.4.0"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:6cd1d271f339efffb640e33c66c3172e64fec4a779f53edcd9655d4061173b3ac85865d35ee9354a7ae474d06f236dbf078921f387ce05d519d3a1790448ca11#npm:8.47.0"]\
         ],\
@@ -9365,7 +9365,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-jest-formatting", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#npm:3.1.0"],\
           ["eslint-plugin-tsdoc", "npm:0.5.0"],\
           ["globals", "npm:16.4.0"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:6cd1d271f339efffb640e33c66c3172e64fec4a779f53edcd9655d4061173b3ac85865d35ee9354a7ae474d06f236dbf078921f387ce05d519d3a1790448ca11#npm:8.47.0"]\
         ],\
@@ -9401,7 +9401,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["tuplerone", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
@@ -9437,7 +9437,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["queueable", "npm:5.3.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
@@ -9481,7 +9481,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9515,7 +9515,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["tuplerone", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
@@ -9528,7 +9528,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@symbola/prettier-config", "virtual:89bcb64b77d9e2db08e121d47745ac4aacdb459d8a00251f4b7979febf37c9b2d98554fa65b1bbc85ed17c0db450f4f473e9e61d2386790af2484d1092aa9e4a#workspace:configs/prettier"],\
           ["@types/prettier", "npm:3.0.0"],\
-          ["prettier", "npm:3.6.2"]\
+          ["prettier", "npm:3.9.6"]\
         ],\
         "packagePeers": [\
           "@types/prettier",\
@@ -9572,7 +9572,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:30.2.0"],\
           ["jest-github-reporter", "virtual:c54e804f978d2d5c39a6b1da4ac6cd7fbed660b0983cffd0d15ad63ef6a06e8de22bcc1f00c807a1527639d6ad2a1d8877fb458377b15fc72b5507defa04ad52#npm:1.1.1"],\
           ["microbundle", "npm:0.15.1"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -9889,7 +9889,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-prettier-npm-3.0.0-6c770110eb-a2a512d304.zip/node_modules/@types/prettier/",\
         "packageDependencies": [\
           ["@types/prettier", "npm:3.0.0"],\
-          ["prettier", "npm:3.6.2"]\
+          ["prettier", "npm:3.9.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -21511,10 +21511,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier", [\
-      ["npm:3.6.2", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.2-2668152203/node_modules/prettier/",\
+      ["npm:3.9.6", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.9.6-ad164eec07/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.6.2"]\
+          ["prettier", "npm:3.9.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -23690,7 +23690,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["microbundle", "npm:0.15.1"],\
           ["multi-semantic-release", "npm:3.0.2"],\
-          ["prettier", "npm:3.6.2"],\
+          ["prettier", "npm:3.9.6"],\
           ["queueable", "npm:5.3.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["semantic-release", "npm:25.0.2"],\
